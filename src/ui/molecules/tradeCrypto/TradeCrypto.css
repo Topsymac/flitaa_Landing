@@ -1,0 +1,37 @@
+.tradeCrypto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.tradeCrypto__bgImg {
+  background: url('../../../assets/3.png');
+  background-repeat: no-repeat;
+  width: 379px;
+  height: 372px;
+}
+
+.tradeCrypto__icon {
+  width: 60px;
+  height: 60px;
+}
+
+.tradeCrypto__heading {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 48px;
+  color: white;
+  /* padding-bottom: 40px; */
+}
+
+.tradeCrypto__paragraph {
+  color: #98a2b3;
+  padding-top: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 315px;
+}

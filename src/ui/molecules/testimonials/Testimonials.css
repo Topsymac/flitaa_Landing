@@ -1,0 +1,19 @@
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 47px;
+  background-color: #121514;
+}
+
+.testimonial__divOne {
+  background-image: url('../../../assets/3.svg');
+  background-repeat: no-repeat;
+}
+
+.testimonial__paragraph{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}

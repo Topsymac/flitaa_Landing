@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0e1110;
+  color: white;
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 120px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.navbar__navOne {
+  display: flex;
+  align-items: center;
+}
+.navbar__logo {
+  width: 99px;
+  height: 31px;
+}
+.navbar__navItems {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 50px;
+}
+.navbar__navItems-link {
+  color: white !important;
+  text-decoration: none;
+}
+.navbar__navTwo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__navTwo-lang {
+  margin-right: 32px;
+}

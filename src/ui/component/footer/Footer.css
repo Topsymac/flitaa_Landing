@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0e1110;
+  color: white;
+  padding-top: 165px;
+  padding-left: 80px;
+  padding-bottom: 87px;
+  padding-right: 142px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.footer__logo {
+  width: 99px;
+  height: 31px;
+}
+
+.footer__navOne {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer__navTwo {
+  display: flex;
+  align-items: center;
+}
+.footer__navTwo-terms {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.footer__socials{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 40px;
+}
+.footer__socials-img {
+  width: 40px;
+  height: 40px;
+}
