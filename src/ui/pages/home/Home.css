@@ -1,0 +1,14 @@
+.home__featureCard1 {
+  background-image: linear-gradient(to bottom, #0f1211f3,#0f1211f3),
+    url('../../../assets/Texture.png');
+  /* background: url('../../../assets/Texture.png'), lightgray 0% 0% / 60.90909242630005px 60.90909242630005px no-repeat; */
+  padding-top: 166px;
+  padding-bottom: 160px;
+  color: white;
+}
+.home__featureCard2 {
+  padding-top: 166px;
+  padding-bottom: 160px;
+  background-color: #121514;
+  color: white;
+}

@@ -4,11 +4,33 @@ import downloadIcon from '../../../assets/Icon 1.png'
 import WalletPicture from '../../../assets/Wallet Video.png'
 import './FeaturesCard.css'
 
-const FeaturesCard = ({ introductionText }) => {
+interface FeaturesCardProp {
+  introductionText: string
+  heading: string
+  paragraph: string
+  subHeading1: string
+  subHeadingParagraph1: string
+  subHeading2: string
+  subHeadingParagraph2: string
+  order1?: boolean
+  order2?: boolean
+}
+
+const FeaturesCard = ({
+  introductionText,
+  heading,
+  paragraph,
+  subHeading1,
+  subHeadingParagraph1,
+  subHeading2,
+  subHeadingParagraph2,
+  order1,
+  order2,
+}: FeaturesCardProp) => {
   return (
     <div>
       <div className='featuresCard'>
-        <div>
+        <div className={`${order1 ? 'featureCardOrderOne' : ''}`}>
           <div className='featuresCard__introduction'>
             <div>
               <img
@@ -22,16 +44,10 @@ const FeaturesCard = ({ introductionText }) => {
             </p>
           </div>
           <div>
-            <p className='featuresCard__header'>
-              Features you’ll expect from a simple wallet
-            </p>
+            <p className='featuresCard__header'>{heading}</p>
           </div>
           <div>
-            <p className='featuresCard__paragraph'>
-              Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
-              nullam auctor lectus in nulla. Sed leo mattis neque ullamcorper
-              ultricies.Lorem ipsum dolor sit amet consectetur.
-            </p>
+            <p className='featuresCard__paragraph'>{paragraph}</p>
           </div>
           {/*  */}
           <div className='featuresCard__div4'>
@@ -44,11 +60,10 @@ const FeaturesCard = ({ introductionText }) => {
             </div>
             <div>
               <div>
-                <p className='featuresCard__safety'>Funds Safety</p>
+                <p className='featuresCard__safety'>{subHeading1}</p>
               </div>
               <div className='featuresCard__paragraph-two'>
-                Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
-                nullam auctor lectus in nulla.
+                {subHeadingParagraph1}
               </div>
             </div>
           </div>
@@ -64,18 +79,17 @@ const FeaturesCard = ({ introductionText }) => {
               </div>
               <div>
                 <div>
-                  <p className='featuresCard__safety'>Multi Assets</p>
+                  <p className='featuresCard__safety'>{subHeading2}</p>
                 </div>
                 <div className='featuresCard__paragraph-two'>
-                  Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh
-                  nam nullam auctor lectus in nulla.
+                  {subHeadingParagraph2}
                 </div>
               </div>
             </div>
           </div>
         </div>
         {/*  */}
-        <div>
+        <div className={`${order2 ? 'featureCardOrderTwo' : ''}`}>
           <img
             src={WalletPicture}
             alt='WalletPicture'

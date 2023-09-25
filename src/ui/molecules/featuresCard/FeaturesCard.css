@@ -35,6 +35,7 @@
   line-height: 24px;
   margin-bottom: 48px;
   width: 515px;
+  color: #98A2B3;
 }
 .featuresCard__div4 {
   display: flex;
@@ -58,8 +59,16 @@
   line-height: 24px;
   width: 365px;
   margin-bottom: 40px;
+  color: #98A2B3;
 }
 .featuresCard__walletImg {
   width: 546px;
   height: 641px;
+}
+
+.featureCardOrderOne{
+    order: 2;
+}
+.featureCardOrderTwo{
+    order: 1;
 }
