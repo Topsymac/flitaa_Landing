@@ -1,7 +1,8 @@
 .featuresCard {
   display: flex;
-  gap: 109px;
-  margin-left: 75px;
+  gap: 70px;
+  justify-content: center;
+  /* margin-left: 75px; */
   /* margin-left: 135px; */
 }
 .featuresCard__introduction {
@@ -21,7 +22,8 @@
   line-height: 24px;
 }
 .featuresCard__header {
-  width: 580px;
+    /* max-width: 515px; */
+  max-width: 580px;
   font-size: 56px;
   font-style: normal;
   font-weight: 600;

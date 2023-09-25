@@ -2,6 +2,7 @@ import React from 'react'
 import LandingWrapper from '../../wrappers/landingWrapper/LandingWrapper'
 import FeaturesCard from '../../molecules/featuresCard/FeaturesCard'
 import './Home.css'
+import GetStartedCard from '../../molecules/getStartedCard/GetStartedCard'
 
 const Home = () => {
   return (
@@ -56,7 +57,9 @@ const Home = () => {
                   nam nullam auctor lectus in nulla.'
           />
         </div>
-        {/* <FeaturesCard  Introducing Simplicity/> */}
+        <div className='home__featureCard1'>
+          <GetStartedCard />
+        </div>
       </LandingWrapper>
     </div>
   )
