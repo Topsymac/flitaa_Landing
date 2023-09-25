@@ -1,0 +1,32 @@
+.headingAndParagraph__divOne {
+  padding-top: 160px;
+  padding-left: 80px;
+  /* background-color: #151817; */
+}
+
+.headingAndParagraph__introduction {
+  display: flex;
+  gap: 8px;
+  color: #2fa67c;
+  padding-bottom: 24px;
+}
+.headingAndParagraph__introduction-img {
+  width: 16px;
+  height: 16px;
+}
+.headingAndParagraph__introduction-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.headingAndParagraph__header {
+  /* max-width: 515px; */
+  max-width: 672px;
+  color: white;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 48px;
+}

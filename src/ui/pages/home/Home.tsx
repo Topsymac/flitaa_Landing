@@ -3,11 +3,23 @@ import LandingWrapper from '../../wrappers/landingWrapper/LandingWrapper'
 import FeaturesCard from '../../molecules/featuresCard/FeaturesCard'
 import './Home.css'
 import GetStartedCard from '../../molecules/getStartedCard/GetStartedCard'
+import HeadingAndParagraph from '../../molecules/headingAndParagraph/HeadingAndParagraph'
+import Testimonials from '../../molecules/testimonials/Testimonials'
+import TradeCrypto from '../../molecules/tradeCrypto/TradeCrypto'
 
 const Home = () => {
   return (
     <div className='home'>
       <LandingWrapper>
+        <div className='home__tradeCrypto'>
+          <HeadingAndParagraph
+            introductionText='Introducing Simplicity'
+            heading='A new, easy way to Trade Cryptocurrency'
+          />
+          <div>
+            {/* <TradeCrypto /> */}
+          </div>
+        </div>
         <div className='home__featureCard1'>
           <FeaturesCard
             introductionText='Introducing Simplicity'
@@ -56,6 +68,9 @@ const Home = () => {
             subHeadingParagraph2='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh
                   nam nullam auctor lectus in nulla.'
           />
+        </div>
+        <div>
+            {/* <Testimonials /> */}
         </div>
         <div className='home__featureCard1'>
           <GetStartedCard />

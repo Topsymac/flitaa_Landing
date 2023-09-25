@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: center;
   background-color: #151817;
+  border-radius: 32px;
   height: 486px;
   /* border: 1px solid red; */
 }
