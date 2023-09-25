@@ -1,0 +1,14 @@
+.languageDropdown{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+.languageDropdown__internetImg{
+    width: 20px;
+    height: 20px;
+}
+.languageDropdown__arrowDown{
+    width: 16px;
+    height: 16px;
+}

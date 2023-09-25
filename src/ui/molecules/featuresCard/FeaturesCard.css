@@ -1,0 +1,65 @@
+.featuresCard {
+  display: flex;
+  gap: 109px;
+  margin-left: 75px;
+  /* margin-left: 135px; */
+}
+.featuresCard__introduction {
+  display: flex;
+  gap: 8px;
+  color: #2fa67c;
+  margin-bottom: 24px;
+}
+.featuresCard__introduction-img {
+  width: 16px;
+  height: 16px;
+}
+.featuresCard__introduction-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.featuresCard__header {
+  width: 515px;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.featuresCard__paragraph {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 48px;
+  width: 515px;
+}
+.featuresCard__div4 {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+}
+.featuresCard__downloadIcon {
+  width: 40px;
+  height: 40px;
+}
+.featuresCard__safety {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+.featuresCard__paragraph-two{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  width: 365px;
+  margin-bottom: 40px;
+}
+.featuresCard__walletImg {
+  width: 546px;
+  height: 641px;
+}
