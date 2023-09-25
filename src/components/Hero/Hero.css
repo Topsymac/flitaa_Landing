@@ -1,0 +1,88 @@
+.Hero {
+  height: 1223px;
+  position: relative;
+  padding: 50px;
+}
+.Appbottom {
+  margin-bottom: 300px;
+}
+.top{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 166px;
+  /* background: red; */
+}
+.margintop {
+  margin-top: 280px;
+}
+.fixedtop{
+  position: sticky;
+  top: 100px;
+  left: 0;
+  right: 0;
+}
+.left{
+  /* font-size: 26px;
+  font-weight: 600; */
+  font-size: 30px;
+}
+.right{
+  font-size: 16px;
+}
+.bottom{
+    position: relative;
+  transform-style: preserve-3d;
+  /* transform: translateX(200px); */
+}
+.bottomfixed{
+  position: fixed;
+  left: 50px;
+  right: 50px;
+  top: 200px;
+}
+.scrollbottom{
+  margin-top: -150px;
+}
+.media_logo{
+  /* background-color: red; */
+  padding: 20px;
+  position: absolute;
+  bottom: 40%;
+  left: 3%;
+  display: flex;
+  gap: 20px;
+  transform: translateY(50px);
+}
+.logo-img{
+  text-align: center;
+  transform-origin: 50% 50%;
+  transform: rotateY(10deg) rotateX(60deg) rotateZ(-35deg); 
+  position: relative;
+  /* z-index: 2; */
+  /* background: red; */
+}
+.bottom_small_left_logo{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  transform: translateY(0px) translateX(0px);
+}
+.top_small_right_logo{
+  position: absolute;
+  right: 25%;
+  top: 10%;
+  transform: translateX(100px);
+}
+.bottom_small_right_logo{
+  position: absolute;
+  bottom: 45%;
+  right: 15%;
+  transform: translateX(-150px);
+  /* background: red; */
+}
+.redbox{
+  height: 500px;
+  background-color: transparent;
+}
