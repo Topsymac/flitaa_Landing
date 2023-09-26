@@ -1,0 +1,11 @@
+.privacy_wrapper {
+    background-color: #121514;
+    color: #fff;
+    padding: 50px 131px;
+}
+.privacy_content{
+    padding: 20px 0px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px
+}

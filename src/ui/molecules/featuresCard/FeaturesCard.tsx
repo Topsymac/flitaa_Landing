@@ -1,7 +1,7 @@
 import React from 'react'
-import star from '../../../assets/star.png'
-import downloadIcon from '../../../assets/Icon 1.png'
-import WalletPicture from '../../../assets/Wallet Video.png'
+import star from '../../../Assets/star.png'
+import downloadIcon from '../../../Assets/Icon 1.png'
+import WalletPicture from '../../../Assets/Wallet Video.png'
 import './FeaturesCard.css'
 
 interface FeaturesCardProp {
