@@ -1,6 +1,6 @@
 import React from 'react'
-import InternetImg from '../../../assets/globe-02.svg'
-import arrowDown from '../../../assets/chevron-down.svg'
+import InternetImg from '../../../Assets/globe-02.svg'
+import arrowDown from '../../../Assets/chevron-down.svg'
 import './LanguageDropdown.css'
 const LanguageDropdown = () => {
   return (

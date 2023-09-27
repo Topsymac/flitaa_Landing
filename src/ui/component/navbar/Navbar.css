@@ -7,11 +7,15 @@
   padding-top: 50px;
   padding-left: 80px;
   padding-right: 80px;
-  padding-bottom: 120px;
+  padding-bottom: 20px;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+  position: sticky;
+  top: 100px;
+  left: 0;
+  right: 0;
 }
 .navbar__navOne {
   display: flex;

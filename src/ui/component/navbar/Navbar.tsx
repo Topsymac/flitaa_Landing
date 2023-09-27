@@ -5,7 +5,7 @@ import Button from '../../atoms/button/Button'
 import LanguageDropdown from '../../molecules/languageDropdown/LanguageDropdown'
 
 import './Navbar.css'
-import Logo from '../../../assets/LOGO.png'
+import Logo from '../../../Assets/LOGO.png'
 
 interface IsideProp {
   name: string
@@ -26,7 +26,7 @@ const Navbar = () => {
       name: 'Home',
       id: 1,
       nav: 1,
-      to: 'home',
+      to: '/',
       active: location.pathname.includes('artists'),
     },
     {

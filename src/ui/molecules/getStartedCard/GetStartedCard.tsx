@@ -1,8 +1,8 @@
 import React from 'react'
-import star from '../../../assets/star.png'
-import image from '../../../assets/Image.png'
-import googlePlay from '../../../assets/Mobile app store badge.png'
-import applePlay from '../../../assets/Mobile app store badge (1).png'
+import star from '../../../Assets/star.png'
+import image from '../../../Assets/Image.png'
+import googlePlay from '../../../Assets/Mobile app store badge.png'
+import applePlay from '../../../Assets/Mobile app store badge (1).png'
 
 import './GetStartedCard.css'
 

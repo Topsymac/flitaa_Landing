@@ -1,5 +1,5 @@
 import React from 'react'
-import star from '../../../assets/star.png'
+import star from '../../../Assets/star.png'
 import './HeadingAndParagraph.css'
 
 const HeadingAndParagraph = ({ introductionText, heading }:any) => {

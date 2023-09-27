@@ -6,11 +6,14 @@ import GetStartedCard from '../../molecules/getStartedCard/GetStartedCard'
 import HeadingAndParagraph from '../../molecules/headingAndParagraph/HeadingAndParagraph'
 import Testimonials from '../../molecules/testimonials/Testimonials'
 import TradeCrypto from '../../molecules/tradeCrypto/TradeCrypto'
+import Hero from '../../molecules/Hero/Hero'
+import Terms from '../../molecules/terms&conditions/Terms'
 
 const Home = () => {
   return (
     <div className='home'>
       <LandingWrapper>
+        <Hero/>
         <div className='home__tradeCrypto'>
           <HeadingAndParagraph
             introductionText='Introducing Simplicity'
