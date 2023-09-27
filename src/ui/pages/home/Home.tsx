@@ -70,7 +70,7 @@ const Home = () => {
           />
         </div>
         <div>
-            {/* <Testimonials /> */}
+            <Testimonials />
         </div>
         <div className='home__featureCard1'>
           <GetStartedCard />
