@@ -7,7 +7,7 @@ import HeadingAndParagraph from '../../molecules/headingAndParagraph/HeadingAndP
 import Testimonials from '../../molecules/testimonials/Testimonials'
 import TradeCrypto from '../../molecules/tradeCrypto/TradeCrypto'
 import Hero from '../../molecules/Hero/Hero'
-import Terms from '../../molecules/terms&conditions/Terms'
+
 
 const Home = () => {
   return (

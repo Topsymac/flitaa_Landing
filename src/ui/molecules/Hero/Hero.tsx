@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Hero.css"
+import "./Hero.css";
 import logo from "../../../Assets/Image (1).svg";
 import bottomleft from "../../../Assets/Screenshot 2023-07-31 at 17.45 3.svg";
 import topright from "../../../Assets/Screenshot 2023-07-31 at 17.45 1.svg";
@@ -13,21 +13,38 @@ const Hero = () => {
   useEffect(() => {
     const handleScroll = () => {
       setWindowScroll(window.scrollY);
+      // Logo Image
+      const isMobileScreen = window.innerWidth <= 768;
       const element = document.querySelector(".logo-img");
       // Logo Image
       if (element) {
         const rect = element.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
-          const rotationX = (300 - window.scrollY) / 5;
-          const rotationY = (300 - window.scrollY) / 30;
-          const rotationZ = (300 - window.scrollY) / -8.57;
+          const rotationX = isMobileScreen
+            ? (150 - window.scrollY) / 2.5
+            : (300 - window.scrollY) / 5;
+          const rotationY = isMobileScreen
+            ? (150 - window.scrollY) / 15
+            : (300 - window.scrollY) / 30;
+          const rotationZ = isMobileScreen
+            ? (150 - window.scrollY) / -4.285
+            : (300 - window.scrollY) / -8.57;
           (element as HTMLElement).style.transform = `rotateY(${
             rotationY > 0 ? rotationY : 0
           }deg) rotateX(${rotationX > 0 ? rotationX : 0}deg) rotateZ(${
             rotationZ < 0 ? rotationZ : 0
-          }deg) translateY(${window.scrollY < 300 ? window.scrollY : "300"}px)`;
+          }deg) translateY(${
+            isMobileScreen
+              ? window.scrollY < 150
+                ? window.scrollY
+                : "150"
+              : window.scrollY < 300
+              ? window.scrollY
+              : "300"
+          }px)`;
         }
       }
+      console.log("window scroll", window.scrollY)
       // Media Logos
       const mediaElement = document.querySelector(".media_logo");
       if (mediaElement) {
@@ -160,6 +177,6 @@ const Hero = () => {
       <div className="redbox" />
     </>
   );
-}
+};
 
-export default Hero
+export default Hero;

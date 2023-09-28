@@ -89,3 +89,26 @@
   height: 200px;
   background-color: #121514;
 }
+@media screen and (max-width: 768px) {
+  .Hero {
+    padding: 20px;
+  }
+  .top{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bottomfixed{
+    top: 400px;
+    left: 0px;
+    right: 280px;
+  }
+  .logo-img img{
+    width: 317px;
+  }
+  .left {
+  font-size: 15px;
+}
+.right {
+  font-size: 12px;
+}
+}
