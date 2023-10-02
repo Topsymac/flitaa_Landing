@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css"
-import logo from "../../../Assets/Image (1).svg";
-import bottomleft from "../../../Assets/Screenshot 2023-07-31 at 17.45 3.svg";
-import topright from "../../../Assets/Screenshot 2023-07-31 at 17.45 1.svg";
-import bottomright from "../../../Assets/Screenshot 2023-07-31 at 17.45 2.svg";
-import appstore from "../../../Assets/Mobile app store badge.svg";
-import googlestore from "../../../Assets/Mobile google store badge.svg";
+import logo from "../../../assets/Image (1).svg";
+import bottomleft from "../../../assets/Screenshot 2023-07-31 at 17.45 3.svg";
+import topright from "../../../assets/Screenshot 2023-07-31 at 17.45 1.svg";
+import bottomright from "../../../assets/Screenshot 2023-07-31 at 17.45 2.svg";
+import appstore from "../../../assets/Mobile app store badge.svg";
+import googlestore from "../../../assets/Mobile google store badge.svg";
 
 const Hero = () => {
   const [windowScroll, setWindowScroll] = useState<number>(0);

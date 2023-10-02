@@ -30,3 +30,19 @@
   line-height: normal;
   padding-bottom: 48px;
 }
+
+
+@media screen and (max-width: 576px){
+  .headingAndParagraph__divOne{
+    margin: auto;
+    padding-left: 0px;
+  }
+  .headingAndParagraph__header{
+    font-size: 36px;
+    font-weight: 700;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px){}
+@media screen and (max-width: 992px){}
+@media screen and (max-width: 1200px){}

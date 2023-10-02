@@ -75,3 +75,30 @@
   width: 462px;
   color: #98a2b3;
 }
+
+@media screen and (max-width: 576px) {
+  .testimonial {
+    flex-direction: column;
+  }
+  .testimonial__divOne {
+    width: 100%;
+  }
+  .testimonial-divOne {
+    margin-left: 0px;
+  }
+  .testimonial__paragraph {
+    width: 100%;
+  }
+  .testimonial__paragraphTwo {
+    width: 100%;
+  }
+  .testimonial__paragraphThree {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 1200px) {
+}

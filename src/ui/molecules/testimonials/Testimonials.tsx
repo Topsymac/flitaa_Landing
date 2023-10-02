@@ -1,9 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import HeadingAndParagraph from '../headingAndParagraph/HeadingAndParagraph'
 import quote from '../../../assets/quote.png'
 import './Testimonials.css'
 
 const Testimonials = () => {
+  const { t } = useTranslation()
+
   const TestimonialBg = ({ children }: any) => {
     return (
       <div>
@@ -22,16 +25,15 @@ const Testimonials = () => {
         <div>
           <div>
             <HeadingAndParagraph
-              introductionText='Testimonials'
-              heading='Hear what our global users say'
+              introductionText={t('testimonials')}
+              heading={t('hearUserSay')}
             />
           </div>
           <div className='testimonial-divOne'>
             <TestimonialBg>
               <div>
                 <p className='testimonial__paragraph'>
-                  Happy to begin my cryptocurrency journey with flitaa. It has
-                  been a wonderful experience.
+                  {t('happyToBeginCryptoJourney')}
                 </p>
               </div>
               <div className='testimonial__userName'>
@@ -45,9 +47,7 @@ const Testimonials = () => {
             <div className='testimonial__paragraphTwo-div'>
               <TestimonialBg>
                 <p className='testimonial__paragraphTwo'>
-                  Outstanding CEX that listens to the heartbeat of it’s users.
-                  Growing at geometric progression. Buying and selling of crypto
-                  made so easy and simple. Flitaa dey for you.
+                  {t('growingAtGeometricProgression')}
                 </p>
                 <div className='testimonial__userName'>
                   <p>Chukwudi Udechukwu</p>
@@ -59,9 +59,7 @@ const Testimonials = () => {
             <TestimonialBg>
               <div>
                 <p className='testimonial__paragraphThree'>
-                  Outstanding CEX that listens to the heartbeat of it’s users.
-                  Growing at geometric progression. Buying and selling of crypto
-                  made so easy and simple. Flitaa dey for you.
+                  {t('growingAtGeometricProgression')}
                 </p>
                 <div className='testimonial__userName'>
                   <p>Chukwudi Udechukwu</p>

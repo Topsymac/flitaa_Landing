@@ -3,7 +3,7 @@
   position: relative;
   padding: 50px;
   background-image: linear-gradient(to bottom, #0d100ffd, #0d100ffd),
-    url("../../../Assets/Texture.png");
+    url("../../../assets/Texture.png");
   color: #fff;
 }
 .Appbottom {

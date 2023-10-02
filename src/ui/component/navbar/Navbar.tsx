@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { useTranslation} from 'react-i18next'
 import Button from '../../atoms/button/Button'
 import LanguageDropdown from '../../molecules/languageDropdown/LanguageDropdown'
 
 import './Navbar.css'
-import Logo from '../../../Assets/LOGO.png'
+import menuButton from '../../../assets/Menu.png'
+import Logo from '../../../assets/LOGO.png'
 
 interface IsideProp {
   name: string
@@ -15,29 +17,36 @@ interface IsideProp {
   active: boolean
 }
 
+// const lngs = {
+//   en: { nativeName: 'English' },
+//   de: { nativeName: 'Deutsch' },
+// }
+
+
 const Navbar = () => {
   // const ref = useMenuOnScroll();
+  const { t } = useTranslation()
   const location = useLocation()
   const [activeNav, setActiveNav] = useState(1)
   const [navItems, setNavItems] = useState<IsideProp[]>([])
-
+  
   const navbarLinkNames = [
     {
-      name: 'Home',
+      name: t('home'),
       id: 1,
       nav: 1,
       to: '/',
       active: location.pathname.includes('artists'),
     },
     {
-      name: 'About',
+      name: t('about'),
       id: 2,
       to: 'about',
       nav: 2,
       active: location.pathname.includes('about'),
     },
     {
-      name: 'Features',
+      name: t('features'),
       id: 3,
       nav: 3,
       to: 'events',
@@ -53,7 +62,7 @@ const Navbar = () => {
       return item
     })
     setNavItems(path)
-  }, [location.pathname])
+  }, [location.pathname, t])
 
   return (
     <header>
@@ -78,8 +87,11 @@ const Navbar = () => {
           <div className='navbar__navTwo-lang'>
             <LanguageDropdown />
           </div>
-          <div>
+          <div className='navbar__navTwo-btn'>
             <Button buttonText='Get Started' />
+          </div>
+          <div className='navbar__navTwo-Menubtn'>
+            <img src={menuButton} alt='img' />
           </div>
         </div>
       </div>

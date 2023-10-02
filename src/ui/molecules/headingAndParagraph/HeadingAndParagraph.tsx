@@ -1,8 +1,18 @@
 import React from 'react'
-import star from '../../../Assets/star.png'
+import { useTranslation } from 'react-i18next'
+import star from '../../../assets/star.png'
 import './HeadingAndParagraph.css'
 
-const HeadingAndParagraph = ({ introductionText, heading }:any) => {
+interface HeadingAndParagraphProp {
+  introductionText: string
+  heading: string
+}
+
+const HeadingAndParagraph = ({
+  introductionText,
+  heading,
+}: HeadingAndParagraphProp) => {
+  const { t } = useTranslation()
   return (
     <div>
       <div className='headingAndParagraph__divOne'>
@@ -15,7 +25,9 @@ const HeadingAndParagraph = ({ introductionText, heading }:any) => {
                 className='headingAndParagraph__introduction-img'
               />
             </div>
-            <p className='headingAndParagraph__introduction-text'>{introductionText}</p>
+            <p className='headingAndParagraph__introduction-text'>
+              {introductionText}
+            </p>
           </div>
           <div>
             <p className='headingAndParagraph__header'>{heading}</p>

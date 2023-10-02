@@ -1,13 +1,17 @@
 import React from 'react'
-import star from '../../../Assets/star.png'
-import image from '../../../Assets/Image.png'
-import googlePlay from '../../../Assets/Mobile app store badge.png'
-import applePlay from '../../../Assets/Mobile app store badge (1).png'
+import { useTranslation } from 'react-i18next'
+
+import star from '../../../assets/star.png'
+import image from '../../../assets/Image.png'
+import googlePlay from '../../../assets/Mobile app store badge.png'
+import applePlay from '../../../assets/Mobile app store badge (1).png'
 
 import './GetStartedCard.css'
 
 
 const GetStartedCard = () => {
+  const { t } = useTranslation()
+
   return (
     <div className='getStarted'>
       <div className='getStarted__div-border'>
@@ -23,21 +27,18 @@ const GetStartedCard = () => {
                   />
                 </div>
                 <p className='getStarted__introduction-text'>
-                  Download our app
+                  {t('downloadApp')}
                 </p>
               </div>
               <div>
-                <p className='getStarted__header'>Let’s get you started</p>
+                <p className='getStarted__header'>{t('letGetYouStarted')}</p>
               </div>
               <div>
                 <div className='getStarted__paragraph'>
-                  No matter where you are, trading is just one click away. Stay
-                  updated on your investment anytime and stay informed on the
-                  latest price of Bitcoin, Ethereum, and other trending digital
-                  assets.
+                  {t('noMatterWhereYouAre')}
                   <br />
                   <div className='getStarted__paragraph-sub'>
-                    Available on Android and iOS.
+                    {t('availableOnAndroidAndIOS')}
                   </div>
                 </div>
               </div>
