@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.css";
-import logo from "../../../Assets/Image (1).svg";
+import logo from "../../../Assets/Image (2).svg";
 import bottomleft from "../../../Assets/Screenshot 2023-07-31 at 17.45 3.svg";
 import topright from "../../../Assets/Screenshot 2023-07-31 at 17.45 1.svg";
 import bottomright from "../../../Assets/Screenshot 2023-07-31 at 17.45 2.svg";
@@ -13,8 +13,8 @@ const Hero = () => {
   useEffect(() => {
     const handleScroll = () => {
       setWindowScroll(window.scrollY);
-      // Logo Image
-      const isMobileScreen = window.innerWidth <= 768;
+      // eslint-disable-next-line no-restricted-globals
+      const isMobileScreen = screen.width <= 768;
       const element = document.querySelector(".logo-img");
       // Logo Image
       if (element) {
@@ -44,14 +44,15 @@ const Hero = () => {
           }px)`;
         }
       }
-      console.log("window scroll", window.scrollY)
+      console.log("inner innerWidth", isMobileScreen);
+      console.log("window scroll", window.scrollY);
       // Media Logos
       const mediaElement = document.querySelector(".media_logo");
       if (mediaElement) {
         const mediarect = mediaElement.getBoundingClientRect();
         if (mediarect.top < window.innerHeight && mediarect.bottom >= 0) {
-          const translateY = 50 + window.scrollY / -1.5;
-          (mediaElement as HTMLElement).style.transform = `translateY(${
+          const translateY = isMobileScreen ? 25 + window.scrollY / -0.75 : 50 + window.scrollY / -1.5 ;
+          (mediaElement as HTMLElement).style.transform = `translateY(${ isMobileScreen ? translateY > -250 ? translateY : -250 :
             translateY > -150 ? translateY : -150
           }px)`;
         }
@@ -67,13 +68,23 @@ const Hero = () => {
           bottom_small_left_logorect.top < window.innerHeight &&
           bottom_small_left_logorect.bottom >= 0
         ) {
-          const translateY = window.scrollY / 2;
-          const translateX = window.scrollY / 3;
+          const translateY = isMobileScreen ? window.scrollY / 1 : window.scrollY / 2;
+          const translateX = isMobileScreen
+            ? window.scrollY / 1.5
+            : window.scrollY / 3;
           (
             bottom_small_left_logo as HTMLElement
           ).style.transform = `translateY(${
             translateY < 150 ? translateY : 150
-          }px) translateX(${translateX < 100 ? translateX : 100}px)`;
+          }px) translateX(${
+            isMobileScreen
+              ? translateX < 50
+                ? translateX
+                : 50
+              : translateX < 100
+              ? translateX
+              : 100
+          }px)`;
         }
       }
       // coin at the top right
@@ -87,11 +98,25 @@ const Hero = () => {
           top_small_right_logorect.top < window.innerHeight &&
           top_small_right_logorect.bottom >= 0
         ) {
-          const translateY = 50 + window.scrollY / -1.5;
-          const translateX = 50 + window.scrollY / -2;
+          const translateY = isMobileScreen ? 50 + window.scrollY/-0.75 : 50 + window.scrollY / -1.5;
+          const translateX = isMobileScreen ? 50 + window.scrollY/ -1 : 50 + window.scrollY / -2;
           (top_small_right_logo as HTMLElement).style.transform = `translateY(${
-            translateY > -150 ? translateY : -150
-          }px) translateX(${translateX > -100 ? translateX : -100}px)`;
+            isMobileScreen
+              ? translateY > -80
+                ? translateY
+                : -80
+              : translateY > -150
+              ? translateY
+              : -150
+          }px) translateX(${
+            isMobileScreen
+              ? translateX > -30
+                ? translateX
+                : -30
+              : translateX > -100
+              ? translateX
+              : -100
+          }px)`;
         }
       }
       // coin at the bottom right
@@ -105,13 +130,21 @@ const Hero = () => {
           bottom_small_right_logorect.top < window.innerHeight &&
           bottom_small_right_logorect.bottom >= 0
         ) {
-          const translateY = window.scrollY / -2;
-          const translateX = window.scrollY / -3;
+          const translateY = isMobileScreen ? window.scrollY /-1 : window.scrollY / -2;
+          const translateX = isMobileScreen ? window.scrollY /-1.5 : window.scrollY / -3;
           (
             bottom_small_right_logo as HTMLElement
           ).style.transform = `translateY(${
             translateY > -150 ? translateY : -150
-          }px) translateX(${translateX > -100 ? translateX : -100}px)`;
+          }px) translateX(${
+            isMobileScreen
+              ? translateX > -30
+                ? translateX
+                : -30
+              : translateX > -100
+              ? translateX
+              : -100
+          }px)`;
         }
       }
     };
@@ -126,21 +159,7 @@ const Hero = () => {
   return (
     <>
       <div className={`Hero ${windowScroll < 300 ? "Appbottom" : ""}`}>
-        <div
-          className={`top`}
-          style={
-            windowScroll < 300
-              ? {
-                  position: "sticky",
-                  top: "100px",
-                  left: "0",
-                  right: "0",
-                }
-              : {
-                  marginTop: "250px",
-                }
-          }
-        >
+        <div className={`top  ${windowScroll < 300 ? "fixedtop" : "margintop"}`}>
           <div className="left">
             <h1>Buy, Trade and Hold Cryptocurrencies in it’s easiest form</h1>
           </div>

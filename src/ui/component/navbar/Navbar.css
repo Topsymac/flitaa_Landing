@@ -43,3 +43,8 @@
 .navbar__navTwo-lang {
   margin-right: 32px;
 }
+@media screen and (max-width: 768px) {
+  .navbar{
+    display: none;
+  }
+}

@@ -1,6 +1,7 @@
 .featuresCard {
   display: flex;
   gap: 70px;
+  align-items: center;
   justify-content: center;
   /* margin-left: 75px; */
   /* margin-left: 135px; */
@@ -73,4 +74,24 @@
 }
 .featureCardOrderTwo{
     order: 1;
+}
+@media screen and (max-width: 768px){
+  .featuresCard{
+    flex-direction: column;
+    padding: 10px;
+  }
+  .featuresCard__walletImg {
+    width: 342px;
+    height: 491px;
+  }
+  .featuresCard__header {
+  font-size: 36px;
+  max-width: fit-content;
+}
+.featuresCard__paragraph {
+  width: fit-content;
+}
+.featuresCard__paragraph-two{
+  width: fit-content;
+}
 }

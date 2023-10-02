@@ -30,3 +30,18 @@
   line-height: normal;
   padding-bottom: 48px;
 }
+@media screen and (max-width: 768px) {
+  .headingAndParagraph__divOne{
+    padding: 10px;
+  }
+  .headingAndParagraph__header {
+  /* max-width: 515px; */
+  /* max-width: 672px; */
+  color: white;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 48px;
+}
+}

@@ -91,24 +91,60 @@
 }
 @media screen and (max-width: 768px) {
   .Hero {
-    padding: 20px;
+    padding: 10px;
+    height: 1200px;
   }
-  .top{
+  .top {
     flex-direction: column;
     gap: 20px;
   }
-  .bottomfixed{
-    top: 400px;
-    left: 0px;
-    right: 280px;
+  .margintop {
+    margin-top: 400px;
   }
-  .logo-img img{
+  /* .fixedtop {
+  position: sticky;
+  top: 100px;
+  left: 0;
+  right: 0;
+} */
+  .bottomfixed {
+    top: 300px;
+    left: 0px;
+    right: -20px;
+  }
+  .logo-img img {
     width: 317px;
   }
   .left {
-  font-size: 15px;
-}
-.right {
-  font-size: 12px;
-}
+    font-size: 15px;
+  }
+  .right {
+    font-size: 16px;
+  }
+  .Appbottom {
+    margin-bottom: 0px;
+  }
+  .media_logo {
+    bottom: -8%;
+    left: 8%;
+  }
+  .bottom_small_left_logo {
+    top: 10%;
+  }
+  .top_small_right_logo {
+    right: 28%;
+    top: -5%;
+  }
+  .bottom_small_right_logo {
+    bottom: 5%;
+    right: 10%;
+  }
+  .scrollbottom {
+    margin-top: -60px;
+    /* left: -10px; */
+
+  }
+  .redbox {
+    display: none;
+  }
 }
