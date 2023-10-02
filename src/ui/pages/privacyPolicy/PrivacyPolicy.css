@@ -9,3 +9,8 @@
     font-size: 18px;
     line-height: 28px
 }
+@media (max-width: 760px) {
+    .privacy_wrapper{
+        padding: 10px 20px;
+    }
+}

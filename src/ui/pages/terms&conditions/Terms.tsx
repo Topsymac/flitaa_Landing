@@ -8,7 +8,7 @@ const Terms = () => {
       <LandingWrapper>
         <div className="terms_wrapper">
           <div className="terms_header">
-            <h1>Terms and Condition</h1>
+            <h1>Terms & Condition</h1>
           </div>
           <div className="terms_content">
             <h3>Last Updated June 13, 2022 </h3>

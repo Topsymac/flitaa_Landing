@@ -1,6 +1,7 @@
 .featuresCard {
   display: flex;
   gap: 70px;
+  align-items: center;
   justify-content: center;
   /* margin-left: 75px; */
   /* margin-left: 135px; */
