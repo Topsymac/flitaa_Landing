@@ -44,8 +44,8 @@ const Hero = () => {
           }px)`;
         }
       }
-      console.log("inner innerWidth", isMobileScreen);
-      console.log("window scroll", window.scrollY);
+      // console.log("inner innerWidth", isMobileScreen);
+      // console.log("window scroll", window.scrollY);
       // Media Logos
       const mediaElement = document.querySelector(".media_logo");
       if (mediaElement) {
