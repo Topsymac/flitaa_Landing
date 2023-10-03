@@ -88,7 +88,7 @@ const Navbar = () => {
             <LanguageDropdown />
           </div>
           <div className='navbar__navTwo-btn'>
-            <Button buttonText='Get Started' />
+            <Button buttonText={t('getStarted')} />
           </div>
           <div className='navbar__navTwo-Menubtn'>
             <img src={menuButton} alt='img' />

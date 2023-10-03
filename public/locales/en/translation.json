@@ -2,6 +2,7 @@
   "home": "Home",
   "about": "About",
   "features": "Features",
+  "getStarted":"Get Started",
   "introducingSimplicity": "Introducing Simplicity",
   "introducingVariety": "Introducing Variety",
   "easyWaytoTradeCryptocurrency": "A new, easy way to Trade Cryptocurrency",
@@ -13,6 +14,9 @@
   "multiAssets": "Multi Assets",
   "supportLocalCurrency": "Supporting your local currencies",
   "kenyanShillings": "Kenyan Shillings",
+
+  "tradeAndHoldCryptocurrencies": "Buy, Trade and Hold Cryptocurrencies in it’s easiest form",
+  "buyAndAccessToken":"Easily buy and sell cryptocurrencies with our user friendly app.Access over 40 tokens.The crypto wallet you have been waiting for.",
 
   "testimonials": "Testimonials",
   "hearUserSay": "Hear what our global users say",

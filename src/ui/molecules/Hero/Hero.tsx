@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from 'react-i18next'
+
 import "./Hero.css"
 import logo from "../../../assets/Image (1).svg";
 import bottomleft from "../../../assets/Screenshot 2023-07-31 at 17.45 3.svg";
@@ -8,6 +10,7 @@ import appstore from "../../../assets/Mobile app store badge.svg";
 import googlestore from "../../../assets/Mobile google store badge.svg";
 
 const Hero = () => {
+  const { t } = useTranslation()
   const [windowScroll, setWindowScroll] = useState<number>(0);
 
   useEffect(() => {
@@ -158,44 +161,45 @@ const Hero = () => {
 
   return (
     <>
-      <div className={`Hero ${windowScroll < 300 ? "Appbottom" : ""}`}>
-        <div className={`top  ${windowScroll < 300 ? "fixedtop" : "margintop"}`}>
-          <div className="left">
-            <h1>Buy, Trade and Hold Cryptocurrencies in it’s easiest form</h1>
+      <div className={`Hero ${windowScroll < 300 ? 'Appbottom' : ''}`}>
+        <div
+          className={`top  ${windowScroll < 300 ? 'fixedtop' : 'margintop'}`}
+        >
+          <div className='left'>
+            <h1>{t('tradeAndHoldCryptocurrencies')}</h1>
           </div>
-          <div className="right">
+          <div className='right'>
             <p>
-              Easily buy and sell cryptocurrencies with our user friendly app.
-              Access over 40 tokens.The crypto wallet you have been waiting for.
+              {t('buyAndAccessToken')}
             </p>
           </div>
         </div>
         <div
           className={`bottom ${
-            windowScroll < 300 ? "bottomfixed" : "scrollbottom"
+            windowScroll < 300 ? 'bottomfixed' : 'scrollbottom'
           }`}
         >
-          <div className="logo-img">
-            <img src={logo} alt="" />
+          <div className='logo-img'>
+            <img src={logo} alt='' />
           </div>
-          <div className="media_logo">
-            <img src={googlestore} alt="" />
-            <img src={appstore} alt="" />
+          <div className='media_logo'>
+            <img src={googlestore} alt='' />
+            <img src={appstore} alt='' />
           </div>
-          <div className="bottom_small_left_logo">
-            <img src={bottomleft} alt="" />
+          <div className='bottom_small_left_logo'>
+            <img src={bottomleft} alt='' />
           </div>
-          <div className="top_small_right_logo">
-            <img src={topright} alt="" />
+          <div className='top_small_right_logo'>
+            <img src={topright} alt='' />
           </div>
-          <div className="bottom_small_right_logo">
-            <img src={bottomright} alt="" />
+          <div className='bottom_small_right_logo'>
+            <img src={bottomright} alt='' />
           </div>
         </div>
       </div>
-      <div className="redbox" />
+      <div className='redbox' />
     </>
-  );
+  )
 };
 
 export default Hero;
