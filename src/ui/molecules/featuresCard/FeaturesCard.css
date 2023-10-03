@@ -9,6 +9,7 @@
 .featuresCard__introduction {
   display: flex;
   gap: 8px;
+  align-items: center;
   color: #2fa67c;
   margin-bottom: 24px;
 }
@@ -23,7 +24,7 @@
   line-height: 24px;
 }
 .featuresCard__header {
-    /* max-width: 515px; */
+  /* max-width: 515px; */
   max-width: 580px;
   font-size: 56px;
   font-style: normal;
@@ -38,7 +39,7 @@
   line-height: 24px;
   margin-bottom: 48px;
   width: 515px;
-  color: #98A2B3;
+  color: #98a2b3;
 }
 .featuresCard__div4 {
   display: flex;
@@ -55,46 +56,177 @@
   font-weight: 700;
   line-height: 30px;
 }
-.featuresCard__paragraph-two{
+.featuresCard__paragraph-two {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   width: 365px;
   margin-bottom: 40px;
-  color: #98A2B3;
+  color: #98a2b3;
 }
 .featuresCard__walletImg {
   width: 546px;
   height: 641px;
 }
 
-.featureCardOrderOne{
-    order: 2;
+.featureCardOrderOne {
+  order: 2;
 }
-.featureCardOrderTwo{
-    order: 1;
+.featureCardOrderTwo {
+  order: 1;
 }
 
-@media screen and (max-width: 576px){
-  .featuresCard{
+@media screen and (max-width: 576px) {
+  .featuresCard {
+    gap: 0px;
     flex-direction: column;
   }
-  .featuresCard__header{
+  .featuresCard__header {
     font-size: 36px;
     width: 100%;
   }
-  .featuresCard__paragraph{
-    width: 100%;
+  .featuresCard__introduction-img {
+    width: 14px;
+    height: 14px;
   }
-  .featuresCard__paragraph-two{
+  .featuresCard__introduction {
+    margin-left: 24px;
+  }
+  .featuresCard__introduction-text {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 24px; */
+  }
+  .featuresCard__header {
+    font-size: 30px;
+    font-weight: 700;
+    width: 90%;
+    margin-left: 24px;
+  }
+  .featuresCard__paragraph {
+    margin-left: 24px;
+    width: 90%;
+  }
+  .featuresCard__paragraph-two {
     width: 100%;
   }
   .featuresCard__walletImg {
-  width: 342px;
-  height: 419px;
+    /* margin-left: 0px; */
+    width: 342px;
+    height: 419px;
+  }
+  .featuresCard__div4 {
+    margin-left: 24px;
+  }
+  .featureCardOrderOne {
+  order: 1;
+}
+.featureCardOrderTwo {
+  order: 2;
 }
 }
-@media screen and (max-width: 768px){}
-@media screen and (max-width: 992px){}
-@media screen and (max-width: 1200px){}
+@media screen and (max-width: 768px) {
+   .featuresCard {
+    gap: 0px;
+    flex-direction: column;
+  }
+  .featuresCard__header {
+    font-size: 36px;
+    width: 100%;
+  }
+  .featuresCard__introduction-img {
+    width: 14px;
+    height: 14px;
+  }
+  .featuresCard__introduction {
+    margin-left: 24px;
+  }
+  .featuresCard__introduction-text {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 24px; */
+  }
+  .featuresCard__header {
+    font-size: 30px;
+    font-weight: 700;
+    width: 90%;
+    margin-left: 24px;
+  }
+  .featuresCard__paragraph {
+    margin-left: 24px;
+    width: 90%;
+  }
+  .featuresCard__paragraph-two {
+    width: 100%;
+  }
+  .featuresCard__walletImg {
+    /* margin-left: 0px; */
+    width: 342px;
+    height: 419px;
+  }
+  .featuresCard__div4 {
+    margin-left: 24px;
+  }
+  .featureCardOrderOne {
+  order: 1;
+}
+.featureCardOrderTwo {
+  order: 2;
+}
+}
+@media screen and (max-width: 992px) {
+   .featuresCard {
+    gap: 0px;
+    flex-direction: column;
+  }
+  .featuresCard__header {
+    font-size: 36px;
+    width: 100%;
+  }
+  .featuresCard__introduction-img {
+    width: 14px;
+    height: 14px;
+  }
+  .featuresCard__introduction {
+    margin-left: 24px;
+  }
+  .featuresCard__introduction-text {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 24px; */
+  }
+  .featuresCard__header {
+    font-size: 30px;
+    font-weight: 700;
+    width: 90%;
+    margin-left: 24px;
+  }
+  .featuresCard__paragraph {
+    margin-left: 24px;
+    width: 90%;
+  }
+  .featuresCard__paragraph-two {
+    width: 100%;
+  }
+  .featuresCard__walletImg {
+    /* margin-left: 0px; */
+    width: 342px;
+    height: 419px;
+  }
+  .featuresCard__div4 {
+    margin-left: 24px;
+  }
+  .featureCardOrderOne {
+  order: 1;
+}
+.featureCardOrderTwo {
+  order: 2;
+}
+}
+
+@media screen and (max-width: 1200px) {
+}

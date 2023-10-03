@@ -30,16 +30,12 @@ const Footer = () => {
         </div>
         <div className='footer__navTwo'>
           <div className='footer__navTwo-terms'>
-            <div>
               <Link to='/terms'>
                 <p>{t('termOfUse')}</p>
               </Link>
-            </div>
-            <div>
               <Link to='/privacy'>
                 <p>{t('privacyPolicy')}</p>
               </Link>
-            </div>
           </div>
           <div className='footer__socials'>
             {/* socials */}

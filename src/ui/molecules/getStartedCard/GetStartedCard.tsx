@@ -5,6 +5,7 @@ import star from '../../../assets/star.png'
 import image from '../../../assets/Image.png'
 import googlePlay from '../../../assets/Mobile app store badge.png'
 import applePlay from '../../../assets/Mobile app store badge (1).png'
+import getStartedBorder from '../../../assets/getStartedBorder.svg'
 
 import './GetStartedCard.css'
 
@@ -15,6 +16,7 @@ const GetStartedCard = () => {
   return (
     <div className='getStarted'>
       <div className='getStarted__div-border'>
+        {/* <img src={getStartedBorder} alt='img' /> */}
         <div className='getStarted__div'>
           <div className='getStarted__divOne'>
             <div className=''>

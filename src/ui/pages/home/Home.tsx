@@ -23,7 +23,7 @@ const Home = () => {
             heading={t('easyWaytoTradeCryptocurrency')}
           />
           <div>
-            {/* <TradeCrypto /> */}
+            <TradeCrypto />
           </div>
         </div>
         <div className='home__featureCard1'>
