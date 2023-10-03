@@ -1,16 +1,16 @@
 .terms_wrapper {
-    background-color: #121514;
-    color: #fff;
-    padding: 50px 131px;
+  background-color: #121514;
+  color: #fff;
+  padding: 180px 131px 100px 130px;
 }
-.terms_content{
-    padding: 20px 0px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px
+.terms_content {
+  padding: 20px 0px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
 }
 @media (max-width: 760px) {
-    .terms_wrapper{
-        padding: 10px 20px;
-    }
+  .terms_wrapper {
+    padding: 10px 20px;
+  }
 }

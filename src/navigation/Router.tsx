@@ -2,7 +2,7 @@ import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import routeNames from './RouterNames'
 import Home from '../ui/pages/home/Home'
-import Terms from '../ui/pages/terms&conditions/Terms'
+import Terms from '../ui/pages/terms&conditions/TermsAndCondition'
 import PrivacyPolicy from '../ui/pages/privacyPolicy/PrivacyPolicy'
 
 const Router = (): JSX.Element => {
