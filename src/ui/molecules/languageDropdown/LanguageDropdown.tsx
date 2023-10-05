@@ -1,70 +1,12 @@
-// import React, { useEffect, useState } from 'react'
-// import i18next from '../../../translate/i18next'
-// import InternetImg from '../../../assets/globe-02.svg'
-// import arrowDown from '../../../assets/chevron-down.svg'
-// import './LanguageDropdown.css'
-// import { useTranslation } from 'react-i18next'
-// const LanguageDropdown = () => {
-//   // Use useState to create a locale state variable with an initial value
-//   const [locale, setLocale] = useState(i18next.language)
-
-//   // Use useEffect to update the locale when the language changes
-//   useEffect(() => {
-//     const handleChange = (lng: any) => setLocale(lng)
-//     i18next.on('languageChanged', handleChange)
-
-//     // Clean up the event listener when the component unmounts
-//     return () => {
-//       i18next.off('languageChanged', handleChange)
-//     }
-//   }, [])
-
-//   const handleLanguageChange = (event: any) => {
-//     i18next.changeLanguage(event.target.value)
-//   }
-
-//   return (
-//     <div>
-//       <div className='languageDropdown'>
-//         <img
-//           src={InternetImg}
-//           alt='internet'
-//           className='languageDropdown__internetImg'
-//         />
-//         <p onChange={handleLanguageChange}>EN</p>
-//         <img
-//           src={arrowDown}
-//           alt='arrow'
-//           className='languageDropdown__arrowDown'
-//         />
-//         {/* <select value={locale} onChange={handleLanguageChange} className='selectLanguage__select'>
-//           <option value='en'>En</option>
-//           <option value='sw'>Sw</option>
-//         </select> */}
-//         <div className='selectLanguage'>
-//           <p>Select Language</p>
-//           <div>
-//             <img src='/' alt='' />
-//             <p >English</p>
-//           </div>
-//           <div>
-//             <img src='/' alt='' />
-//             <p>Swahili</p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default LanguageDropdown
-
 import React, { useEffect, useState } from 'react'
 import i18next from '../../../translate/i18next'
 import InternetImg from '../../../assets/globe-02.svg'
 import arrowDown from '../../../assets/chevron-down.svg'
+import englishIcon from '../../../assets/englishIcon.svg'
+import kenyaIcon from '../../../assets/kenyaIcon.svg'
+
 import './LanguageDropdown.css'
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 
 const LanguageDropdown = () => {
   const [locale, setLocale] = useState(i18next.language)
@@ -109,17 +51,23 @@ const LanguageDropdown = () => {
 
         {OpenDropdown ? (
           <div className='selectLanguage'>
-            <p>Select Language</p>
+            <p className='selectLanguage__paragraph'>Select Language</p>
             <div
               onClick={() => handleLanguageChange({ target: { value: 'en' } })}
+              className='selectLanguage_divOne'
             >
-              <img src='/' alt='' />
+              <img
+                src={englishIcon}
+                alt='icon'
+                className='selectLanguage-icon'
+              />
               <p>English</p>
             </div>
             <div
               onClick={() => handleLanguageChange({ target: { value: 'sw' } })}
+              className='selectLanguage_div'
             >
-              <img src='/' alt='' />
+              <img src={kenyaIcon} alt='icon' className='selectLanguage-icon' />
               <p>Swahili</p>
             </div>
           </div>

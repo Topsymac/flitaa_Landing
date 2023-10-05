@@ -1,497 +1,163 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import './PrivacyPolicy.css'
 import LandingWrapper from '../../wrappers/landingWrapper/LandingWrapper';
 
 const PrivacyPolicy = () => {
+  const { t } = useTranslation()
   return (
     <>
       <LandingWrapper>
-        <div className="privacy_wrapper">
-          <div className="privacy_header">
-            <h1>Privacy Policy</h1>
+        <div className='privacy_wrapper'>
+          <div className='privacy_header'>
+            <h1>{t('privacyPolicy')}</h1>
           </div>
-          <div className="privacy_content">
-            <p>
-              Thank you for choosing to be part of our community at our online
-              platform flitaa (“flitaa”, “we”, “us”, our”). We are committed to
-              protecting your personal information and your right to privacy. If
-              you have any questions or concerns about this privacy notice,
-              please contact us at support@flitaa.com.
-            </p>
+          <div className='privacy_content'>
+            <p>{t('privacyParagraphOne')}</p>
             <br />
-            <p>
-              This policy is effective as of 9th July 2021 and was last updated
-              on 9th July 2021.
-            </p>
+            <p>{t('privacyParagraphTwo')}</p>
             <br />
-            <p>
-              When you visit our website http://www.flitaa.com (“the Website”),
-              use our mobile application, as the case may be (the “App”) and
-              more generally, use any of our services (the “Services”, which
-              include the Website and App), we appreciate that you are trusting
-              us with your personal information. We take your privacy very
-              seriously. In this privacy notice, we seek to explain to you in
-              the clearest way possible what information we collect, how we use
-              it and what rights you have in relation to it. We hope you take
-              some time to read through it carefully, as it is important. If
-              there are any terms in this privacy notice that you do not agree
-              with, please discontinue use of our Services immediately.
-            </p>
+            <p>{t('privacyParagraphThree')}</p>
             <br />
-            <p>
-              This privacy notice applies to all information collected through
-              our Services (which, as described above, includes our Website and
-              App), as well as, any related services, sales, marketing or
-              events.
-            </p>
+            <p>{t('privacyParagraphFour')}</p>
             <br />
-            <p>
-              Please read this privacy notice carefully as it will help you
-              understand what we do with the information that we collect.
-            </p>
+            <p>{t('privacyParagraphFive')}</p>
           </div>
-          <div className="privacy_content">
-            <h3>1. WHAT INFORMATION DO WE COLLECT?</h3>
-            <p className="underline">Personal information you disclose to us</p>
+          <div className='privacy_content'>
+            <h3>1. {t('privacyParagraphSix')}</h3>
+            <p className='underline'>{t('privacyParagraphSeven')}</p>
             <br />
-            <p>
-              In Short: We collect personal information that you provide to us.
-            </p>
+            <p>{t('privacyParagraphEight')}</p>
             <br />
-            <p>
-              We collect personal information that you voluntarily provide to us
-              when you register on the Services, express an interest in
-              obtaining information about us or our products and Services, when
-              you participate in activities on the Services or otherwise when
-              you contact us.
-            </p>
+            <p>{t('privacyParagraphNine')}</p>
             <br />
-            <p>
-              The personal information that we collect depends on the context of
-              your interactions with us and the Services, the choices you make
-              and the products and features you use. The personal information we
-              collect may include the following:
-            </p>
+            <p>{t('privacyParagraphTen')}</p>
             <br />
-            <p>
-              Personal Information Provided by You. We collect names; phone
-              numbers; email addresses; usernames; passwords; contact or
-              authentication data; debit/credit card numbers; mailing addresses;
-              date of birth; and other similar information.
-            </p>
+            <p>{t('privacyParagraphEleven')}</p>
             <br />
-            <p>
-              Social Media Login Data. We may provide you with the option to
-              register with us using your existing social media account details,
-              like your Facebook, Twitter or other social media account. If you
-              choose to register in this way, we will collect the information
-              described in the section called “HOW DO WE HANDLE YOUR SOCIAL
-              LOGINS?” below.
-            </p>
+            <p>{t('privacyParagraphTwelve')}</p>
             <br />
-            <p>
-              All personal information that you provide to us must be true,
-              complete and accurate, and you must notify us of any changes to
-              such personal information.
-            </p>
+            <p>{t('privacyParagraphThirteen')}</p>
           </div>
-          <div className="privacy_content">
-            <p className="underline">Information automatically collected</p>
+          <div className='privacy_content'>
+            <p className='underline'>{t('privacyParagraphFourteen')}</p>
             <br />
-            <p>
-              In Short: Some information — such as your Internet Protocol (IP)
-              address and/or browser and device characteristics — is collected
-              automatically when you visit our Services.
-            </p>
+            <p>{t('privacyParagraphFifteen')}</p>
             <br />
-            <p>
-              We automatically collect certain information when you visit, use
-              or navigate the Services. This information does not reveal your
-              specific identity (like your name or contact information) but may
-              include device and usage information, such as your IP address,
-              browser and device characteristics, operating system, language
-              preferences, referring URLs, device name, country, location,
-              information about how and when you use our Services and other
-              technical information. This information is primarily needed to
-              maintain the security and operation of our Services, and for our
-              internal analytics and reporting purposes.
-            </p>
+            <p>{t('privacyParagraphSixteen')}</p>
             <br />
-            <p>The information we collect includes:</p>
+            <p>{t('privacyParagraphSeventeen')}</p>
             <br />
-            <p>
-              **Log and Usage Data. Log and usage data is service-related,
-              diagnostic, usage and performance information our servers
-              automatically collect when you access or use our Services and
-              which we record in log files. Depending on how you interact with
-              us, this log data may include your IP address, device information,
-              browser type and settings and information about your activity in
-              the Services (such as the date/time stamps associated with your
-              usage, pages and files viewed, searches and other actions you take
-              such as which features you use), device event information (such as
-              system activity, error reports (sometimes called ‘crash dumps’)
-              and hardware settings). **Device Data. We collect device data such
-              as information about your computer, phone, tablet or other device
-              you use to access the Services. Depending on the device used, this
-              device data may include information such as your IP address (or
-              proxy server), device and application identification numbers,
-              location, browser type, hardware model Internet service provider
-              and/or mobile carrier, operating system and system configuration
-              information.
-            </p>
+            <p>{t('privacyParagraphEighteen')}</p>
           </div>
-          <div className="privacy_content">
-            <p className="underline">Information collected through our App</p>
+          <div className='privacy_content'>
+            <p className='underline'>{t('privacyParagraphNineteen')}</p>
             <br />
-            <p>
-              In Short: We collect information regarding your mobile device,
-              push notifications, when you use our App.
-            </p>
+            <p>{t('privacyParagraphTwenty')}</p>
             <br />
-            <p>
-              If you use our App, we also collect the following information:
-            </p>
+            <p>{t('privacyParagraphTwentyOne')}</p>
             <br />
-            <p>
-              **Mobile Device Access. We may request access or permission to
-              certain features from your mobile device, including your mobile
-              device’s camera, contacts, sms messages, and other features. If
-              you wish to change our access or permissions, you may do so in
-              your device’s settings. **Mobile Device Data. We automatically
-              collect device information (such as your mobile device ID, model
-              and manufacturer), operating system, version information and
-              system configuration information, device and application
-              identification numbers, browser type and version, hardware model
-              Internet service provider and/or mobile carrier, and Internet
-              Protocol (IP) address (or proxy server). If you are using our App,
-              we may also collect information about the phone network associated
-              with your mobile device, your mobile device’s operating system or
-              platform, the type of mobile device you use, your mobile device’s
-              unique device ID and information about the features of our App you
-              accessed. **Push Notifications. We may request to send you push
-              notifications regarding your account or certain features of the
-              App. If you wish to opt-out from receiving these types of
-              communications, you may turn them off in your device’s settings.
-              This information is primarily needed to maintain the security and
-              operation of our App, for troubleshooting and for our internal
-              analytics and reporting purposes.
-            </p>
+            <p>{t('privacyParagraphTwentyTwo')}</p>
           </div>
-          <div className="privacy_content">
-            <p className="underline">
-              Information collected from other sources.
-            </p>
+          <div className='privacy_content'>
+            <p className='underline'>{t('privacyParagraphTwentyThree')} </p>
             <br />
-            <p>
-              In Short: We may collect limited data from public databases,
-              marketing partners, social media platforms, and other outside
-              sources.
-            </p>
+            <p>{t('privacyParagraphTwentyFour')}</p>
             <br />
-            <p>
-              In order to enhance our ability to provide relevant marketing,
-              offers and services to you and update our records, we may obtain
-              information about you from other sources, such as public
-              databases, joint marketing partners, affiliate programs, data
-              providers, social media platforms, as well as from other third
-              parties. This information includes mailing addresses, job titles,
-              email addresses, phone numbers, intent data (or user behaviour
-              data), Internet Protocol (IP) addresses, social media profiles,
-              social media URLs and custom profiles, for purposes of targeted
-              advertising and event promotion. If you interact with us on a
-              social media platform using your social media account (e.g.
-              Facebook or Twitter), we receive personal information about you
-              such as your name, email address, and gender. Any personal
-              information that we collect from your social media account depends
-              on your social media account’s privacy settings.
-            </p>
+            <p>{t('privacyParagraphTwentyFive')}</p>
           </div>
-          <div className="privacy_content">
-            <h3>2. HOW DO WE USE YOUR INFORMATION?</h3>
-            <p>
-              In Short: We process your information for purposes based on
-              legitimate business interests, the fulfillment of our contract
-              with you, compliance with our legal obligations, and/or your
-              consent.
-            </p>
+          <div className='privacy_content'>
+            <h3>{t('privacyParagraphTwentySix')}</h3>
+            <p>{t('privacyParagraphTwentySeven')}</p>
             <br />
-            <p>
-              We use personal information collected via our Services for a
-              variety of business purposes described below. We process your
-              personal information for these purposes in reliance on our
-              legitimate business interests, in order to enter into or perform a
-              contract with you, with your consent, and/or for compliance with
-              our legal obligations. We indicate the specific processing grounds
-              we rely on next to each purpose listed below.
-            </p>
+            <p>{t('privacyParagraphTwentyEight')}</p>
             <br />
-            <p>We use the information we collect or receive:</p>
+            <p>{t('privacyParagraphTwentyNine')}</p>
             <br />
-            <p>
-              **To facilitate account creation and logon process. If you choose
-              to link your account with us to a third-party account (such as
-              your Google or Facebook account), we use the information you
-              allowed us to collect from those third parties to facilitate
-              account creation and logon process for the performance of the
-              contract. See the section below headed “HOW DO WE HANDLE YOUR
-              SOCIAL LOGINS?” for further information.
-            </p>
+            <p>{t('privacyParagraphThirty')}</p>
             <br />
-            <p>
-              **To post testimonials. We post testimonials on our Services that
-              may contain personal information. Prior to posting a testimonial,
-              we will obtain your consent to use your name and the content of
-              the testimonial. If you wish to update, or delete your
-              testimonial, please contact us at privacy@flitaa.com and be sure
-              to include your name, testimonial location, and contact
-              information.
-            </p>
+            <p>{t('privacyParagraphThirtyOne')}</p>
             <br />
-            <p>
-              **Request feedback. We may use your information to request
-              feedback and to contact you about your use of our Services.
-            </p>
+            <p>{t('privacyParagraphThirtyTwo')}</p>
             <br />
-            <p>
-              **To enable user-to-user communications. We may use your
-              information in order to enable user-to-user communications with
-              each user’s consent. To manage user accounts. We may use your
-              information for the purposes of managing our account and keeping
-              it in working order.
-            </p>
+            <p>{t('privacyParagraphThirtyThree')}</p>
             <br />
-            <p>
-              **To send administrative information to you. We may use your
-              personal information to send you product, service and new feature
-              information and/or information about changes to our terms,
-              conditions, and policies.
-            </p>
+            <p>{t('privacyParagraphThirtyFour')}</p>
             <br />
-            <p>
-              **To protect our Services. We may use your information as part of
-              our efforts to keep our Services safe and secure (for example, for
-              fraud monitoring and prevention).**To enforce our terms,
-              conditions and policies for business purposes, to comply with
-              legal and regulatory requirements or in connection with our
-              contract.**To respond to legal requests and prevent harm. If we
-              receive a subpoena or other legal request, we may need to inspect
-              the data we hold to determine how to respond.
-            </p>
+            <p>{t('privacyParagraphThirtyFive')}</p>
             <br />
-            <p>
-              **Fulfill and manage your orders. We may use your information to
-              fulfill and manage your orders, payments, returns, and exchanges
-              made through the Services.
-            </p>
+            <p>{t('privacyParagraphThirtySix')}</p>
             <br />
-            <p>
-              **Administer prize draws and competitions. We may use your
-              information to administer prize draws and competitions when you
-              elect to participate in our competitions.
-            </p>
+            <p>{t('privacyParagraphThirtySeven')}</p>
             <br />
-            <p>
-              **To deliver and facilitate delivery of services to the user. We
-              may use your information to provide you with the requested
-              service.**To respond to user inquiries/offer support to users. We
-              may use your information to respond to your inquiries and solve
-              any potential issues you might have with the use of our Services.
-            </p>
+            <p>{t('privacyParagraphThirtyEight')}</p>
             <br />
-            <p>
-              **To send you marketing and promotional communications. We and/or
-              our third-party marketing partners may use the personal
-              information you send to us for our marketing purposes, if this is
-              in accordance with your marketing preferences. For example, when
-              expressing an interest in obtaining information about us or our
-              Services, subscribing to marketing or otherwise contacting us, we
-              will collect personal information from you. You can opt-out of our
-              marketing emails at any time (see the “WHAT ARE YOUR PRIVACY
-              RIGHTS?” below).
-            </p>
+            <p>{t('privacyParagraphThirtyNine')}</p>
             <br />
-            <p>
-              **Deliver targeted advertising to you. We may use your information
-              to develop and display personalized content and advertising (and
-              work with third parties who do so) tailored to your interests
-              and/or location and to measure its effectiveness.
-            </p>
+            <p>{t('privacyParagraphForty')}</p>
             <br />
-            <p>
-              **For other business purposes. We may use your information for
-              other business purposes, such as data analysis, identifying usage
-              trends, determining the effectiveness of our promotional campaigns
-              and to evaluate and improve our Services, products, marketing and
-              your experience. We may use and store this information in
-              aggregated and anonymized form so that it is not associated with
-              individual end users and does not include personal information. We
-              will not use identifiable personal information without your
-              consent.
-            </p>
+            <p>{t('privacyParagraphFortyOne')}</p>
             <br />
-            <p>
-              **We access your contact list information to enable you send
-              digital assets to other users in your contact list.
-            </p>
+            <p>{t('privacyParagraphFortyTwo')}</p>
           </div>
-          <div className="privacy_content">
-            <h3>3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</h3>
-            <p>
-              In Short: We only share information with your consent, to comply
-              with laws, to provide you with services, to protect your rights,
-              or to fulfill business obligations.
-            </p>
+          <div className='privacy_content'>
+            <h3>{t('privacyParagraphFortyThree')}</h3>
+            <p>{t('privacyParagraphFortyFour')}</p>
             <br />
-            <p>
-              We may process or share your data that we hold based on the
-              following legal basis:
-            </p>
+            <p>{t('privacyParagraphFortyFive')}</p>
             <br />
-            <p>
-              **Consent: We may process your data if you have given us specific
-              consent to use your personal information for a specific purpose.
-            </p>
+            <p>{t('privacyParagraphFortySix')}</p>
             <br />
-            <p>
-              **Legitimate Interests: We may process your data when it is
-              reasonably necessary to achieve our legitimate business interests.
-            </p>
+            <p>{t('privacyParagraphFortySeven')}</p>
             <br />
-            <p>
-              **Performance of a Contract: Where we have entered into a contract
-              with you, we may process your personal information to fulfill the
-              terms of our contract.
-            </p>
+            <p>{t('privacyParagraphFortyEight')}</p>
             <br />
-            <p>
-              **Legal Obligations: We may disclose your information where we are
-              legally required to do so in order to comply with applicable law,
-              governmental requests, a judicial proceeding, court order, or
-              legal process, such as in response to a court order or a subpoena
-              (including in response to public authorities to meet national
-              security or law enforcement requirements).
-            </p>
+            <p>{t('privacyParagraphFortyNine')}</p>
             <br />
-            <p>
-              **Vital Interests: We may disclose your information where we
-              believe it is necessary to investigate, prevent, or take action
-              regarding potential violations of our policies, suspected fraud,
-              situations involving potential threats to the safety of any person
-              and illegal activities, or as evidence in litigation in which we
-              are involved.
-            </p>
+            <p>{t('privacyParagraphFifty')}</p>
             <br />
-            <p>
-              More specifically, we may need to process your data or share your
-              personal information in the following situations:
-            </p>
+            <p>{t('privacyParagraphFiftyOne')}</p>
             <br />
-            <p>
-              **Business Transfers. We may share or transfer your information in
-              connection with, or during negotiations of, any merger, sale of
-              company assets, financing, or acquisition of all or a portion of
-              our business to another company.
-            </p>
+            <p>{t('privacyParagraphFiftyTwo')}</p>
             <br />
-            <p>
-              **Vendors, Consultants and Other Third-Party Service Providers. We
-              may share your data with third-party vendors, service providers,
-              contractors or agents who perform services for us or on our behalf
-              and require access to such information to do that work. Examples
-              include: payment processing, data analysis, email delivery,
-              hosting services, customer service and marketing efforts. We may
-              allow selected third parties to use tracking technology on the
-              Services, which will enable them to collect data on our behalf
-              about how you interact with our Services over time. This
-              information may be used to, among other things, analyze and track
-              data, determine the popularity of certain content, pages or
-              features, and better understand online activity. Unless described
-              in this notice, we do not share, sell, rent or trade any of your
-              information with third parties for their promotional purposes.
-            </p>
+            <p>{t('privacyParagraphFiftyThree')}</p>
             <br />
-            <p>
-              More specifically, we may need to process your data or share your
-              personal information in the following situations:
-            </p>
+            <p>{t('privacyParagraphFiftyFour')}</p>
             <br />
-            <p>
-              **Business Partners. We may share your information with our
-              business partners to offer you certain products, services or
-              promotions
-            </p>
+            <p>{t('privacyParagraphFiftyFive')}</p>
           </div>
-          <div className="privacy_content">
-            <h3>4. WHO WILL YOUR INFORMATION BE SHARED WITH?</h3>
-            <p>
-              In Short: We only share information with the following categories
-              of third parties.
-            </p>
+          <div className='privacy_content'>
+            <h3>{t('privacyParagraphFiftySix')}</h3>
+            <p>{t('privacyParagraphFiftySeven')}</p>
             <br />
-            <p>
-              We only share and disclose your information with the following
-              categories of third parties. If we have processed your data based
-              on your consent and you wish to revoke your consent, please
-              contact us using the contact details provided in the section below
-              titled “HOW CAN YOU CONTACT US ABOUT THIS NOTICE?”.
-            </p>
+            <p>{t('privacyParagraphFiftyEight')}</p>
             <br />
-            <p>**Communication & Collaboration Tools</p>
+            <p>{t('privacyParagraphFiftyNine')}</p>
             <br />
-            <p>
-              7.4 You shall take all rational measures to detect any
-              unauthorized use and access to the flitaa App and the Services.7.5
-              You shall at always follow the security measures notified to you
-              by flitaa from time to time or such other measures as may be
-              applicable to the use of the flitaa App and the Services from time
-              to time.
-            </p>
+            <p>{t('privacyParagraphSixty')}</p>
             <br />
-            <p>**Data Analytics Services</p>
+            <p>{t('privacyParagraphSixtyOne')}</p>
             <br />
-            <p>**Data Storage Service Providers</p>
+            <p>{t('privacyParagraphSixtyTwo')}</p>
             <br />
-            <p>**Government Entities</p>
+            <p>{t('privacyParagraphSixtyThree')}</p>
             <br />
-            <p>**Payment Processors</p>
+            <p>{t('privacyParagraphSixtyFour')}</p>
             <br />
-            <p>**User Account Registration & Authentication Services</p>
+            <p>{t('privacyParagraphSixtyFive')}</p>
             <br />
-            <p>**Website Hosting Service Providers</p>
+            <p>{t('privacyParagraphSixtySix')}</p>
           </div>
-          <div className="privacy_content">
-            <h3>5. HOW DO WE HANDLE YOUR SOCIAL LOGINS?</h3>
-            <p>
-              In Short: If you choose to register or log in to our services
-              using a social media account, we may have access to certain
-              information about you.
-            </p>
+          <div className='privacy_content'>
+            <h3>{t('privacyParagraphSixtySeven')}</h3>
+            <p>{t('privacyParagraphSixtyEight')}</p>
             <br />
-            <p>
-              Our Services offers you the ability to register and login using
-              your third-party social media account details (like your Facebook
-              or Twitter logins). Where you choose to do this, we will receive
-              certain profile information about you from your social media
-              provider. The profile information we receive may vary depending on
-              the social media provider concerned, but will often include your
-              name, email address, friends list, profile picture as well as
-              other information you choose to make public on such social media
-              platforms.
-            </p>
+            <p>{t('privacyParagraphSixtyNine')}</p>
             <br />
-            <p>
-              We will use the information we receive only for the purposes that
-              are described in this privacy notice or that are otherwise made
-              clear to you on the relevant Services. Please note that we do not
-              control, and are not responsible for, other uses of your personal
-              information by your third-party social media provider. We
-              recommend that you review their privacy notice to understand how
-              they collect, use and share your personal information, and how you
-              can set your privacy preferences on their sites and apps.
-            </p>
+            <p>{t('privacyParagraphSeventy')}</p>
           </div>
-          <div className="privacy_content">
-            <h3>6. HOW LONG DO WE KEEP YOUR INFORMATION?</h3>
+          <div className='privacy_content'>
+            <h3>{t('privacyParagraphSeventyOne')}</h3>
             <p>
               In Short: We keep your information for as long as necessary to
               fulfill the purposes outlined in this privacy notice unless
@@ -517,7 +183,7 @@ const PrivacyPolicy = () => {
               it from any further processing until deletion is possible.
             </p>
           </div>
-          <div className="privacy_content">
+          <div className='privacy_content'>
             <h3>7. HOW DO WE KEEP YOUR INFORMATION SAFE?</h3>
             <p>
               In Short: We aim to protect your personal information through a
@@ -539,7 +205,7 @@ const PrivacyPolicy = () => {
               You should only access the Services within a secure environment.
             </p>
           </div>
-          <div className="privacy_content">
+          <div className='privacy_content'>
             <h3>8. WHAT ARE YOUR PRIVACY RIGHTS?</h3>
             <p>
               In Short: You may review, change, or terminate your account at any
@@ -563,7 +229,7 @@ const PrivacyPolicy = () => {
               may email us at privacy@flitaa.com
             </p>
             <br />
-            <p className="underline">Account Information</p>
+            <p className='underline'>Account Information</p>
             <br />
             <p>
               If you would at any time like to review or change the information
@@ -592,7 +258,7 @@ const PrivacyPolicy = () => {
               information provided.
             </p>
           </div>
-          <div className="privacy_content">
+          <div className='privacy_content'>
             <h3>9. CONTROLS FOR DO-NOT-TRACK FEATURES</h3>
             <p>
               Most web browsers and some mobile operating systems and mobile
@@ -608,7 +274,7 @@ const PrivacyPolicy = () => {
               revised version of this privacy notice.
             </p>
           </div>
-          <div className="privacy_content">
+          <div className='privacy_content'>
             <h3>10. DO WE MAKE UPDATES TO THIS NOTICE?</h3>
             <p>
               In Short: Yes, we will update this notice as necessary to stay
@@ -626,14 +292,14 @@ const PrivacyPolicy = () => {
               protecting your information.
             </p>
           </div>
-          <div className="privacy_content">
+          <div className='privacy_content'>
             <h3>11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h3>
             <p>
               If you have questions or comments about this notice, you may email
               us at privacy@flitaa.com
             </p>
           </div>
-          <div className="privacy_content">
+          <div className='privacy_content'>
             <h3>
               12. HOW CAN YOU REVIEW. UPDATE. OR DELETE THE DATA WE COLLECT FROM
               YOU?
