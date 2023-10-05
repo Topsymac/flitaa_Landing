@@ -161,9 +161,9 @@ const Hero = () => {
 
   return (
     <>
-      <div className={`Hero ${windowScroll < 300 ? 'Appbottom' : ''}`}>
+      <div className={`Hero`}>
         <div
-          className={`top  ${windowScroll < 300 ? 'fixedtop' : 'margintop'}`}
+          className={`top`}
         >
           <div className='left'>
             <h1>{t('tradeAndHoldCryptocurrencies')}</h1>
@@ -175,9 +175,7 @@ const Hero = () => {
           </div>
         </div>
         <div
-          className={`bottom ${
-            windowScroll < 300 ? 'bottomfixed' : 'scrollbottom'
-          }`}
+          className={`bottom`}
         >
           <div className='logo-img'>
             <img src={logo} alt='' />
