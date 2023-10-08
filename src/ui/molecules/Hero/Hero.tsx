@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next'
 
 import "./Hero.css"
-import logo from "../../../assets/Image (1).svg";
+import logo from "../../../assets/Image (2).svg";
 import bottomleft from "../../../assets/Screenshot 2023-07-31 at 17.45 3.svg";
 import topright from "../../../assets/Screenshot 2023-07-31 at 17.45 1.svg";
 import bottomright from "../../../assets/Screenshot 2023-07-31 at 17.45 2.svg";
