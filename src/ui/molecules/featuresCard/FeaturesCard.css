@@ -107,10 +107,10 @@
   }
   .featuresCard__paragraph {
     margin-left: 24px;
-    width: 90%;
+    width: 90% !important;
   }
   .featuresCard__paragraph-two {
-    width: 100%;
+    width: 90% !important;
   }
   .featuresCard__walletImg {
     /* margin-left: 0px; */
@@ -130,7 +130,7 @@
 @media screen and (max-width: 768px) {
    .featuresCard {
     gap: 0px;
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .featuresCard__header {
     font-size: 36px;
@@ -180,11 +180,13 @@
 @media screen and (max-width: 992px) {
    .featuresCard {
     gap: 0px;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 0px !important;
+    padding-right: 30px;
   }
   .featuresCard__header {
     font-size: 36px;
-    width: 100%;
+    width: 80%;
   }
   .featuresCard__introduction-img {
     width: 14px;
@@ -202,15 +204,15 @@
   .featuresCard__header {
     font-size: 30px;
     font-weight: 700;
-    width: 90%;
+    width: 80% !important;
     margin-left: 24px;
   }
   .featuresCard__paragraph {
     margin-left: 24px;
-    width: 90%;
+    width: 80%;
   }
   .featuresCard__paragraph-two {
-    width: 100%;
+    width:70%;
   }
   .featuresCard__walletImg {
     /* margin-left: 0px; */

@@ -1,11 +1,52 @@
+@font-face {
+  font-family: 'Degular';
+  src: url('./font/Degular/Degular/Desktop/Degular-Semibold.otf')
+    format('opentype');
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./font/Degular/Degular Text/Desktop/DegularText-Medium.otf')
+    format('opentype');
+}
+
+@font-face {
+  font-family: 'Degular-Display-Semibold';
+  src: url('./font/Degular/Degular Display/Desktop/DegularDisplay-Semibold.otf')
+    format('opentype');
+}
+
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "degular";
+  font-family: Degular !important;
   font-size: 14px;
   /* max-width: 1170px; */
 }
-
-p{
+/* *::-webkit-scrollbar {
+  width: 4px;
+  background-color: #2FA67C;
+  background-color: #1c2127;
+} */
+html {
+  --scrollbarBG: #1c2127;
+  --thumbBG: #2FA67C;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+p {
   margin: 0px;
 }
