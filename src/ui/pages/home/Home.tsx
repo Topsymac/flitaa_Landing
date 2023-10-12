@@ -16,14 +16,14 @@ const Home = () => {
   return (
     <div className='home'>
       <LandingWrapper>
-        {/* <Hero /> */}
+        <Hero />
         <div className='home__tradeCrypto'>
-          {/* <HeadingAndParagraph
+          <HeadingAndParagraph
             introductionText={t('introducingSimplicity')}
             heading={t('easyWaytoTradeCryptocurrency')}
-          /> */}
+          />
           <div>
-            {/* <TradeCrypto /> */}
+            <TradeCrypto />
           </div>
         </div>
         <div className='home__featureCard1'>
@@ -79,7 +79,7 @@ const Home = () => {
           <Testimonials />
         </div>
         <div className='home__featureCard1'>
-          {/* <GetStartedCard /> */}
+          <GetStartedCard />
         </div>
       </LandingWrapper>
     </div>
