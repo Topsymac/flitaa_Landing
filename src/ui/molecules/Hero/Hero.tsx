@@ -162,42 +162,38 @@ const Hero = () => {
   return (
     <>
       <div className={`Hero`}>
-        <div
-          className={`top`}
-        >
-          <div className='left'>
-            <h1>{t('tradeAndHoldCryptocurrencies')}</h1>
+        <div className={`top`}>
+          <div className="left">
+            <h1>{t("tradeAndHoldCryptocurrencies")}</h1>
           </div>
-          <div className='right'>
-            <p>
-              {t('buyAndAccessToken')}
-            </p>
+          <div className="right">
+            <p>{t("buyAndAccessToken")}</p>
           </div>
         </div>
-        <div
-          className={`bottom`}
-        >
-          <div className='logo-img'>
-            <img src={logo} alt='' />
+        <div className={`bottom`}>
+          <div className="logo-img-wrapper">
+            <div className="logo-img">
+              <img src={logo} alt="" />
+            </div>
           </div>
-          <div className='media_logo'>
-            <img src={googlestore} alt='' />
-            <img src={appstore} alt='' />
+          <div className="media_logo">
+            <img src={googlestore} alt="" />
+            <img src={appstore} alt="" />
           </div>
-          <div className='bottom_small_left_logo'>
-            <img src={bottomleft} alt='' />
+          <div className="bottom_small_left_logo">
+            <img src={bottomleft} alt="" />
           </div>
-          <div className='top_small_right_logo'>
-            <img src={topright} alt='' />
+          <div className="top_small_right_logo">
+            <img src={topright} alt="" />
           </div>
-          <div className='bottom_small_right_logo'>
-            <img src={bottomright} alt='' />
+          <div className="bottom_small_right_logo">
+            <img src={bottomright} alt="" />
           </div>
         </div>
       </div>
-      <div className='redbox' />
+      <div className="redbox" />
     </>
-  )
+  );
 };
 
 export default Hero;
