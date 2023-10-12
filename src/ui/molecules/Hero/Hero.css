@@ -74,6 +74,10 @@
   /* z-index: 2; */
   /* background: red; */
 }
+.logo-img-wrapper{
+   width:90%;
+   /* padding-left: 50px; */
+}
 .bottom_small_left_logo {
   position: absolute;
   top: 25%;
