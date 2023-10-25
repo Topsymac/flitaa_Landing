@@ -33,20 +33,22 @@ const LanguageDropdown = () => {
 
   return (
     <div>
-      <div className='languageDropdown'>
+      <div className='languageDropdown' onClick={OpenDropdownFunction}>
         <img
           src={InternetImg}
           alt='internet'
           className='languageDropdown__internetImg'
         />
-        <p onClick={() => handleLanguageChange({ target: { value: 'sw' } })}>
+        <p
+          className='languageDropdown__text'
+          onClick={() => handleLanguageChange({ target: { value: 'sw' } })}
+        >
           {locale === 'en' ? 'EN' : 'SW'}
         </p>
         <img
           src={arrowDown}
           alt='arrow'
           className='languageDropdown__arrowDown'
-          onClick={OpenDropdownFunction}
         />
 
         {OpenDropdown ? (
@@ -76,7 +78,7 @@ const LanguageDropdown = () => {
         )}
       </div>
     </div>
-  )
+  );
 }
 
 export default LanguageDropdown

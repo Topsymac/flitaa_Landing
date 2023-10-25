@@ -1,11 +1,9 @@
 .Hero {
-  /* height: 1223px; */
   position: relative;
   padding: 50px;
   background-image: linear-gradient(to bottom, #0d100ffd, #0d100ffd),
-    url("../../../assets/Texture.png");
+    url('../../../assets/Texture.png');
   color: #fff;
-  /* max-width: 1170px; */
 }
 .Appbottom {
   margin-bottom: 300px;
@@ -71,12 +69,14 @@
   transform-origin: 50% 50%;
   transform: rotateY(10deg) rotateX(60deg) rotateZ(-35deg);
   position: relative;
+  width: fit-content;
+  margin: 0 auto;
   /* z-index: 2; */
   /* background: red; */
 }
-.logo-img-wrapper{
-   width:90%;
-   /* padding-left: 50px; */
+.logo-img-wrapper {
+  width: 90%;
+  /* padding-left: 50px; */
 }
 .bottom_small_left_logo {
   position: absolute;
@@ -88,6 +88,16 @@
   position: absolute;
   right: 25%;
   top: 10%;
+  transform: translateX(100px);
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  -o-transform: translateX(100px);
+}
+.top_small_right_orange_logo {
+  position: absolute;
+  right: 25%;
+  top: 20%;
   transform: translateX(100px);
 }
 .bottom_small_right_logo {
@@ -119,9 +129,9 @@
   left: 0;
   right: 0;
 } */
-.bottom{
-  margin-top: 0px;
-}
+  .bottom {
+    margin-top: 0px;
+  }
   .bottomfixed {
     top: 300px;
     left: 0px;
@@ -160,5 +170,20 @@
   }
   .redbox {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .Hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .top {
+    flex-direction: column;
+    justify-content: start;
+    gap: 0px;
+    width: 60%;
   }
 }

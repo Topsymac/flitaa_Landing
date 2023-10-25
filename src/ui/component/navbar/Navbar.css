@@ -16,7 +16,7 @@
   top: 0px;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 99;
 }
 .navbar__navOne {
   display: flex;
@@ -32,6 +32,12 @@
   gap: 40px;
   margin-left: 50px;
 }
+
+.navbar__active {
+  text-decoration: none;
+  color: #2fa67c;
+}
+
 .navbar__navItems-link {
   color: white !important;
   text-decoration: none;
@@ -39,10 +45,20 @@
 .navbar__navTwo {
   display: flex;
   align-items: center;
+  gap: 32px;
+}
+.navbar__navTwo-btn {
+  align-items: center;
+  width: 120px;
 }
 
 .navbar__navTwo-lang {
-  margin-right: 32px;
+  transition: all 3.5s ease-out;
+  /* margin-right: 32px; */
+  -webkit-transition: all 3.5s ease-out;
+  -moz-transition: all 3.5s ease-out;
+  -ms-transition: all 3.5s ease-out;
+  -o-transition: all 3.5s ease-out;
 }
 
 @media (max-width: 992px) {
@@ -53,12 +69,11 @@
   .navbar__navTwo-btn {
     display: none;
   }
-  .navbar__navItems{
+  .navbar__navItems {
+    display: none;
     flex-direction: column;
     justify-items: start;
-    /* align-items: start; */
-    position: absolute;
-    top: 87px;
+    align-items: start;
     right: 0px;
     width: 50%;
     height: 100vh;
@@ -66,10 +81,48 @@
     margin: auto;
     padding-top: 50px;
     padding-left: 50px;
-    background-color: #121514;
-    /* border-top-left-radius: 24px; */
+    /* background-color: #121514; */
+    border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-
+  }
+  .mobileNavbar {
+    display: block;
+  }
+  .mobileNavbar__div {
+    min-width: 390px;
+    /* margin-top: 30px; */
+    /* padding-left: 50px; */
+    background-color: #121514;
+    /* background-color: red !important; */
+    height: 398px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+  .mobileNavbar__navItems {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    right: 0px;
+    padding-top: 8px;
+    margin-left: 0px;
+    margin: auto;
+    gap: 40px;
+  }
+  .mobileNavbar__navTwo-btn {
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    width: 120px;
+  }
+  .mobileNavbar__dash {
+    margin-top: 16px;
+    text-align: center;
+  }
+  .mobileNavbar__cancel {
+    text-align: end;
+    margin-top: 12px;
+    padding-right: 32px;
   }
   /* ..navbar__navItems-link {} */
 }
@@ -80,6 +133,9 @@
 } */
 @media (min-width: 992px) {
   .navbar__navTwo-Menubtn {
+    display: none;
+  }
+  .mobileNavbar {
     display: none;
   }
 }

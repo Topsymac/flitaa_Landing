@@ -8,6 +8,10 @@ import LanguageDropdown from '../../molecules/languageDropdown/LanguageDropdown'
 import './Navbar.css';
 import menuButton from '../../../assets/Menu.png';
 import Logo from '../../../assets/LOGO.png';
+import Modal from '../../wrappers/modal/Modal';
+import mobileDash from '../../../assets/mobileDash.png';
+
+import mobileCancel from '../../../assets/cancel.png';
 
 interface IsideProp {
   name: string;
@@ -24,11 +28,13 @@ interface IsideProp {
 
 const Navbar = () => {
   // const ref = useMenuOnScroll();
+  const [mobileNav, setMobileNav] = useState(false);
+
   const { t } = useTranslation();
   const location = useLocation();
   const [activeNav, setActiveNav] = useState(1);
   const [navItems, setNavItems] = useState<IsideProp[]>([]);
-  const [openDropdown, setOpenDropdown] = useState(true);
+  // const [openDropdown, setOpenDropdown] = useState(true);
 
   const navbarLinkNames = [
     {
@@ -36,7 +42,7 @@ const Navbar = () => {
       id: 1,
       nav: 1,
       to: '/',
-      active: location.pathname.includes('artists'),
+      active: location.pathname.includes('/'),
     },
     {
       name: t('about'),
@@ -55,8 +61,7 @@ const Navbar = () => {
   ];
 
   const dropDownFunction = () => {
-    setOpenDropdown(!openDropdown);
-    console.log('clicked', openDropdown);
+    setMobileNav(true)
   };
 
   useEffect(() => {
@@ -76,20 +81,19 @@ const Navbar = () => {
           <div className=''>
             <img src={Logo} alt='flitaaLogo' className='navbar__logo' />
           </div>
-          {!openDropdown ? (
-            <div className='navbar__navItems'>
-              {navItems.length > 0 &&
-                navItems.map(({ name, id, to, nav, active }) => (
-                  <div key={id}>
-                    <Link to={to} className='navbar__navItems-link'>
-                      <span>{name}</span>
-                    </Link>
-                  </div>
-                ))}
-            </div>
-          ) : (
-            ''
-          )}
+          <div className='navbar__navItems'>
+            {navItems.length > 0 &&
+              navItems.map(({ name, id, to, nav, active }) => (
+                <div key={id}>
+                  <Link
+                    to={`/${to}`}
+                    className={`${activeNav === id ?"navbar__active":"navbar__navItems-link"}`}
+                  >
+                    <span>{name}</span>
+                  </Link>
+                </div>
+              ))}
+          </div>
         </div>
         {/*  */}
         <div className='navbar__navTwo'>
@@ -103,6 +107,41 @@ const Navbar = () => {
             <img src={menuButton} alt='img' onClick={dropDownFunction} />
           </div>
         </div>
+      </div>
+      {/* mobile Navbar */}
+      <div className='mobileNavbar'>
+        <Modal
+          show={mobileNav}
+          onClose={() => {
+            setMobileNav(mobileNav);
+          }}
+        >
+          <div className='mobileNavbar__div'>
+            <div className='mobileNavbar__dash'>
+              <img src={mobileDash} alt='img' />
+            </div>
+            <div
+              className='mobileNavbar__cancel'
+              onClick={() => setMobileNav(!mobileNav)}
+            >
+              {/* {mobileNav ? <img src={mobileCancel} alt='img' /> : ''} */}
+              <img src={mobileCancel} alt='img' />
+            </div>
+            <div className='mobileNavbar__navItems'>
+              {navItems.length > 0 &&
+                navItems.map(({ name, id, to, nav, active }) => (
+                  <div key={id}>
+                    <Link to={to} className='navbar__navItems-link'>
+                      <span>{name}</span>
+                    </Link>
+                  </div>
+                ))}
+            </div>
+            <div className='mobileNavbar__navTwo-btn'>
+              <Button buttonText={t('getStarted')} />
+            </div>
+          </div>
+        </Modal>
       </div>
     </header>
   );

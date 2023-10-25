@@ -1,9 +1,9 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
-import downloadIcon from '../../../assets/Icon 1.png'
-import deposit from '../../../assets/Icon 2.png'
-import rocket from '../../../assets/Icon 3.png'
+import downloadIcon from '../../../assets/downloadIcon.svg';
+import deposit from '../../../assets/depositIcon.svg';
+import rocket from '../../../assets/transactIcon.svg';
 import depositMiddleCardBg from '../../../assets/2.png'
 import CardBg from '../../../assets/3.png'
 
@@ -64,16 +64,12 @@ const TradeCrypto = () => {
         <div className='tradeCrypto__div-content'>
           <img
             src={depositMiddleCardBg}
-            alt=''
+            alt='img'
             className='tradeCrypto__bgImg'
           />
           <div className='tradeCrypto__content'>
             <div style={{ textAlign: 'end' }}>
-              <img
-                src={downloadIcon}
-                alt='icon'
-                className='tradeCrypto__icon'
-              />
+              <img src={deposit} alt='icon' className='tradeCrypto__icon' />
             </div>
             <div className='tradeCrypto__text'>
               <div className='tradeCrypto__heading'>
@@ -99,11 +95,7 @@ const TradeCrypto = () => {
           <img src={CardBg} alt='' className='tradeCrypto__bgImgOne' />
           <div className='tradeCrypto__content'>
             <div style={{ textAlign: 'end' }}>
-              <img
-                src={downloadIcon}
-                alt='icon'
-                className='tradeCrypto__icon'
-              />
+              <img src={rocket} alt='icon' className='tradeCrypto__icon' />
             </div>
             <div className='tradeCrypto__textOne'>
               <div className='tradeCrypto__heading'>
@@ -115,7 +107,7 @@ const TradeCrypto = () => {
         {/* <Card img={rocket} heading={t('transactAndObserveGrowth')} /> */}
       </div>
     </div>
-  )
+  );
 }
 
 export default TradeCrypto

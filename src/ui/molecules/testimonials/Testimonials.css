@@ -156,7 +156,7 @@
   }
   .testimonial__paragraph {
     padding-bottom: 40px;
-    width: 65%;
+    width: 85%;
   }
   .testimonial__paragraphTwo {
     width: 85%;
@@ -363,9 +363,9 @@
     font-weight: 500;
     line-height: 28px;
     padding-top: 48px;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
     /* padding-left: 48px; */
-    max-width: 420px;
+    max-width: 520px;
     color: #98a2b3;
   }
 

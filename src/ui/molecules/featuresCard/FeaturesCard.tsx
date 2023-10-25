@@ -1,6 +1,7 @@
 import React from 'react'
 import star from '../../../assets/star.png'
-import downloadIcon from '../../../assets/Icon 1.png'
+import downloadIcon from '../../../assets/shield.svg'
+import transactIcon from '../../../assets/transactIcon.svg';
 import WalletPicture from '../../../assets/Wallet Video.png'
 import './FeaturesCard.css'
 
@@ -72,7 +73,7 @@ const FeaturesCard = ({
             <div className='featuresCard__div4'>
               <div>
                 <img
-                  src={downloadIcon}
+                  src={transactIcon}
                   alt='downloadIcon'
                   className='featuresCard__downloadIcon'
                 />
@@ -98,7 +99,7 @@ const FeaturesCard = ({
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default FeaturesCard

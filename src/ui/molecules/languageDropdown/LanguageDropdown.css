@@ -1,9 +1,15 @@
 .languageDropdown {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 8px;
   color: white;
   position: relative;
+  cursor: pointer;
+}
+.languageDropdown__text{
+  font-size: 16px;
+  font-weight: normal;
+  font-family: degular text;
 }
 .languageDropdown__internetImg {
   width: 20px;
@@ -16,36 +22,22 @@
 
 .selectLanguage {
   position: absolute;
-  top: 30px;
+  top: 45px;
   left: -70px;
-  /* right: 0px; */
-  padding: 24px;
-  width: 160px;
+  /*right: 0px;
+  */padding: 24px;
+  /*width: 160px;
+  */width: 189px;
   z-index: 939;
+  font-size: 16px;
   background-color: #121514;
   /* background-color: rgb(192, 192, 192); */
   color: white;
-  border-radius: 32px;
-  -webkit-border-radius: 32px;
-  -moz-border-radius: 32px;
-  -ms-border-radius: 32px;
-  -o-border-radius: 32px;
-  cursor: pointer;
-}
-
-.selectLanguage__select,
-.selectLanguage__select:focus {
-  border: none;
-  color: white;
-  background-color: #121514;
-}
-
-.selectLanguage__select > option {
-  position: absolute;
-  top: 30px;
-  left: -70px;
-  padding: 25px;
-  width: 160px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .selectLanguage-icon {
@@ -56,19 +48,23 @@
 
 .selectLanguage_div {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   font-size: 16px;
+  font-family: degular text;
+  font-weight: normal;
 }
 .selectLanguage_divOne {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   font-size: 16px;
   margin: 16px 0px;
+  font-family: degular text;
+  font-weight: normal;
 }
 
 .selectLanguage__paragraph {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 16px;
   /* margin-top: 15px; */
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 }
