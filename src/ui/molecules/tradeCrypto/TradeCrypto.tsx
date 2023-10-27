@@ -45,7 +45,7 @@ const TradeCrypto = () => {
       <div>
         {/* <Card img={downloadIcon} heading={t('downloadApp')} /> */}
         <div className='tradeCrypto__div-content'>
-          <img src={CardBg} alt='' className='tradeCrypto__bgImgOne' />
+          <img src={CardBg} alt='' className='tradeCrypto__bgImgTwo' />
           <div className='tradeCrypto__content'>
             <div style={{ textAlign: 'end' }}>
               <img
@@ -60,6 +60,7 @@ const TradeCrypto = () => {
           </div>
         </div>
       </div>
+      {/*  */}
       <div>
         <div className='tradeCrypto__div-content'>
           <img
@@ -90,6 +91,7 @@ const TradeCrypto = () => {
           paragraph='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam nullam auctor lectus in nulla. Sed leo mattis neque ullamcorper ultricies.'
         /> */}
       </div>
+      {/*  */}
       <div>
         <div className='tradeCrypto__div-content'>
           <img src={CardBg} alt='' className='tradeCrypto__bgImgOne' />

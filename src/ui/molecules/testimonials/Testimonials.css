@@ -1,6 +1,6 @@
 .testimonial {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   background-color: #121514;
   color: white;
@@ -12,8 +12,8 @@
 .testimonial__headerDiv {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .testimonial__headerText {
   width: 482px;
@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 40px;
 }
 
@@ -43,7 +43,6 @@
 .testionial_greenEllipse {
   position: absolute;
   /*justify-self: flex-end;
-  align-self:flex-start;
   */ /*left: 32rem;
   */
   right: 0px;
@@ -267,7 +266,7 @@
 @media (min-width: 992px) {
   .testimonial {
     display: flex;
-    align-items: start;
+    align-items:flex-start;
     flex-direction: row;
     justify-content: center;
     background-color: #121514;
@@ -280,8 +279,8 @@
   .testimonial__headerDiv {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    align-items: flex-start;
+    justify-content:flex-start;
   }
   .testimonial__headerText {
     width: 482px;
@@ -291,7 +290,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 40px;
   }
 
@@ -311,7 +310,6 @@
   .testionial_greenEllipse {
     position: absolute;
     /*justify-self: flex-end;
-  align-self:flex-start;
   */ /*left: 32rem;
   */
     right: 0px;

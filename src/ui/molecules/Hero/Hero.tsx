@@ -187,10 +187,10 @@ const Hero = () => {
           <div className='top_small_right_logo'>
             <img src={topright} alt='img' />
           </div>
-          <div className='top_small_right_orange_logo'>
+          {/*Temi uncomment the code below and fix the image  */}
+          {/* <div className='top_small_right_orange_logo'>
             <img src={topOrangeright} alt='img' />
-            gygg
-          </div>
+          </div> */}
           <div className='bottom_small_right_logo'>
             <img src={bottomright} alt='img' />
           </div>

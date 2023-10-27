@@ -7,7 +7,7 @@ import HeadingAndParagraph from '../../molecules/headingAndParagraph/HeadingAndP
 import Testimonials from '../../molecules/testimonials/Testimonials';
 import TradeCrypto from '../../molecules/tradeCrypto/TradeCrypto';
 import Hero from '../../molecules/Hero/Hero';
-import Terms from '../terms&conditions/TermsAndCondition';
+// import Terms from '../terms&conditions/TermsAndCondition';
 
 import './Home.css';
 
@@ -17,7 +17,7 @@ const Home = () => {
     <div className='home'>
       <LandingWrapper>
         <Hero />
-        {/* <div className='home__tradeCrypto'>
+        <div className='home__tradeCrypto'>
           <div className='home__tradeCrypto-paragraph'>
             <HeadingAndParagraph
               introductionText={t('introducingSimplicity')}
@@ -27,7 +27,7 @@ const Home = () => {
           <div>
             <TradeCrypto />
           </div>
-        </div> */}
+        </div>
         <div className='home__featureCard1'>
           <FeaturesCard
             introductionText={t('introducingSimplicity')}
@@ -41,6 +41,7 @@ const Home = () => {
             subHeading2={t('multiAssets')}
             subHeadingParagraph2='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh
                   nam nullam auctor lectus in nulla.'
+            walletImgOne
           />
         </div>
         {/*  */}
@@ -59,6 +60,7 @@ const Home = () => {
                   nam nullam auctor lectus in nulla.'
             order1
             order2
+            walletImgTwo
           />
         </div>
         {/*  */}
@@ -75,13 +77,14 @@ const Home = () => {
             subHeading2={t('multiAssets')}
             subHeadingParagraph2='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh
                   nam nullam auctor lectus in nulla.'
+            walletImgThree
           />
         </div>
         <div>
           <Testimonials />
         </div>
         <div className='home__featureCard1'>
-          {/* <GetStartedCard /> */}
+          <GetStartedCard />
         </div>
       </LandingWrapper>
     </div>

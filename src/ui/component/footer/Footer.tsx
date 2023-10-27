@@ -25,17 +25,19 @@ const Footer = () => {
             <img src={Logo} alt='logo' className='footer__logo' />
           </div>
           <div>
-            <p>© {t('copyRight')} {new Date().getFullYear()} :: Flitaa</p>
+            <p>
+              © {t('copyRight')} {new Date().getFullYear()} :: Flitaa
+            </p>
           </div>
         </div>
         <div className='footer__navTwo'>
           <div className='footer__navTwo-terms'>
-              <Link to='/terms'>
-                <p>{t('termOfUse')}</p>
-              </Link>
-              <Link to='/privacy'>
-                <p>{t('privacyPolicy')}</p>
-              </Link>
+            <Link to='/terms-and-conditions'>
+              <p>{t('termOfUse')}</p>
+            </Link>
+            <Link to='/privacy-policy'>
+              <p>{t('privacyPolicy')}</p>
+            </Link>
           </div>
           <div className='footer__socials'>
             {/* socials */}
@@ -48,7 +50,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Footer

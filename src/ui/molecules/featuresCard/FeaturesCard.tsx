@@ -1,20 +1,25 @@
-import React from 'react'
-import star from '../../../assets/star.png'
-import downloadIcon from '../../../assets/shield.svg'
+import React from 'react';
+import star from '../../../assets/star.png';
+import downloadIcon from '../../../assets/shield.svg';
 import transactIcon from '../../../assets/transactIcon.svg';
-import WalletPicture from '../../../assets/Wallet Video.png'
-import './FeaturesCard.css'
+import walletImg1 from '../../../assets/walletImgOne.png';
+import walletImg2 from '../../../assets/walletImgTwo.png';
+import walletImg3 from '../../../assets/walletImgThree.png';
+import './FeaturesCard.css';
 
 interface FeaturesCardProp {
-  introductionText: string
-  heading: string
-  paragraph: string
-  subHeading1: string
-  subHeadingParagraph1: string
-  subHeading2: string
-  subHeadingParagraph2: string
-  order1?: boolean
-  order2?: boolean
+  introductionText: string;
+  heading: string;
+  paragraph: string;
+  subHeading1: string;
+  subHeadingParagraph1: string;
+  subHeading2: string;
+  subHeadingParagraph2: string;
+  order1?: boolean;
+  order2?: boolean;
+  walletImgOne?: boolean;
+  walletImgTwo?: boolean;
+  walletImgThree?: boolean;
 }
 
 const FeaturesCard = ({
@@ -27,6 +32,9 @@ const FeaturesCard = ({
   subHeadingParagraph2,
   order1,
   order2,
+  walletImgOne,
+  walletImgTwo,
+  walletImgThree,
 }: FeaturesCardProp) => {
   return (
     <div>
@@ -91,15 +99,31 @@ const FeaturesCard = ({
         </div>
         {/*  */}
         <div className={`${order2 ? 'featureCardOrderTwo' : ''}`}>
-          <img
-            src={WalletPicture}
-            alt='WalletPicture'
-            className='featuresCard__walletImg'
-          />
+          {walletImgOne && (
+            <img
+              src={walletImg1}
+              alt='WalletPicture'
+              className='featuresCard__walletImg'
+            />
+          )}
+          {walletImgTwo && (
+            <img
+              src={walletImg2}
+              alt='WalletPicture'
+              className='featuresCard__walletImg'
+            />
+          )}
+          {walletImgThree && (
+            <img
+              src={walletImg3}
+              alt='WalletPicture'
+              className='featuresCard__walletImg'
+            />
+          )}
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default FeaturesCard
+export default FeaturesCard;

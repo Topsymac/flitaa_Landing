@@ -16,7 +16,7 @@ const GetStartedCard = () => {
   return (
     <div className='getStarted'>
       <div className='getStarted__div-border'>
-        {/* <img src={getStartedBorder} alt='img' /> */}
+        {/* <img src={getStartedBorder} alt='img' className='getStartedBorder' /> */}
         <div className='getStarted__div'>
           <div className='getStarted__divOne'>
             <div className=''>
@@ -68,7 +68,7 @@ const GetStartedCard = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default GetStartedCard

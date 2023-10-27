@@ -1,7 +1,9 @@
 .headingAndParagraph__divOne {
-  display: flex;
+  max-width: 75rem;
+  margin: 0 auto;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; */
   /* padding-top: 160px; */
   /* padding-left: 80px; */
   /* background-color: #151817; */
@@ -24,12 +26,14 @@
 }
 .headingAndParagraph__header {
   /* max-width: 515px; */
-  /* max-width: 602px; */
+  width: 602px;
+  /* margin: 0 auto; */
   color: white;
   font-size: 56px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  /* margin-right: 300px; */
   /* padding-bottom: 48px; */
 }
 
