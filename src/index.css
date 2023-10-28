@@ -9,6 +9,12 @@
   src: url('./font/Degular/Degular Text/Desktop/DegularText-Medium.otf')
     format('opentype');
 }
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./font/Degular/Degular Display/Desktop/DegularDisplay-Regular.otf')
+    format('opentype');
+}
+
 
 @font-face {
   font-family: 'Degular-Display-Semibold';
@@ -21,13 +27,14 @@ body {
   padding: 0px;
   font-family: Degular !important;
   font-size: 14px;
-  /* max-width: 1170px; */
 }
 /* *::-webkit-scrollbar {
   width: 4px;
   background-color: #2FA67C;
   background-color: #1c2127;
 } */
+
+/* for the scroll bar */
 html {
   --scrollbarBG: #1c2127;
   --thumbBG: #2FA67C;

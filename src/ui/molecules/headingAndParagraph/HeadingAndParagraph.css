@@ -1,49 +1,61 @@
 .headingAndParagraph__divOne {
   max-width: 75rem;
   margin: 0 auto;
-  /* display: flex;
-  align-items: center;
-  justify-content: flex-start; */
-  /* padding-top: 160px; */
-  /* padding-left: 80px; */
-  /* background-color: #151817; */
 }
 
 .headingAndParagraph__introduction {
   display: flex;
+  align-items: center;
   gap: 8px;
   color: #2fa67c;
-  padding-bottom: 0px;
+  padding-bottom: 8px;
 }
 .headingAndParagraph__introduction-img {
   width: 16px;
   height: 16px;
 }
-.headingAndParagraph__introduction-text {
+/* .headingAndParagraph__introduction-text {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-}
+} */
 .headingAndParagraph__header {
-  /* max-width: 515px; */
-  width: 602px;
-  /* margin: 0 auto; */
   color: white;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  /* margin-right: 300px; */
-  /* padding-bottom: 48px; */
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 100px) {
   .headingAndParagraph__divOne {
-    margin: auto;
+    margin: 0px auto;
+    /* remove this margin top when you include temi's part */
+    margin-top: 60px;
     padding-left: 0px;
   }
   .headingAndParagraph__introduction {
-    margin-left: 24px;
+    margin-left: 15px;
+  }
+  .headingAndParagraph__introduction-img {
+    width: 14px;
+    height: 14px;
+  }
+  .headingAndParagraph__introduction-text {
+    font-size: 16px;
+  }
+  .headingAndParagraph__header {
+    font-size: 36px;
+    font-weight: bolder;
+    line-height: 44px;
+    margin-left: 15px;
+    width: 93%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .headingAndParagraph__divOne {
+    margin: 60px auto;
+    padding-left: 0px;
+  }
+  .headingAndParagraph__introduction {
+    margin-left: 20px;
   }
   .headingAndParagraph__introduction-img {
     width: 14px;
@@ -59,9 +71,7 @@
     width: 80%;
   }
 }
-@media screen and (max-width: 768px) {
-}
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .headingAndParagraph__introduction {
     display: flex;
     gap: 8px;
@@ -74,6 +84,29 @@
     font-weight: 700;
     margin-left: 24px;
     width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .headingAndParagraph__introduction-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .headingAndParagraph__header {
+    /* max-width: 515px; */
+    width: 602px;
+    /* margin: 0 auto; */
+    color: white;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 0px;
+
+  }
+  .headingAndParagraph__introduction {
+    padding-bottom: 15px;
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 1200px) {

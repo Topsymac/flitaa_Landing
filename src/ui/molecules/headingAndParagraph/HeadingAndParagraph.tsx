@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import star from '../../../assets/star.png';
 import './HeadingAndParagraph.css';
 
@@ -12,7 +11,6 @@ const HeadingAndParagraph = ({
   introductionText,
   heading,
 }: HeadingAndParagraphProp) => {
-  const { t } = useTranslation();
   return (
     <div className='headingAndParagraph__divOne'>
       <div className=''>

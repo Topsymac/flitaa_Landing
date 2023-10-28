@@ -55,7 +55,7 @@ const TradeCrypto = () => {
               />
             </div>
             <div className='tradeCrypto__textOne'>
-              <div className='tradeCrypto__heading'>{t('downloadApp')}</div>
+              <div className='tradeCrypto__headingTwo'>{t('downloadApp')}</div>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ const TradeCrypto = () => {
           />
           <div className='tradeCrypto__content'>
             <div style={{ textAlign: 'end' }}>
-              <img src={deposit} alt='icon' className='tradeCrypto__icon' />
+              <img src={deposit} alt='icon' className='tradeCrypto__icon-1' />
             </div>
             <div className='tradeCrypto__text'>
               <div className='tradeCrypto__heading'>
@@ -97,10 +97,10 @@ const TradeCrypto = () => {
           <img src={CardBg} alt='' className='tradeCrypto__bgImgOne' />
           <div className='tradeCrypto__content'>
             <div style={{ textAlign: 'end' }}>
-              <img src={rocket} alt='icon' className='tradeCrypto__icon' />
+              <img src={rocket} alt='icon' className='tradeCrypto__iconOne' />
             </div>
             <div className='tradeCrypto__textOne'>
-              <div className='tradeCrypto__heading'>
+              <div className='tradeCrypto__headingOne'>
                 {t('transactAndObserveGrowth')}
               </div>
             </div>

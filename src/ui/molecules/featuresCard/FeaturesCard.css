@@ -29,7 +29,7 @@
   font-size: 56px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  line-height: 74px;
   margin-bottom: 16px;
 }
 .featuresCard__paragraph {
@@ -84,53 +84,52 @@
     justify-content: center !important;
     padding-right: 0px !important;
   }
-  .featuresCard__header {
-    font-size: 36px;
-    width: 100%;
-  }
   .featuresCard__introduction-img {
     width: 14px;
     height: 14px;
   }
   .featuresCard__introduction {
-    margin-left: 24px;
+    margin-left: 15px !important;
+    margin-bottom: 8px;
   }
   .featuresCard__introduction-text {
-    font-size: 13px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    /* line-height: 24px; */
+    line-height: 24px;
   }
   .featuresCard__header {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
-    width: 90%;
-    margin-left: 24px;
+    width: 92% !important;
+    margin-left: 15px !important;
+    line-height: 44px;
   }
   .featuresCard__paragraph {
-    margin-left: 24px;
+    margin-left: 15px !important;
     width: 90% !important;
+    /* font-family: Degular Text; */
   }
   .featuresCard__paragraph-two {
     width: 90% !important;
   }
   .featuresCard__walletImg {
     /* margin-left: 0px; */
-    width: 342px;
+    width: 322px !important;
     height: 419px;
   }
   .featuresCard__div4 {
-    margin-left: 24px;
+    margin-left: 15px !important;
   }
   .featureCardOrderOne {
-  order: 1;
-}
-.featureCardOrderTwo {
-  order: 2;
-}
+    order: 1;
+  }
+  .featureCardOrderTwo {
+    order: 2;
+  }
 }
 @media screen and (max-width: 768px) {
-   .featuresCard {
+  .featuresCard {
     gap: 0px;
     flex-direction: column !important;
     align-items: center;
@@ -147,13 +146,13 @@
     margin-left: 24px;
   }
   .featuresCard__introduction-text {
-    font-size: 13px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     /* line-height: 24px; */
   }
   .featuresCard__header {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     width: 90%;
     margin-left: 24px;
@@ -167,21 +166,21 @@
   }
   .featuresCard__walletImg {
     /* margin-left: 0px; */
-    width: 342px;
-    height: 419px;
+    width: 492px;
+    height: 499px;
   }
   .featuresCard__div4 {
     margin-left: 24px;
   }
   .featureCardOrderOne {
-  order: 1;
-}
-.featureCardOrderTwo {
-  order: 2;
-}
+    order: 1;
+  }
+  .featureCardOrderTwo {
+    order: 2;
+  }
 }
 @media screen and (max-width: 992px) {
-   .featuresCard {
+  .featuresCard {
     gap: 0px;
     flex-direction: row;
     gap: 0px !important;
@@ -199,15 +198,15 @@
     margin-left: 24px;
   }
   .featuresCard__introduction-text {
-    font-size: 13px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     /* line-height: 24px; */
   }
   .featuresCard__header {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
-    width: 80% !important;
+    width: 80%;
     margin-left: 24px;
   }
   .featuresCard__paragraph {
@@ -215,7 +214,7 @@
     width: 80%;
   }
   .featuresCard__paragraph-two {
-    width:70%;
+    width: 70%;
   }
   .featuresCard__walletImg {
     /* margin-left: 0px; */
@@ -226,11 +225,11 @@
     margin-left: 24px;
   }
   .featureCardOrderOne {
-  order: 1;
-}
-.featureCardOrderTwo {
-  order: 2;
-}
+    order: 1;
+  }
+  .featureCardOrderTwo {
+    order: 2;
+  }
 }
 
 @media screen and (max-width: 1200px) {
