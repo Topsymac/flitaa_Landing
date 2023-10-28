@@ -61,10 +61,14 @@
 
 .modal-content-right {
   width: 30%;
-  /* background: #fff; */
-  transition: all 0.3s ease-in-out;
+  /*background: #fff;
+  */transition: all 0.3s ease-in-out;
   margin-left: auto;
   transform: translateX(30%);
+  -webkit-transform: translateX(30%);
+  -moz-transform: translateX(30%);
+  -ms-transform: translateX(30%);
+  -o-transform: translateX(30%);
 }
 
 .modal-right.show {

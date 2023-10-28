@@ -61,7 +61,7 @@ const Navbar = () => {
   ];
 
   const dropDownFunction = () => {
-    setMobileNav(true)
+    setMobileNav(!mobileNav);
   };
 
   useEffect(() => {
@@ -75,7 +75,7 @@ const Navbar = () => {
   }, [location.pathname, t]);
 
   return (
-    <header>
+    <header className='navbar__header'>
       <div className='navbar'>
         <div className='navbar__navOne'>
           <div className=''>
@@ -87,7 +87,11 @@ const Navbar = () => {
                 <div key={id}>
                   <Link
                     to={`/${to}`}
-                    className={`${activeNav === id ?"navbar__active":"navbar__navItems-link"}`}
+                    className={`${
+                      activeNav === id
+                        ? 'navbar__active'
+                        : 'navbar__navItems-link'
+                    }`}
                   >
                     <span>{name}</span>
                   </Link>
@@ -108,14 +112,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
       {/* mobile Navbar */}
-      <div className='mobileNavbar'>
-        <Modal
-          show={mobileNav}
-          onClose={() => {
-            setMobileNav(mobileNav);
-          }}
-        >
+      {mobileNav && (
+        <div className='mobileNavbar'>
           <div className='mobileNavbar__div'>
             <div className='mobileNavbar__dash'>
               <img src={mobileDash} alt='img' />
@@ -141,8 +141,8 @@ const Navbar = () => {
               <Button buttonText={t('getStarted')} />
             </div>
           </div>
-        </Modal>
-      </div>
+        </div>
+      )}
     </header>
   );
 };

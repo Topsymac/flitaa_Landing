@@ -21,21 +21,21 @@
 .tradeCrypto__icon {
   width: 60px;
   height: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   padding-right: 30px;
 }
 
 .tradeCrypto__icon-1 {
   width: 60px;
   height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding-right: 30px;
 }
 
 .tradeCrypto__iconOne {
   width: 60px;
   height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding-right: 30px;
 }
 
@@ -47,7 +47,8 @@
   font-family: Degular Text;
   color: white;
   padding-left: 24px;
-  max-width: 240px;
+  max-width: 260px;
+  /* max-width: 240px; */
   /* padding-bottom: 40px; */
 }
 
