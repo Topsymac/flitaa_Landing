@@ -140,6 +140,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .tradeCrypto {
+    flex-direction: column;
+  }
   .tradeCrypto__bgImg {
     width: 490px;
     height: 374px;
@@ -163,7 +166,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+  /* when flex direction is row */
+  /* .tradeCrypto__bgImgTwo {
+    width: 270px;
+    height: 314px;
+  }
+  .tradeCrypto__bgImgOne {
+    width: 400px;
+    height: 314px;
+  }
+  .tradeCrypto__bgImg {
+    width: 350px;
+    height: 372px;
+  } */
+}
+
+@media screen and (min-width: 1200px) {
+  .tradeCrypto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
     gap: 24px;
     width: 100%;
     margin: auto;
@@ -181,17 +210,4 @@
     width: 379px;
     height: 372px;
   }
-
-  /* .tradeCrypto__bgImg {
-    width: 379px;
-    height: 374px;
-  }
-  .tradeCrypto__bgImgTwo {
-    width: 329px;
-    height: 314px;
-  } */
-  /* .tradeCrypto__bgImgOne {
-    width: 449px;
-    height: 314px;
-  } */
 }

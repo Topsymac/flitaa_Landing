@@ -77,19 +77,19 @@
   order: 1;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 100px) {
   .featuresCard {
     gap: 0px;
     flex-direction: column;
-    justify-content: center !important;
-    padding-right: 0px !important;
+    justify-content: center;
+    padding-right: 0px;
   }
   .featuresCard__introduction-img {
     width: 14px;
     height: 14px;
   }
   .featuresCard__introduction {
-    margin-left: 15px !important;
+    margin-left: 15px;
     margin-bottom: 8px;
   }
   .featuresCard__introduction-text {
@@ -101,25 +101,25 @@
   .featuresCard__header {
     font-size: 36px;
     font-weight: 700;
-    width: 92% !important;
-    margin-left: 15px !important;
+    width: 92%;
+    margin-left: 15px;
     line-height: 44px;
   }
   .featuresCard__paragraph {
-    margin-left: 15px !important;
-    width: 90% !important;
+    margin-left: 15px;
+    width: 90%;
     /* font-family: Degular Text; */
   }
   .featuresCard__paragraph-two {
-    width: 90% !important;
+    width: 90%;
   }
   .featuresCard__walletImg {
     /* margin-left: 0px; */
-    width: 322px !important;
+    width: 322px;
     height: 419px;
   }
   .featuresCard__div4 {
-    margin-left: 15px !important;
+    margin-left: 15px;
   }
   .featureCardOrderOne {
     order: 1;
@@ -128,10 +128,62 @@
     order: 2;
   }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 576px) {
   .featuresCard {
     gap: 0px;
-    flex-direction: column !important;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .featuresCard__introduction-img {
+    width: 14px;
+    height: 14px;
+  }
+  .featuresCard__introduction {
+    margin-left: 15px;
+    margin-bottom: 8px;
+  }
+  .featuresCard__introduction-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .featuresCard__header {
+    font-size: 36px;
+    font-weight: 700;
+    width: 92%;
+    margin-left: 15px;
+    line-height: 44px;
+  }
+  .featuresCard__paragraph {
+    margin-left: 15px;
+    width: 90%;
+    /* font-family: Degular Text; */
+  }
+  .featuresCard__paragraph-two {
+    width: 90%;
+  }
+  .featuresCard__walletImg {
+    /* margin-left: 0px; */
+    width: 322px;
+    height: 419px;
+  }
+  .featuresCard__div4 {
+    margin-left: 15px;
+  }
+  .featureCardOrderOne {
+    order: 1;
+  }
+  .featureCardOrderTwo {
+    order: 2;
+  }
+}
+@media screen and (min-width: 768px) {
+  .featuresCard {
+    gap: 0px;
+    flex-direction: column;
     align-items: center;
   }
   .featuresCard__header {
@@ -179,11 +231,11 @@
     order: 2;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .featuresCard {
     gap: 0px;
     flex-direction: row;
-    gap: 0px !important;
+    gap: 0px;
     padding-right: 30px;
   }
   .featuresCard__header {
@@ -218,7 +270,6 @@
     width: 70%;
   }
   .featuresCard__walletImg {
-    /* margin-left: 0px; */
     width: 342px;
     height: 419px;
   }
@@ -233,5 +284,91 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .featuresCard {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    max-width: 77rem;
+    margin: 0 auto;
+    padding-right: 0px;
+    /* margin-left: 75px; */
+    /* margin-left: 135px; */
+  }
+  .featuresCard__introduction {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: #2fa67c;
+    margin-bottom: 24px;
+  }
+  .featuresCard__introduction-img {
+    width: 16px;
+    height: 16px;
+  }
+  .featuresCard__introduction-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .featuresCard__header {
+    /* max-width: 515px; */
+    /* max-width: 780px; */
+    width: 90%;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 74px;
+    margin-bottom: 16px;
+  }
+  .featuresCard__paragraph {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 48px;
+    /* width: 415px; */
+    color: #98a2b3;
+  }
+  .featuresCard__div4 {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .featuresCard__downloadIcon {
+    width: 40px;
+    height: 40px;
+  }
+  .featuresCard__safety {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .featuresCard__paragraph-two {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 365px;
+    margin-bottom: 40px;
+    color: #98a2b3;
+  }
+  .featuresCard__walletImg {
+    width: 546px;
+    height: 641px;
+  }
+
+  .featureCardOrderOne {
+    order: 2;
+  }
+  .featureCardOrderTwo {
+    order: 1;
+  }
+  /* .featuresCard__walletImg {
+  width: 546px;
+  height: 641px;
+} */
 }
