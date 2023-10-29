@@ -7,7 +7,7 @@ import LanguageDropdown from '../../molecules/languageDropdown/LanguageDropdown'
 
 import './Navbar.css';
 import menuButton from '../../../assets/Menu.png';
-import Logo from '../../../assets/LOGO.png';
+import Logo from '../../../assets/LOGO.svg';
 import Modal from '../../wrappers/modal/Modal';
 import mobileDash from '../../../assets/mobileDash.png';
 

@@ -6,7 +6,7 @@ import Facebook from '../../../assets/Facebook.svg'
 import Twitter from '../../../assets/Twitter.png'
 import LinkedIn from '../../../assets/LinkedIn.svg'
 import Instagram from '../../../assets/Instagram.svg'
-import Logo from '../../../assets/LOGO.png'
+import Logo from '../../../assets/LOGO.svg'
 import './Footer.css'
 
 const Footer = () => {

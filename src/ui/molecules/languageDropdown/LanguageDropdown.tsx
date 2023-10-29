@@ -41,7 +41,7 @@ const LanguageDropdown = () => {
         />
         <p
           className='languageDropdown__text'
-          onClick={() => handleLanguageChange({ target: { value: 'sw' } })}
+          // onClick={() => handleLanguageChange({ target: { value: 'sw' } })}
         >
           {locale === 'en' ? 'EN' : 'SW'}
         </p>
