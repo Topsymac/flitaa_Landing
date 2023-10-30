@@ -6,6 +6,7 @@ import image from '../../../assets/Image.png'
 import googlePlay from '../../../assets/mobileGooglePlayBadge.svg';
 import applePlay from '../../../assets/mobileAppStoreBadge.svg';
 import getStartedBorder from '../../../assets/getStartedBorder.svg'
+import mobileScreenGetStarted from '../../../assets/mobileScreenGetStarted.svg'
 
 import './GetStartedCard.css'
 
@@ -16,7 +17,13 @@ const GetStartedCard = () => {
   return (
     <div className='getStarted'>
       <div className='getStarted__div-border'>
-        {/* <img src={getStartedBorder} alt='img' className='getStartedBorder' /> */}
+        <img src={getStartedBorder} alt='img' className='getStartedBorder' />
+        {/* for mobile screen   */}
+        {/* <img
+          src={mobileScreenGetStarted}
+          alt='img'
+          className='mobileScreenGetStarted'
+        /> */}
         <div className='getStarted__div'>
           <div className='getStarted__divOne'>
             <div className=''>
@@ -62,9 +69,7 @@ const GetStartedCard = () => {
               </div>
             </div>
           </div>
-          <div>
-            <img src={image} alt='' className='getStarted__image' />
-          </div>
+            <img src={image} alt='img' className='getStarted__image' />
         </div>
       </div>
     </div>

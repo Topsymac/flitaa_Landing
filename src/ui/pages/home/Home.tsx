@@ -83,7 +83,7 @@ const Home = () => {
         <div>
           <Testimonials />
         </div>
-        <div className='home__featureCard1'>
+        <div className='home__getStarted'>
           <GetStartedCard />
         </div>
       </LandingWrapper>

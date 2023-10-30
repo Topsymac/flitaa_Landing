@@ -18,6 +18,14 @@
   padding-bottom: 120px;
   color: white;
 }
+
+.home__getStarted {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: linear-gradient(to bottom, #0d100ffd, #0d100ffd),
+    url('../../../assets/Texture.png');
+}
+
 .home__featureCard2 {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -90,7 +98,7 @@
 
 @media screen and (max-width: 1200px) {
   .home__featureCard2 {
-  padding-top: 180px;
-  padding-bottom: 180px;
-}
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
 }
