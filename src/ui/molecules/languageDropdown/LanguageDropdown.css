@@ -1,12 +1,14 @@
 .languageDropdown {
   display: flex;
-  /* align-items: center; */
   gap: 8px;
   color: white;
   position: relative;
   cursor: pointer;
 }
-.languageDropdown__text{
+/* .languageDropdown:hover {
+  align-items: center;
+} */
+.languageDropdown__text {
   font-size: 16px;
   font-weight: normal;
   font-family: degular text;
@@ -18,7 +20,16 @@
 .languageDropdown__arrowDown {
   width: 16px;
   height: 16px;
+  /* transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out; */
 }
+
+/* .languageDropdown__arrowDown:hover {
+  transition: all 0.3s ease-out;
+} */
 
 .selectLanguage {
   position: absolute;
@@ -31,18 +42,15 @@
   z-index: 939;
   font-size: 16px;
   background-color: #121514;
-  /* background-color: rgb(192, 192, 192); */
-  color: white;
+  /*background-color: rgb(192, 192, 192);
+  */color: white;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
-   transition: all 3.5s ease-out;
-  -webkit-transition: all 3.5s ease-out;
-  -moz-transition: all 3.5s ease-out;
-  -ms-transition: all 3.5s ease-out;
-  -o-transition: all 3.5s ease-out;
+  animation: selectLanguage 0.8s ease 1;
+  -webkit-animation: selectLanguage 0.8s ease 1;
 }
 
 .selectLanguage-icon {
@@ -72,4 +80,13 @@
   font-size: 16px;
   /* margin-top: 15px; */
   margin-bottom: 16px;
+}
+
+@keyframes selectLanguage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
