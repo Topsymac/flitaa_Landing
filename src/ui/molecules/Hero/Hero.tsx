@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next'
 
 import "./Hero.css"
-import logo from "../../../assets/Image (2).svg";
+import logo from "../../../assets/heroLogo.svg";
 import bottomleft from '../../../assets/blueHeroIcon.svg';
 import topright from '../../../assets/greenHeroIcon.svg';
 import topOrangeright from '../../../assets/orangeHeroIcon.svg';
 import bottomright from "../../../assets/forwardProgress.svg";
-import appstore from "../../../assets/Mobile app store badge.svg";
-import googlestore from "../../../assets/Mobile google store badge.svg";
+import appstore from "../../../assets/heroAppStore.svg";
+import googlestore from "../../../assets/heroGoogleStore.svg";
 
 const Hero = () => {
   const { t } = useTranslation()
@@ -164,39 +164,39 @@ const Hero = () => {
     <>
       <div className={`Hero`}>
         <div className={`top`}>
-          <div className='left'>
-            <h1>{t('tradeAndHoldCryptocurrencies')}</h1>
+          <div className="left">
+            <h1>{t("tradeAndHoldCryptocurrencies")}</h1>
           </div>
-          <div className='right'>
-            <p>{t('buyAndAccessToken')}</p>
+          <div className="right">
+            <p>{t("buyAndAccessToken")}</p>
           </div>
         </div>
         <div className={`bottom`}>
-          <div className='logo-img-wrapper'>
-            <div className='logo-img'>
-              <img src={logo} alt='img' />
+          <div className="logo-img-wrapper">
+            <div className="logo-img">
+              <img src={logo} alt="img" />
             </div>
           </div>
-          <div className='media_logo'>
-            <img src={googlestore} alt='img' />
-            <img src={appstore} alt='img' />
+          <div className="media_logo">
+            <img src={googlestore} alt="img" />
+            <img src={appstore} alt="img" />
           </div>
-          <div className='bottom_small_left_logo'>
-            <img src={bottomleft} alt='img' />
+          <div className="bottom_small_left_logo">
+            <img src={bottomleft} alt="img" />
           </div>
-          <div className='top_small_right_logo'>
-            <img src={topright} alt='img' />
+          <div className="top_small_right_logo">
+            <img src={topright} alt="img" />
           </div>
-          {/*Temi uncomment the code below and fix the image  */}
-          {/* <div className='top_small_right_orange_logo'>
-            <img src={topOrangeright} alt='img' />
-          </div> */}
-          <div className='bottom_small_right_logo'>
-            <img src={bottomright} alt='img' />
+
+          <div className="bottom_small_right_logo">
+            <img src={topOrangeright} alt="img" />
+          </div>
+          <div className="top_small_right_orange_logo">
+            <img src={bottomright} alt="img" />
           </div>
         </div>
       </div>
-      <div className='redbox' />
+      <div className="redbox" />
     </>
   );
 };
