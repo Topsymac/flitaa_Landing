@@ -77,10 +77,14 @@
 @media screen and (max-width: 992px) {
   .home__tradeCrypto {
     padding-top: 130px;
+    padding-left: 24px;
   }
 }
 
 @media screen and (min-width: 992px) {
+   .home__tradeCrypto {
+    padding-left: 24px;
+  }
   .home__tradeCrypto-paragraph {
     padding-bottom: 48px;
     /* width: 45vw; */
@@ -97,6 +101,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+   .home__tradeCrypto {
+    padding-left: 24px;
+  }
   .home__featureCard2 {
     padding-top: 180px;
     padding-bottom: 180px;
