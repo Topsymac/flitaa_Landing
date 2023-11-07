@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import i18next from '../../../translate/i18next'
 import InternetImg from '../../../assets/globe-02.svg'
-import arrowDown from '../../../assets/chevron-down.svg'
+import arrowDown from '../../../assets/chevronDown.svg'
 import englishIcon from '../../../assets/englishIcon.svg'
 import kenyaIcon from '../../../assets/kenyaIcon.svg'
 

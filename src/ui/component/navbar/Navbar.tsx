@@ -10,7 +10,6 @@ import menuButton from '../../../assets/Menu.png';
 import Logo from '../../../assets/LOGO.svg';
 import Modal from '../../wrappers/modal/Modal';
 import mobileDash from '../../../assets/mobileDash.png';
-
 import mobileCancel from '../../../assets/cancel.png';
 
 interface IsideProp {

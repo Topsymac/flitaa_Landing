@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next'
 
 import star from '../../../assets/star.png'
 import image from '../../../assets/Image.png'
-import googlePlay from '../../../assets/mobileGooglePlayBadge.svg';
-import applePlay from '../../../assets/mobileAppStoreBadge.svg';
+import googlePlay from '../../../assets/heroAppStore.svg';
+import applePlay from '../../../assets/heroGoogleStore.svg';
 import getStartedBorder from '../../../assets/getStartedBorder.svg'
 import mobileScreenGetStarted from '../../../assets/mobileScreenGetStarted.svg'
 
