@@ -119,6 +119,7 @@
   .getStarted__paragraph {
     margin-left: 15px;
     max-width: 80%;
+    height: 175px;
   }
   .getStarted__header {
     margin-left: 15px;
@@ -206,8 +207,8 @@
   .getStarted__image {
     position: relative;
     top: 48px;
-    width: 457px;
-    height: 452px;
+    width: 427px;
+    height: 422px;
     /* width: 323px;
     height: 355px; */
     padding-right: 0px;
@@ -290,8 +291,8 @@
   .getStarted__image {
     position: relative;
     top: 48px;
-    width: 557px;
-    height: 552px;
+    width: 507px;
+    height: 502px;
     padding-right: 0px;
   }
   .getStarted__introduction {
@@ -325,7 +326,7 @@
     -moz-border-radius: 32px;
     -ms-border-radius: 32px;
     -o-border-radius: 32px;
-    width: 75%;
+    /* width: 75%; */
     height: 962px;
   }
 

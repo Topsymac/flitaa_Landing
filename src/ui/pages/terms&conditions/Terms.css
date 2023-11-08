@@ -1,15 +1,30 @@
 .terms_wrapper {
   background-color: #121514;
   color: #fff;
-  padding: 180px 131px 100px 130px;
+  padding-top: 180px;
+  /* padding: 180px 131px 100px 130px; */
+}
+.terms {
+  max-width: 67rem;
+  margin: 0 auto;
+  /* padding: 180px 131px 100px 130px; */
 }
 .terms_content {
-  padding: 20px 0px;
+  padding: 0px 0px;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
 }
-@media (max-width: 760px) {
+
+.terms_bulletPoint{
+  max-width: 66rem;
+  margin: 60px auto;
+}
+
+.terms_content li {
+  list-style: none;
+}
+@media (max-width: 992px) {
   .terms_wrapper {
     padding: 10px 20px;
   }
