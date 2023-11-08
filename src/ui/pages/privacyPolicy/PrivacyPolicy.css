@@ -3,6 +3,9 @@
     color: #fff;
     padding: 180px 131px 100px 130px;
 }
+.privacy_header{
+    font-size: 20px;
+}
 .privacy_content{
     padding: 20px 0px;
     font-weight: 500;
@@ -11,6 +14,6 @@
 }
 @media (max-width: 760px) {
     .privacy_wrapper{
-        padding: 10px 20px;
+        padding: 100px 20px;
     }
 }
