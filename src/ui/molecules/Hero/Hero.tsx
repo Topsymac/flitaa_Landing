@@ -3,10 +3,10 @@ import { useTranslation } from 'react-i18next'
 
 import "./Hero.css"
 import logo from "../../../assets/heroLogo.svg";
-import bottomleft from '../../../assets/blueHeroIcon.svg';
-import topright from '../../../assets/greenHeroIcon.svg';
-import topOrangeright from '../../../assets/orangeHeroIcon.svg';
-import bottomright from "../../../assets/forwardProgress.svg";
+import bottomleft from '../../../assets/Innovation & Knowledge copy.png';
+import topright from '../../../assets/Innovation & Knowledge.png';
+import topOrangeright from '../../../assets/Innovation & Knowledge copy 2.png';
+import bottomright from "../../../assets/Forward Progress.png";
 import appstore from "../../../assets/heroAppStore.svg";
 import googlestore from "../../../assets/heroGoogleStore.svg";
 
