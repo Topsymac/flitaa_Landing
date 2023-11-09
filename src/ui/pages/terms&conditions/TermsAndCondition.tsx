@@ -193,103 +193,323 @@ const Terms = () => {
               <p>{t('weMayChargeNetworkFees')}</p>
               <br />
               <p>{t('weMayRefuseToProcess')}</p>
-              {/* <br />
-              <p>{t('holdFlitaaInnocent')}</p> */}
+              <br />
             </div>
             <div className='terms_content'>
               <h3>{t('delisting')}</h3>
               <p>{t('youHerebyAgreeThatFlitaa')}</p>
               <br />
-              {/* <p>{t('followAllObligation')}</p>
-              <br />
-              <p>{t('credentialsNotExposed')}</p>
-              <br />
-              <p>{t('rationalMeasures')}</p> */}
             </div>
             <div className='terms_content'>
               <h3>{t('supportedDigitalCurrencies')}</h3>
-              <p>{t('terminateUse')}</p>
+              <p>{t('ourDigitalCurrencyServicesAreAvailable')}</p>
               <br />
             </div>
             <div className='terms_content'>
-              <h3>{t('disruptionOfService')}</h3>
-              <p>{t('cannotGuarantee')}</p>
+              <h3>{t('thirdPartyPayments')}</h3>
+              <p>{t('weAreNotResponsibleForEnsuringThat')}</p>
               <br />
-              <p>{t('hardwareDowntime')}</p>
+              <p>{t('flitaaHasNoControlOver')}</p>
               <br />
-              <p>{t('softwareDowntime')}</p>
-              <br />
-              <p>{t('overload')}</p>
-              <br />
-              <p>{t('severeWeather')}</p>
-              <br />
-              <p>{t('labourStrike')}</p>
-              <br />
-              <p>{t('governmentRegulation')}</p>
-              <br />
-              <p>{t('failureOfTelecomms')}</p>
-              <br />
-              <p>{t('anyOtherCause')}</p>
             </div>
             <div className='terms_content'>
-              <h3>{t('exemptionOfLiability')}</h3>
-              <p>{t('asIsBasis')}</p>
+              <h3>{t('advancedProtocols')}</h3>
+              <p>{t('unlessSpecificallyAnnounced')}</p>
               <br />
-              <p>{t('discontinueService')}</p>
-              <br />
-              <p>{t('notLiableForDelay')}</p>
-              <br />
-              <p>{t('serviceForPersonalUse')}</p>
-              <br />
-              <p>{t('notLiableForDamage')}</p>
-              <br />
-              <p>{t('unlawfulUse')}</p>
-              <br />
-              <p>{t('failureToComply')}</p>
-              <br />
-              <p>{t('notAccountable')}</p>
             </div>
             <div className='terms_content'>
-              <h3>{t('communication')}</h3>
-              <p>{t('accessingTheApp')}</p>
+              <h3>{t('operationOfDigitalCurrency')}</h3>
+              <p>{t('weDoNotOwnOrControlTheUnderlying')}</p>
               <br />
-              <b>{t('electronicSignature')}</b>
+              <b>{t('inParticularTheUnderlyingProtocolsAre')}</b>
             </div>
             <div className='terms_content'>
-              <h3>{t('correction')}</h3>
-              <p>{t('rightToCorrect')}</p>
+              <h3>{t('transactionLimitsAndEnhancedDueDiligence')}</h3>
+              <p>{t('theUseOfAllFlitaaServices')}</p>
+              <br />
+              <p>{t('weMayRequireYouToSubmit')}</p>
+              <br />
+            </div>
+            {/*  */}
+            {/* list */}
+            <div className='terms_content'>
+              <h3>{t('flitaaSavingServices')}</h3>
+              <p>{t('flitaaOffersFlitaaSavings')}</p>
+              <br />
+              <p>{t('flitaaSavingsAssets')}</p>
+              <br />
+              {/* <ol type='i'> */}
+              <div className='terms_bulletPoint-div'>
+                <li>&#x2022; {t('whenYouUseFlitaaSavingsService')}</li>
+                <li>&#x2022; {t('youShallAbideByRelevantLaws')}</li>
+                <li>&#x2022; {t('whenYouUseFlitaaSavings')}</li>
+                <li>&#x2022; {t('youAgreeThatAllTransactions')}</li>
+                <li>&#x2022; {t('flitaaReservesTheRight')}</li>
+                <li>&#x2022; {t('dueToNetworkDelay')}</li>
+                <br />
+              </div>
+              {/* </ol> */}
             </div>
             <div className='terms_content'>
-              <h3>{t('general')}</h3>
-              <p>{t('noFailure')}</p>
+              <h3>{t('p2pTransactions')}</h3>
+              <p>{t('flitaaOperatesAPeerToPeer')}</p>
               <br />
-              <p>{t('anyProvision')}</p>
+              <p>{t('aWithdrawalInvolvesAFlitaaUser')}</p>
               <br />
-              <p>{t('doNotRely')}</p>
+              <p>{t('aDepositInvolvesAFlitaaUser')}</p>
               <br />
-              <p>{t('agreeToAssign')}</p>
+              <p>{t('byUsingTheFlitaaPlatform')}</p>
+              <br />
+              <p>{t('thisProvisionIsLegallyBinding')}</p>
+              <br />
+              <p>{t('flitaaReservesTheRightTo')}</p>
+              <br />
+              <p>{t('dueToNetworkDelays')}</p>
+              <br />
+              <p>{t('flitaaReservesTheRightToUpdate')}</p>
             </div>
             <div className='terms_content'>
-              <h3>{t('disputeResolution')}</h3>
-              <p>{t('disputesFlitaa')}</p>
-              <br />
-              <p>{t('arbitration')}</p>
-              <br />
-              <p>{t('provisionToClause')}</p>
-              <br />
-              <p>{t('arbitralTribunal')}</p>
-              <br />
-              <p>{t('arbitrationInNigeria')}</p>
-              <br />
-              <p>{t('nothingInClause')}</p>
+              <h2>{t('`suspensionTermination`')}</h2>
             </div>
             <div className='terms_content'>
-              <h3>{t('governingLaw')}</h3>
-              <p>{t('complyWithLaw')}</p>
+              <h3>{t('`suspensionOfFlitaaAccount`')}</h3>
+              <p>{t('youAgreeThatFlitaaShall')}</p>
+              <br />
+              <p>{t('youAgreeThatWhileYourAccount')}</p>
+              <br />
+              {/* list */}
+              <div className='terms_bulletPoint-div'>
+                <li>
+                  &#x2022;{' '}
+                  {t('theFlitaaAccountIsSubjectToAGovernmentalProceeding')}
+                </li>
+                <li>&#x2022; {t('weDetectUnusualActivities')}</li>
+                <li>&#x2022; {t('weDetectGlitches')}</li>
+                <li>&#x2022; {t('weDetectUnauthorisedAccess')}</li>
+                <li>&#x2022; {t('weHaveConcernsThatATransaction')}</li>
+                <li>&#x2022; {t('weSuspectMoneyLaundering')}</li>
+                <li>&#x2022; {t('ifYourCreditOrDebitCard')}</li>
+                <li>&#x2022; {t('useOfYourFlitaaAccount')}</li>
+                <li>&#x2022; {t('wePerceiveAHeightenedRisk')}</li>
+                <li>&#x2022; {t('youTakeAnyActionThatMay')}</li>
+                <li>&#x2022; {t('ourServicePartnersAre')}</li>
+                <li>&#x2022; {t('flitaaBelivesThatInThe')}</li>
+                <li>&#x2022; {t('flitaaDiscoversThatInTheProcess')}</li>
+                <li>&#x2022; {t('nonComplianceOfTheUser')}</li>
+                <li>&#x2022; {t('weAreRequiredToDoSo')}</li>
+                <br />
+              </div>
+              <p>{t('weMayAlsoRefuseToComplete')}</p>
+              <br />
             </div>
             <div className='terms_content'>
-              <h3>{t('contactUs')}</h3>
-              <p>{t('resolveComplaint')}</p>
+              <p>{t('cancellationOfFlitaaAccount')}</p>
+              <br />
+              <p>{t('inCaseOfAnyOfTheFollowing')}</p>
+              <br />
+              <div className='terms_bulletPoint-div'>
+                <li>&#x2022; {t('afterFlitaaTerminatesServices')}</li>
+                <li>&#x2022; {t('theInformationThatYouHave')}</li>
+                <li>&#x2022; {t('whenTheseTermsAreAmended')}</li>
+                <li>&#x2022; {t('youRequestThatFlitaaServices')}</li>
+                <li>&#x2022; {t('anyOtherCircumstancesWhere')}</li>
+                <br />
+              </div>
+            </div>
+            <div className='terms_content'>
+              <h3>{t('administrativeAndSecurity')}</h3>
+              <p>{t('youAcknowledgeThatOurDecision')}</p>
+              <br />
+              <p>{t('onTerminationOfTheseTerms')}</p>
+              <br />
+              <p>{t('inTheCaseOfAccountTermination')}</p>
+              <br />
+              <p>{t('flitaaMaintainsFullCustody')}</p>
+              <br />
+              <p>{t('shouldYourFlitaaAccountBeTerminated')}</p>
+              <br />
+              <p>{t('ifFlitaaisInformedThatAnyDigital')}</p>
+              <br />
+              <p>{t('flitaaIsNoObligationToallow')}</p>
+              <br />
+            </div>
+            {/*  */}
+            <div className='terms_content'>
+              <h2>{t('`representationWarrantiesLiabilities`')}</h2>
+            </div>
+            <div className='terms_content'>
+              <h3>{t('`ReleaseOfFlitaa`')}</h3>
+              <p>{t('ifYouHaveADisputeWithOne')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('`noFinancialAdvice`')}</h3>
+              <p>{t('flitaaIsNotYourInvestmentManager')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('`disclaimerOfWarranties`')}</h3>
+              <p>{t('toTheMaximumExtentPermitted')}</p>
+              <br />
+              <p>{t('flitaaWillMakeReasonable')}</p>
+              <br />
+              <p>{t('theDisclaimerOfImplied')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('DisclaimerOfWarrantiesAnd')}</h3>
+              <p>{t('toTheMaximumExtent')}</p>
+              <br />
+              <p>{t('notwithstandingTheForegoing')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('indemification')}</h3>
+              <p>{t('youAgreeToIndemnify')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('limitationOfLoss')}</h3>
+              <br />
+              <p>{t('inNoEventShallFlitaa')}</p>
+              <br />
+              {/* links */}
+              <div className='terms_bulletPoint-div'>
+                <li>&#x2022; {t('anyLossOfProfitsOrLoss')}</li>
+                <li>&#x2022; {t('anyLossOfOrDamageTo')}</li>
+                <li>&#x2022; {t('anyLossOfUseOfHardWare')}</li>
+                <li>&#x2022; {t('anyLossOrDamageWhatsoeverWhich')}</li>
+              </div>
+            </div>
+            <div className='terms_content'>
+              <h3>{t('safetyAndSecurity')}</h3>
+              <br />
+              <p>{t('flitaaIsNotLiableForAny')}</p>
+              <br />
+            </div>
+            {/*  */}
+            <div className='terms_content'>
+              <h3>{t('flitaaInfinityLoans')}</h3>
+              <br />
+              {/* links */}
+              <div className='terms_bulletPoint-div'>
+                <li>&#x2022; {t('youAgreeThatYourEligibility')}</li>
+                <li>&#x2022; {t('youAgreeThatUponALoanApplication')}</li>
+                <li>&#x2022; {t('youAgreeThatOnceYour')}</li>
+                <li>&#x2022; {t('youAgreeThatYouShallNotBeEntitled')}</li>
+                <li>&#x2022; {t('youAgreeThatTheLoanInterestRepayment')}</li>
+                <li>&#x2022; {t('youAgreeThatUponYourLoanApproval')}</li>
+                <li>&#x2022; {t('youPromiseToPayTheseLoanAmounts')}</li>
+                <li>&#x2022; {t('youAgreeThatWhereYourStakedCollateral')}</li>
+                <li>&#x2022; {t('flitaaReservesTheRightToPresume')}</li>
+                <li>&#x2022; {t('flitaaReservesTheRightToAccept')}</li>
+                <li>&#x2022; {t('youAgreeToPayAllInterest')}</li>
+                <li>&#x2022; {t('youAgreeToPayAllCosts')}</li>
+                <li>&#x2022; {t('youHerebyExpresslyConsent')}</li>
+                <li>&#x2022; {t('youAuthoriseFlitaa')}</li>
+                <li>&#x2022; {t('yourAcceptanceOfTheseTerms')}</li>
+              </div>
+            </div>
+            <div className='terms_content'>
+              <h3>{t('applicableLaws')}</h3>
+              <br />
+              <p>{t('itIsYourResponsibilityToAbide')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('PrivacyPolicy')}</h3>
+              <br />
+              <p>{t('accessToFlitaaServicesWill')}</p>
+              <br />
+              <br />
+              <h3>{t('customerFeedback')}</h3>
+              <br />
+              <p>{t('pleaseReadThisSection')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('contactFlitaa')}</h3>
+              <br />
+              <p>{t('ifYouHaveAnyFeedback')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('complaints')}</h3>
+              <br />
+              <p>{t('inTheEventOfAComplaint')}</p>
+              <br />
+              {/* links */}
+              <div className='terms_bulletPoint'>
+                <li>&#x2022; {t('offerToResolveYour')}</li>
+                <li>&#x2022; {t('MakeADeterminationTo')}</li>
+                <li>&#x2022; {t('offerToResolveYourComplaint')}</li>
+              </div>
+            </div>
+            <div className='terms_content'>
+              <h3>{t('noticeOfClaimAnd')}</h3>
+              <br />
+              <p>{t('inTheEventOfAnIssue')}</p>
+              <br />
+              <p>{t('inTheEventTheDisputeCannot')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('arbitrationAndGoverning')}</h3>
+              <p>{t('youAndFlitaaOperatorsAgree')}</p>
+              <br />
+              <p>{t('anyArbitrationAgainstFlitaaOperators')}</p>
+              <br />
+              <p>{t('ifWeRequestArbitrationAgainstYou')}</p>
+              <br />
+              <p>{t('theSeatOfTheArbitrationShall')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('classActionWaiver')}</h3>
+              <br />
+              <p>{t('youAgreeThatAnyClaimsRelating')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('modifications')}</h3>
+              <br />
+              <p>{t('flitaaReservesTheRightToUpdateModify')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('severability')}</h3>
+              <br />
+              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <br />
+            </div>
+            <div className='terms_content'>
+              <h3>{t('severability')}</h3>
+              <br />
+              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <br />
+              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <br />
+              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <br />
+              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <br />
+              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <br />
+              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <br />
+              {/*  */}
+              <div className='terms_bulletPoint-div'>
+                <li>&#x2022; {t('anyLossOfProfitsOrLoss')}</li>
+                <li>&#x2022; {t('anyLossOfOrDamageTo')}</li>
+                <li>&#x2022; {t('anyLossOfUseOfHardWare')}</li>
+                <li>&#x2022; {t('anyLossOrDamageWhatsoeverWhich')}</li>
+              </div>
+              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <br />
+              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <br />
+              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <br />
             </div>
           </div>
         </div>

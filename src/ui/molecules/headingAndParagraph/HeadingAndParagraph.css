@@ -27,7 +27,7 @@
   .headingAndParagraph__divOne {
     margin: 0px auto;
     /* remove this margin top when you include temi's part */
-    margin-top: 60px;
+    /* margin-top: 60px; */
     padding-left: 0px;
   }
   .headingAndParagraph__introduction {
@@ -110,5 +110,5 @@
     margin-left: 0px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
 }
