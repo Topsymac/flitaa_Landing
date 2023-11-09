@@ -8,202 +8,151 @@ const PrivacyPolicy = () => {
   return (
     <>
       <LandingWrapper>
-        <div className='privacy_wrapper'>
-          <div className='privacy_header'>
-            <h1>{t('privacyPolicy')}</h1>
+        <div className="privacy_wrapper">
+          <div className="privacy_header">
+            <h1>{t("privacyPolicy")}</h1>
           </div>
-          <div className='privacy_content'>
-            <p>{t('privacyParagraphOne')}</p>
+          <div className="privacy_content">
+            <p>{t("privacyParagraphOne")}</p>
             <br />
-            <p>{t('privacyParagraphTwo')}</p>
+            <p>{t("privacyParagraphTwo")}</p>
             <br />
-            <p>{t('privacyParagraphThree')}</p>
+            <h3>{t("privacyAcceptance")}</h3>
+            <p>{t("privacyParagraphThree")}</p>
             <br />
-            <p>{t('privacyParagraphFour')}</p>
+            <h3>{t("privacyChanges")}</h3>
+            <p>{t("privacyParagraphFour")}</p>
             <br />
-            <p>{t('privacyParagraphFive')}</p>
+            <h3>{t("privacyRelationship")}</h3>
+            <p>{t("privacyParagraphFive")}</p>
+            <br />
+            <h3>{t("privacyPersonal")}</h3>
+            <p>{t("privacyPersonalText")}</p>
           </div>
-          <div className='privacy_content'>
-            <h3>1. {t('privacyParagraphSix')}</h3>
-            <p className='underline'>{t('privacyParagraphSeven')}</p>
+          <div className="privacy_content">
+            <h3>{t("privacyParagraphSix")}</h3>
+            <p className="underline">{t("privacyParagraphSeven")}</p>
             <br />
-            <p>{t('privacyParagraphEight')}</p>
+            <p>{t("privacyParagraphEight")}</p>
             <br />
-            <p>{t('privacyParagraphNine')}</p>
+            <p>{t("privacyParagraphNine")}</p>
             <br />
-            <p>{t('privacyParagraphTen')}</p>
+            <p>{t("privacyParagraphTen")}</p>
             <br />
-            <p>{t('privacyParagraphEleven')}</p>
+            <p>{t("privacyParagraphEleven")}</p>
             <br />
-            <p>{t('privacyParagraphTwelve')}</p>
+            <p>{t("privacyParagraphTwelve")}</p>
             <br />
-            <p>{t('privacyParagraphThirteen')}</p>
+            <p>{t("privacyParagraphThirteen")}</p>
           </div>
-          <div className='privacy_content'>
-            <p className='underline'>{t('privacyParagraphFourteen')}</p>
+          <div className="privacy_content">
+            <p className="underline">{t("privacyParagraphFourteen")}</p>
             <br />
-            <p>{t('privacyParagraphFifteen')}</p>
+            <p>{t("privacyParagraphFifteen")}</p>
             <br />
-            <p>{t('privacyParagraphSixteen')}</p>
+            <p>{t("privacyParagraphSixteen")}</p>
             <br />
-            <p>{t('privacyParagraphSeventeen')}</p>
-            <br />
-            <p>{t('privacyParagraphEighteen')}</p>
+            <p>{t("privacyParagraphSeventeen")}</p>
+            {/* <br /> */}
+            {/* <p>{t("privacyParagraphEighteen")}</p> */}
           </div>
-          <div className='privacy_content'>
-            <p className='underline'>{t('privacyParagraphNineteen')}</p>
+          <div className="privacy_content">
+            <h3>{t("privacyParagraphNineteen")}</h3>
             <br />
-            <p>{t('privacyParagraphTwenty')}</p>
+            <p>{t("privacyParagraphTwenty")}</p>
             <br />
-            <p>{t('privacyParagraphTwentyOne')}</p>
+            <p>{t("privacyParagraphTwentyOne")}</p>
             <br />
-            <p>{t('privacyParagraphTwentyTwo')}</p>
+            <p>{t("privacyParagraphTwentyTwo")}</p>
           </div>
-          <div className='privacy_content'>
-            <p className='underline'>{t('privacyParagraphTwentyThree')} </p>
+          <div className="privacy_content">
+            <p className="underline">{t("privacyParagraphTwentyThree")} </p>
             <br />
-            <p>{t('privacyParagraphTwentyFour')}</p>
+            <p>{t("privacyParagraphTwentyFour")}</p>
             <br />
-            <p>{t('privacyParagraphTwentyFive')}</p>
+            <p>{t("privacyParagraphTwentyFive")}</p>
+            <br />
+            <p>{t("privacyParagraphTwentyFive1")}</p>
+            <br />
+            <p>{t("privacyParagraphTwentyFive2")}</p>
+            <br />
+            <p>{t("privacyParagraphTwentyFive3")}</p>
           </div>
-          <div className='privacy_content'>
-            <h3>{t('privacyParagraphTwentySix')}</h3>
-            <p>{t('privacyParagraphTwentySeven')}</p>
+          <div className="privacy_content">
+            <h3>{t("privacyParagraphTwentySix")}</h3>
+            <p>{t("privacyParagraphTwentySeven")}</p>
             <br />
-            <p>{t('privacyParagraphTwentyEight')}</p>
+            <h3>{t("privacyParagraphTwentyEight")}</h3>
             <br />
-            <p>{t('privacyParagraphTwentyNine')}</p>
+            <p>{t("privacyParagraphTwentyNine")}</p>
             <br />
-            <p>{t('privacyParagraphThirty')}</p>
+            <p>{t("privacyParagraphThirty")}</p>
             <br />
-            <p>{t('privacyParagraphThirtyOne')}</p>
+            <p>{t("privacyParagraphThirtyOne")}</p>
             <br />
-            <p>{t('privacyParagraphThirtyTwo')}</p>
+            <p>{t("privacyParagraphThirtyTwo")}</p>
             <br />
-            <p>{t('privacyParagraphThirtyThree')}</p>
+            <p>{t("privacyParagraphThirtyThree")}</p>
             <br />
-            <p>{t('privacyParagraphThirtyFour')}</p>
+            <p>{t("privacyParagraphThirtyFour")}</p>
             <br />
-            <p>{t('privacyParagraphThirtyFive')}</p>
+            <p>{t("privacyParagraphThirtyFive")}</p>
             <br />
-            <p>{t('privacyParagraphThirtySix')}</p>
+            <p>{t("privacyParagraphThirtySix")}</p>
             <br />
-            <p>{t('privacyParagraphThirtySeven')}</p>
+            <p>{t("privacyParagraphThirtySeven")}</p>
             <br />
-            <p>{t('privacyParagraphThirtyEight')}</p>
-            <br />
-            <p>{t('privacyParagraphThirtyNine')}</p>
-            <br />
-            <p>{t('privacyParagraphForty')}</p>
-            <br />
-            <p>{t('privacyParagraphFortyOne')}</p>
-            <br />
-            <p>{t('privacyParagraphFortyTwo')}</p>
+            <p>{t("privacyParagraphThirtyEight")}</p>
           </div>
-          <div className='privacy_content'>
-            <h3>{t('privacyParagraphFortyThree')}</h3>
-            <p>{t('privacyParagraphFortyFour')}</p>
+          <div className="privacy_content">
+            <h3>{t("privacyParagraphThirtyNine")}</h3>
             <br />
-            <p>{t('privacyParagraphFortyFive')}</p>
+            <p>{t("privacyParagraphForty")}</p>
             <br />
-            <p>{t('privacyParagraphFortySix')}</p>
+            <p>{t("privacyParagraphFortyOne")}</p>
             <br />
-            <p>{t('privacyParagraphFortySeven')}</p>
+            <p>{t("privacyParagraphFortyTwo")}</p>
             <br />
-            <p>{t('privacyParagraphFortyEight')}</p>
+            <p>{t("privacyParagraphFortyThree")}</p>
             <br />
-            <p>{t('privacyParagraphFortyNine')}</p>
-            <br />
-            <p>{t('privacyParagraphFifty')}</p>
-            <br />
-            <p>{t('privacyParagraphFiftyOne')}</p>
-            <br />
-            <p>{t('privacyParagraphFiftyTwo')}</p>
-            <br />
-            <p>{t('privacyParagraphFiftyThree')}</p>
-            <br />
-            <p>{t('privacyParagraphFiftyFour')}</p>
-            <br />
-            <p>{t('privacyParagraphFiftyFive')}</p>
+            <p>{t("privacyParagraphFortyFour")}</p>
+            <div className="privacy_content">
+              <h3>{t("privacyParagraphFortyFive")}</h3>
+              <br />
+              <p>{t("privacyParagraphFortySix")}</p>
+              <br />
+              <p>{t("privacyParagraphFortySeven")}</p>
+            </div>
+            <div className="privacy_content">
+              <h3>{t("privacyParagraphFortyEight")}</h3>
+              <br />
+              <p>{t("privacyParagraphFortyNine")}</p>
+            </div>
+            <div className="privacy_content">
+              <h3>{t("privacyParagraphFifty")}</h3>
+              <br />
+              <p>{t("privacyParagraphFiftyOne")}</p>
+              <br />
+              <p>{t("privacyParagraphFiftyTwo")}</p>
+              <br />
+              <p>{t("privacyParagraphFiftyThree")}</p>
+              <br />
+              <p>{t("privacyParagraphFiftyFour")}</p>
+            </div>
           </div>
-          <div className='privacy_content'>
-            <h3>{t('privacyParagraphFiftySix')}</h3>
-            <p>{t('privacyParagraphFiftySeven')}</p>
+          <div className="privacy_content">
+            <h3>{t("privacyParagraphFiftyFive")}</h3>
             <br />
-            <p>{t('privacyParagraphFiftyEight')}</p>
-            <br />
-            <p>{t('privacyParagraphFiftyNine')}</p>
-            <br />
-            <p>{t('privacyParagraphSixty')}</p>
-            <br />
-            <p>{t('privacyParagraphSixtyOne')}</p>
-            <br />
-            <p>{t('privacyParagraphSixtyTwo')}</p>
-            <br />
-            <p>{t('privacyParagraphSixtyThree')}</p>
-            <br />
-            <p>{t('privacyParagraphSixtyFour')}</p>
-            <br />
-            <p>{t('privacyParagraphSixtyFive')}</p>
-            <br />
-            <p>{t('privacyParagraphSixtySix')}</p>
+            <p>{t("privacyParagraphFiftySix")}</p>
           </div>
-          <div className='privacy_content'>
-            <h3>{t('privacyParagraphSixtySeven')}</h3>
-            <p>{t('privacyParagraphSixtyEight')}</p>
+          <div className="privacy_content">
+            <h3>{t("privacyParagraphFiftySeven")}</h3>
             <br />
-            <p>{t('privacyParagraphSixtyNine')}</p>
+            <p>{t("privacyParagraphFiftyEight")}</p>
             <br />
-            <p>{t('privacyParagraphSeventy')}</p>
-          </div>
-          <div className='privacy_content'>
-            <h3>{t('privacyParagraphSeventyOne')}</h3>
-            <p>{t('privacyParagraphSeventyTwo')}</p>
+            <p>{t("privacyParagraphFiftyNine")}</p>
             <br />
-            <p>{t('privacyParagraphSeventyThree')}</p>
-            <br />
-            <p>{t('privacyParagraphSeventyFive')}</p>
-          </div>
-          <div className='privacy_content'>
-            <h3>{t('privacyParagraphSeventySix')}</h3>
-            <p>{t('privacyParagraphSeventySeven')}</p>
-            <br />
-            <p>{t('privacyParagraphSeventyEight')}</p>
-          </div>
-          <div className='privacy_content'>
-            <h3>{t('privacyParagraphSeventyNine')}</h3>
-            <p>{t('privacyParagraphEighty')}</p>
-            <br />
-            <p>{t('privacyParagraphEightyOne')}</p>
-            <br />
-            <p>{t('privacyParagraphEightyThree')}</p>
-            <br />
-            <p>{t('privacyParagraphEightyFour')}</p>
-            <br />
-            <p className='underline'>{t('privacyParagraphEightyFive')}</p>
-            <br />
-            <p>{t('privacyParagraphEightySix')}</p>
-            <p>{t('privacyParagraphEightySeven')}</p>
-            <br />
-            <p>{t('privacyParagraphEightyEight')}</p>
-          </div>
-          <div className='privacy_content'>
-            <h3>{t('privacyParagraphEightyNine')}</h3>
-            <p>{t('privacyParagraphNinety')}</p>
-          </div>
-          <div className='privacy_content'>
-            <h3>{t('privacyParagraphNinetyOne')}</h3>
-            <p>{t('privacyParagraphNinetyTwo')}</p>
-            <br />
-            <p>{t('privacyParagraphNinetyThree')}</p>
-          </div>
-          <div className='privacy_content'>
-            <h3>{t('privacyParagraphNinetyFour')}</h3>
-            <p>{t('privacyParagraphNinetyFive')}</p>
-          </div>
-          <div className='privacy_content'>
-            <h3>{t('privacyParagraphNinetySix')}</h3>
-            <p>{t('privacyParagraphNinetySeven')}</p>
+            <p>{t("privacyParagraphSixty")}</p>
           </div>
         </div>
       </LandingWrapper>
