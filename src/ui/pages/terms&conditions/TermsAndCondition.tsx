@@ -483,32 +483,32 @@ const Terms = () => {
               <br />
             </div>
             <div className='terms_content'>
-              <h3>{t('severability')}</h3>
+              <h3>{t('miscellaneous')}</h3>
               <br />
-              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <p>{t('forceMajeure')}</p>
               <br />
-              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <p>{t('historicalPriceData')}</p>
               <br />
-              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <p>{t('entireAgreement')}</p>
               <br />
-              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <p>{t('changeOfControl')}</p>
               <br />
-              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <p>{t('survival')}</p>
               <br />
-              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <p>{t('fraudManagement')}</p>
               <br />
               {/*  */}
               <div className='terms_bulletPoint-div'>
-                <li>&#x2022; {t('anyLossOfProfitsOrLoss')}</li>
-                <li>&#x2022; {t('anyLossOfOrDamageTo')}</li>
-                <li>&#x2022; {t('anyLossOfUseOfHardWare')}</li>
-                <li>&#x2022; {t('anyLossOrDamageWhatsoeverWhich')}</li>
+                <li>&#x2022; {t('youSendOutFundsToAMerchant')}</li>
+                <li>&#x2022; {t('youTransferFundsIntoAMerchantAccount')}</li>
+                <li>&#x2022; {t('youGainAccessToAnotherFlitaaUser')}</li>
+                <li>&#x2022; {t('aLienIsPlacedOnTheMerchant')}</li>
               </div>
-              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <p>{t('consideringThatThePlatformIsAn')}</p>
               <br />
-              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <p>{t('uponCompletionOfTheInvestigation')}</p>
               <br />
-              <p>{t('ifAnyPortionOfTheseTerms')}</p>
+              <p>{t('youAreAdvisedToReachOutToTheirFinancial')}</p>
               <br />
             </div>
           </div>
