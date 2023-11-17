@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className='home'>
       <LandingWrapper>
-        <Hero />
+        {/* <Hero /> */}
         <div className='home__tradeCrypto'>
           <div className='home__tradeCrypto-paragraph'>
             <HeadingAndParagraph

@@ -14,7 +14,7 @@ const Terms = () => {
               <h1>{t('terms&Condition')}</h1>
             </div>
             <div className='terms_content'>
-              <h3>{t('introduction')}</h3>
+              <h3 className='terms_introduction'>{t('introduction')}</h3>
               <p>{t('theseFlitaa')}</p>
               <br />
               <p>{t('pleaseReadTheTermsCarefully')}</p>
@@ -164,22 +164,42 @@ const Terms = () => {
               <br />
               <p>{t('whenYouUseFlitaaServices')}</p>
               <div className='terms_bulletPoint'>
-                <li>&#x2022; {t('duringTheUseOfFlitaaServices')}</li>
-                <li>&#x2022; {t('yourUseOfFlitaaServices')}</li>
-                <li>&#x2022; {t('withoutPriorWrittenConsent')}</li>
-                <li>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('duringTheUseOfFlitaaServices')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('yourUseOfFlitaaServices')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('withoutPriorWrittenConsent')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
                   &#x2022;{' '}
-                  {t('withoutPriorWrittenConsentFromFlitaaYouMayNotModify')}
-                </li>
+                  <li>
+                    {t('withoutPriorWrittenConsentFromFlitaaYouMayNotModify')}
+                  </li>
+                </span>
               </div>
               <p>{t('byAccessingFlitaaServices')}</p>
               <div className='terms_bulletPoint'>
-                <li>&#x2022; {t('blockingAndClosing')}</li>
-                <li>&#x2022; {t('reversingOrRefusing')}</li>
-                <li>&#x2022; {t('freezingAndRestricting')}</li>
-                <li>&#x2022; {t('reportingTheIncident')}</li>
-                <li>&#x2022; {t('publishingTheAlleged')}</li>
-                <li>&#x2022; {t('deletingAnyInformation')}</li>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('blockingAndClosing')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('reversingOrRefusing')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('freezingAndRestricting')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('reportingTheIncident')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('publishingTheAlleged')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('deletingAnyInformation')}</li>
+                </span>
               </div>
             </div>
             <div className='terms_content'>
@@ -240,12 +260,24 @@ const Terms = () => {
               <br />
               {/* <ol type='i'> */}
               <div className='terms_bulletPoint-div'>
-                <li>&#x2022; {t('whenYouUseFlitaaSavingsService')}</li>
-                <li>&#x2022; {t('youShallAbideByRelevantLaws')}</li>
-                <li>&#x2022; {t('whenYouUseFlitaaSavings')}</li>
-                <li>&#x2022; {t('youAgreeThatAllTransactions')}</li>
-                <li>&#x2022; {t('flitaaReservesTheRight')}</li>
-                <li>&#x2022; {t('dueToNetworkDelay')}</li>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('whenYouUseFlitaaSavingsService')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('youShallAbideByRelevantLaws')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('whenYouUseFlitaaSavings')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('youAgreeThatAllTransactions')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('flitaaReservesTheRight')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('dueToNetworkDelay')}</li>
+                </span>
                 <br />
               </div>
               {/* </ol> */}
@@ -269,34 +301,64 @@ const Terms = () => {
               <p>{t('flitaaReservesTheRightToUpdate')}</p>
             </div>
             <div className='terms_content'>
-              <h2>{t('`suspensionTermination`')}</h2>
+              <h2>{t('suspensionTermination')}</h2>
             </div>
             <div className='terms_content'>
-              <h3>{t('`suspensionOfFlitaaAccount`')}</h3>
+              <h3>{t('suspensionOfFlitaaAccount')}</h3>
               <p>{t('youAgreeThatFlitaaShall')}</p>
               <br />
               <p>{t('youAgreeThatWhileYourAccount')}</p>
               <br />
               {/* list */}
               <div className='terms_bulletPoint-div'>
-                <li>
+                <span className='terms_bulletPoint-span'>
                   &#x2022;{' '}
-                  {t('theFlitaaAccountIsSubjectToAGovernmentalProceeding')}
-                </li>
-                <li>&#x2022; {t('weDetectUnusualActivities')}</li>
-                <li>&#x2022; {t('weDetectGlitches')}</li>
-                <li>&#x2022; {t('weDetectUnauthorisedAccess')}</li>
-                <li>&#x2022; {t('weHaveConcernsThatATransaction')}</li>
-                <li>&#x2022; {t('weSuspectMoneyLaundering')}</li>
-                <li>&#x2022; {t('ifYourCreditOrDebitCard')}</li>
-                <li>&#x2022; {t('useOfYourFlitaaAccount')}</li>
-                <li>&#x2022; {t('wePerceiveAHeightenedRisk')}</li>
-                <li>&#x2022; {t('youTakeAnyActionThatMay')}</li>
-                <li>&#x2022; {t('ourServicePartnersAre')}</li>
-                <li>&#x2022; {t('flitaaBelivesThatInThe')}</li>
-                <li>&#x2022; {t('flitaaDiscoversThatInTheProcess')}</li>
-                <li>&#x2022; {t('nonComplianceOfTheUser')}</li>
-                <li>&#x2022; {t('weAreRequiredToDoSo')}</li>
+                  <li>
+                    {t('theFlitaaAccountIsSubjectToAGovernmentalProceeding')}
+                  </li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('weDetectUnusualActivities')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('weDetectGlitches')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('weDetectUnauthorisedAccess')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('weHaveConcernsThatATransaction')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('weSuspectMoneyLaundering')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('ifYourCreditOrDebitCard')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('useOfYourFlitaaAccount')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('wePerceiveAHeightenedRisk')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('youTakeAnyActionThatMay')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('ourServicePartnersAre')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('flitaaBelivesThatInThe')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('flitaaDiscoversThatInTheProcess')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('nonComplianceOfTheUser')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('weAreRequiredToDoSo')}</li>
+                </span>
                 <br />
               </div>
               <p>{t('weMayAlsoRefuseToComplete')}</p>
@@ -308,11 +370,21 @@ const Terms = () => {
               <p>{t('inCaseOfAnyOfTheFollowing')}</p>
               <br />
               <div className='terms_bulletPoint-div'>
-                <li>&#x2022; {t('afterFlitaaTerminatesServices')}</li>
-                <li>&#x2022; {t('theInformationThatYouHave')}</li>
-                <li>&#x2022; {t('whenTheseTermsAreAmended')}</li>
-                <li>&#x2022; {t('youRequestThatFlitaaServices')}</li>
-                <li>&#x2022; {t('anyOtherCircumstancesWhere')}</li>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('afterFlitaaTerminatesServices')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('theInformationThatYouHave')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('whenTheseTermsAreAmended')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('youRequestThatFlitaaServices')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('anyOtherCircumstancesWhere')}</li>
+                </span>
                 <br />
               </div>
             </div>
@@ -335,20 +407,20 @@ const Terms = () => {
             </div>
             {/*  */}
             <div className='terms_content'>
-              <h2>{t('`representationWarrantiesLiabilities`')}</h2>
+              <h2>{t('representationWarrantiesLiabilities')}</h2>
             </div>
             <div className='terms_content'>
-              <h3>{t('`ReleaseOfFlitaa`')}</h3>
+              <h3>{t('ReleaseOfFlitaa')}</h3>
               <p>{t('ifYouHaveADisputeWithOne')}</p>
               <br />
             </div>
             <div className='terms_content'>
-              <h3>{t('`noFinancialAdvice`')}</h3>
+              <h3>{t('noFinancialAdvice')}</h3>
               <p>{t('flitaaIsNotYourInvestmentManager')}</p>
               <br />
             </div>
             <div className='terms_content'>
-              <h3>{t('`disclaimerOfWarranties`')}</h3>
+              <h3>{t('disclaimerOfWarranties')}</h3>
               <p>{t('toTheMaximumExtentPermitted')}</p>
               <br />
               <p>{t('flitaaWillMakeReasonable')}</p>
@@ -375,10 +447,19 @@ const Terms = () => {
               <br />
               {/* links */}
               <div className='terms_bulletPoint-div'>
-                <li>&#x2022; {t('anyLossOfProfitsOrLoss')}</li>
-                <li>&#x2022; {t('anyLossOfOrDamageTo')}</li>
-                <li>&#x2022; {t('anyLossOfUseOfHardWare')}</li>
-                <li>&#x2022; {t('anyLossOrDamageWhatsoeverWhich')}</li>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li>{t('anyLossOfProfitsOrLoss')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('anyLossOfOrDamageTo')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;
+                  <li> {t('anyLossOfUseOfHardWare')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('anyLossOrDamageWhatsoeverWhich')}</li>
+                </span>
               </div>
             </div>
             <div className='terms_content'>
@@ -393,21 +474,52 @@ const Terms = () => {
               <br />
               {/* links */}
               <div className='terms_bulletPoint-div'>
-                <li>&#x2022; {t('youAgreeThatYourEligibility')}</li>
-                <li>&#x2022; {t('youAgreeThatUponALoanApplication')}</li>
-                <li>&#x2022; {t('youAgreeThatOnceYour')}</li>
-                <li>&#x2022; {t('youAgreeThatYouShallNotBeEntitled')}</li>
-                <li>&#x2022; {t('youAgreeThatTheLoanInterestRepayment')}</li>
-                <li>&#x2022; {t('youAgreeThatUponYourLoanApproval')}</li>
-                <li>&#x2022; {t('youPromiseToPayTheseLoanAmounts')}</li>
-                <li>&#x2022; {t('youAgreeThatWhereYourStakedCollateral')}</li>
-                <li>&#x2022; {t('flitaaReservesTheRightToPresume')}</li>
-                <li>&#x2022; {t('flitaaReservesTheRightToAccept')}</li>
-                <li>&#x2022; {t('youAgreeToPayAllInterest')}</li>
-                <li>&#x2022; {t('youAgreeToPayAllCosts')}</li>
-                <li>&#x2022; {t('youHerebyExpresslyConsent')}</li>
-                <li>&#x2022; {t('youAuthoriseFlitaa')}</li>
-                <li>&#x2022; {t('yourAcceptanceOfTheseTerms')}</li>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('youAgreeThatYourEligibility')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('youAgreeThatUponALoanApplication')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('youAgreeThatOnceYour')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('youAgreeThatYouShallNotBeEntitled')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('youAgreeThatTheLoanInterestRepayment')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('youAgreeThatUponYourLoanApproval')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('youPromiseToPayTheseLoanAmounts')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;{' '}
+                  <li> {t('youAgreeThatWhereYourStakedCollateral')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('flitaaReservesTheRightToPresume')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('flitaaReservesTheRightToAccept')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('youAgreeToPayAllInterest')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('youAgreeToPayAllCosts')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('youHerebyExpresslyConsent')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('youAuthoriseFlitaa')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022; <li> {t('yourAcceptanceOfTheseTerms')}</li>
+                </span>
               </div>
             </div>
             <div className='terms_content'>
@@ -440,9 +552,15 @@ const Terms = () => {
               <br />
               {/* links */}
               <div className='terms_bulletPoint'>
-                <li>&#x2022; {t('offerToResolveYour')}</li>
-                <li>&#x2022; {t('MakeADeterminationTo')}</li>
-                <li>&#x2022; {t('offerToResolveYourComplaint')}</li>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('offerToResolveYour')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('MakeADeterminationTo')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('offerToResolveYourComplaint')}</li>
+                </span>
               </div>
             </div>
             <div className='terms_content'>
@@ -499,10 +617,18 @@ const Terms = () => {
               <br />
               {/*  */}
               <div className='terms_bulletPoint-div'>
-                <li>&#x2022; {t('youSendOutFundsToAMerchant')}</li>
-                <li>&#x2022; {t('youTransferFundsIntoAMerchantAccount')}</li>
-                <li>&#x2022; {t('youGainAccessToAnotherFlitaaUser')}</li>
-                <li>&#x2022; {t('aLienIsPlacedOnTheMerchant')}</li>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('youSendOutFundsToAMerchant')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('youTransferFundsIntoAMerchantAccount')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('youGainAccessToAnotherFlitaaUser')}</li>
+                </span>
+                <span className='terms_bulletPoint-span'>
+                  &#x2022;<li> {t('aLienIsPlacedOnTheMerchant')}</li>
+                </span>
               </div>
               <p>{t('consideringThatThePlatformIsAn')}</p>
               <br />
