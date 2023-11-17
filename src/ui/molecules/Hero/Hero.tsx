@@ -12,6 +12,7 @@ import googlestore from "../../../assets/heroGoogleStore.svg";
 
 const Hero = () => {
   const { t } = useTranslation()
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [windowScroll, setWindowScroll] = useState<number>(0);
 
   useEffect(() => {
