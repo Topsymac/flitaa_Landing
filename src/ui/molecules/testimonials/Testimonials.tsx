@@ -52,7 +52,9 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-        <div className='testionial_ellipse'></div>
+        {/* ellipse  */}
+        {/* <div className='testionial_ellipse'></div> */}
+        {/*  */}
         <div className='testimonial-divOne'>
           <img src={TestimonialImg} alt='' className='testimonialBg' />
           <div className='testimonial__content'>

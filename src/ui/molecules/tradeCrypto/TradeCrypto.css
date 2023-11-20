@@ -129,7 +129,7 @@
     font-weight: 400;
     line-height: 24px;
     padding-left: 24px;
-    max-width: 250px;
+    max-width: 280px;
   }
 }
 
@@ -233,5 +233,8 @@
   .tradeCrypto__bgImg {
     width: 379px;
     height: 372px;
+  }
+  .tradeCrypto__heading {
+    width: 320px;
   }
 }
