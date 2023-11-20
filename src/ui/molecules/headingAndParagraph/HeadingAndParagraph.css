@@ -26,8 +26,6 @@
 @media screen and (min-width: 100px) {
   .headingAndParagraph__divOne {
     margin: 0px auto;
-    /* remove this margin top when you include temi's part */
-    /* margin-top: 60px; */
     padding-left: 0px;
   }
   .headingAndParagraph__introduction {
@@ -62,7 +60,7 @@
     height: 14px;
   }
   .headingAndParagraph__introduction-text {
-    font-size: 13px;
+    font-size: 16px;
   }
   .headingAndParagraph__header {
     font-size: 30px;
@@ -94,8 +92,9 @@
   }
   .headingAndParagraph__header {
     /* max-width: 515px; */
-    width: 562px;
-    /* max-width: 100%; */
+    /* width: 562px; */
+    height: 150px;
+    /* width: 100%; */
     /* margin: 0 auto; */
     color: white;
     font-size: 56px;

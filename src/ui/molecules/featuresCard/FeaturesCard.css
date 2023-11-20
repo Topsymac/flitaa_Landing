@@ -39,7 +39,7 @@
   line-height: 24px;
   margin-bottom: 48px;
   width: 515px;
-  color: #98a2b3;
+  color: white;
 }
 .featuresCard__div4 {
   display: flex;
@@ -63,7 +63,7 @@
   line-height: 24px;
   width: 365px;
   margin-bottom: 40px;
-  color: #98a2b3;
+  color: #d0d5dd;
 }
 .featuresCard__walletImg {
   width: 546px;
@@ -316,7 +316,8 @@
   .featuresCard__header {
     /* max-width: 515px; */
     /* max-width: 780px; */
-    width: 90%;
+    /* width: 90%; */
+    min-width: 100%;
     font-size: 56px;
     font-style: normal;
     font-weight: 600;
@@ -330,7 +331,7 @@
     line-height: 24px;
     margin-bottom: 48px;
     /* width: 415px; */
-    color: #98a2b3;
+    color: white;
   }
   .featuresCard__div4 {
     display: flex;
@@ -354,7 +355,7 @@
     line-height: 24px;
     width: 365px;
     margin-bottom: 40px;
-    color: #98a2b3;
+    color: #d0d5dd;
   }
   .featuresCard__walletImg {
     width: 546px;

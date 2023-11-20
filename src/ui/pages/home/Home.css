@@ -14,9 +14,11 @@
   /* width: 45vw; */
 }
 .home__featureCard1 {
-  background-image: linear-gradient(to bottom, #0d100ffd, #0d100ffd),
+  background-image: 
     url('../../../assets/Texture.png');
-  /* background: url('../../../assets/Texture.png'), lightgray 0% 0% / 60.90909242630005px 60.90909242630005px no-repeat; */
+  /* background: url('../../../assets/Texture.png'), lightgray 0% 0% / 60.90909242630005px 60.90909242630005px no-repeat; */ 
+  /* linear-gradient(to bottom, #0d100ffd, #0d100ffd), */
+  background-color: #121514;
   padding-top: 120px;
   padding-bottom: 120px;
   color: white;

@@ -32,15 +32,11 @@ const Home = () => {
           <FeaturesCard
             introductionText={t('introducingSimplicity')}
             heading={t('featuresFromSimpleWallet')}
-            paragraph='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
-              nullam auctor lectus in nulla. Sed leo mattis neque ullamcorper
-              ultricies.Lorem ipsum dolor sit amet consectetur.'
+            paragraph={t('inAWorldOfComplexity')}
             subHeading1={t('fundsSafety')}
-            subHeadingParagraph1='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
-                nullam auctor lectus in nulla.'
+            subHeadingParagraph1={t('theSafetyOfCustomers')}
             subHeading2={t('multiAssets')}
-            subHeadingParagraph2='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh
-                  nam nullam auctor lectus in nulla.'
+            subHeadingParagraph2={t('weSupportMultiChains')}
             walletImgOne
           />
         </div>

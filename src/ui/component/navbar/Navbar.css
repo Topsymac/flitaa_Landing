@@ -1,5 +1,6 @@
 .navbar__header {
-  position: relative;
+  /* position: relative; */
+  /* position: absolute; */
   position: fixed;
   top: 0px;
   left: 0;
