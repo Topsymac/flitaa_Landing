@@ -55,6 +55,9 @@ const FeaturesCard = ({
           <div>
             <p className='featuresCard__header'>{heading}</p>
           </div>
+          {/*  */}
+          {/* {order2 && <div className='featuresCard_greenEllipse'></div>} */}
+          {/*  */}
           <div>
             <p className='featuresCard__paragraph'>{paragraph}</p>
           </div>

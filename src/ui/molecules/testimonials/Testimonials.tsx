@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import HeadingAndParagraph from '../headingAndParagraph/HeadingAndParagraph';
 import quote from '../../../assets/quote.png';
 import TestimonialImg from '../../../assets/3.png';
+import star from '../../../assets/star.png';
 import './Testimonials.css';
 
 const Testimonials = () => {
@@ -25,12 +26,35 @@ const Testimonials = () => {
     <div className='testimonial'>
       <div className='testimonial__headerDiv'>
         <div className='testimonial__headerText'>
-          <HeadingAndParagraph
+          {/* <HeadingAndParagraph
             introductionText={t('testimonials')}
             heading={t('hearUserSay')}
-          />
+          /> */}
+          <div className='testimonial__divOne'>
+            <div className=''>
+              <div className='testimonial__introduction'>
+                <div>
+                  <img
+                    src={star}
+                    alt='star'
+                    className='testimonial__introduction-img'
+                  />
+                </div>
+                <p className='testimonial__introduction-text'>
+                  {t('testimonials')}
+                </p>
+              </div>
+              <div>
+                <p className='testimonial__header'>
+                  {t('hearUserSay')}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className='testionial_ellipse'></div>
+        {/* ellipse  */}
+        {/* <div className='testionial_ellipse'></div> */}
+        {/*  */}
         <div className='testimonial-divOne'>
           <img src={TestimonialImg} alt='' className='testimonialBg' />
           <div className='testimonial__content'>
@@ -45,7 +69,7 @@ const Testimonials = () => {
         </div>
       </div>
       {/*  */}
-        {/* <div className='testionial_greenEllipse'></div> */}
+      {/* <div className='testionial_greenEllipse'></div> */}
       {/*  */}
       <div className='testimonial_div'>
         <div className='testimonial__paragraphTwo-div'>

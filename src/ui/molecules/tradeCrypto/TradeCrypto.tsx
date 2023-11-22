@@ -77,9 +77,7 @@ const TradeCrypto = () => {
                 {t('depositCashOrCrypto')}
               </div>
               <p className='tradeCrypto__paragraph'>
-                Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
-                nullam auctor lectus in nulla. Sed leo mattis neque ullamcorper
-                ultricies.
+                {t('depositingCashOrCryptoHaveNeverBeen')}
               </p>
             </div>
           </div>
