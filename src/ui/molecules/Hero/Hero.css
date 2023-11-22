@@ -1,6 +1,7 @@
 .Hero {
   position: relative;
-  padding: 50px;
+  padding: 0 100px;
+  /* border: 1px solid red; */
   background-image: linear-gradient(to bottom, #0d100ffd, #0d100ffd),
     url('../../../assets/Texture.png');
   color: #fff;
@@ -9,6 +10,7 @@
   margin-bottom: 300px;
 }
 .top {
+  max-width: 1200px;
   padding: 30px;
   display: flex;
   align-items: center;
@@ -28,15 +30,15 @@
   right: 0;
 }
 .left {
-  font-size: 30px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: normal;
 }
 .right {
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 24px;
 }
 .bottom {
@@ -59,7 +61,7 @@
   padding: 20px;
   position: absolute;
   bottom: 40%;
-  left: 3%;
+  left: 0%;
   display: flex;
   gap: 20px;
   transform: translateY(50px);
@@ -97,8 +99,8 @@
 }
 .top_small_right_orange_logo {
   position: absolute;
-  right: 25%;
-  top: 80%;
+  right: 20%;
+  top: 76%;
   transform: translateX(-100px);
   -webkit-transform: translateX(-100px);
   -moz-transform: translateX(-100px);
@@ -115,6 +117,11 @@
 .redbox {
   height: 200px;
   background-color: #121514;
+}
+@media only screen and (min-width: 768px) and (max-width: 920px){
+  .logo-img img {
+    width: 660px;
+  }
 }
 @media screen and (max-width: 768px) {
   .Hero {
@@ -187,11 +194,5 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  .top {
-    flex-direction: column;
-    /* justify-content: start; */
-    gap: 0px;
-    /* width: 60%; */
   }
 }
