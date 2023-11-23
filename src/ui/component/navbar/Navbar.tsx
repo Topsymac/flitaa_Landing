@@ -40,8 +40,8 @@ const Navbar = () => {
       name: t('home'),
       id: 1,
       nav: 1,
-      to: '/',
-      active: location.pathname.includes('/'),
+      to: 'app',
+      active: location.pathname.includes('app'),
     },
     {
       name: t('about'),
@@ -130,7 +130,7 @@ const Navbar = () => {
               {navItems.length > 0 &&
                 navItems.map(({ name, id, to, nav, active }) => (
                   <div key={id}>
-                    <Link to={to} className='navbar__navItems-link'>
+                    <Link to={`/${to}`} className='navbar__navItems-link'>
                       <span>{name}</span>
                     </Link>
                   </div>
