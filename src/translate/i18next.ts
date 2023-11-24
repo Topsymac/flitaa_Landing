@@ -8,14 +8,14 @@ i18next
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'en',
+    fallbackLng: 'en-US',
     fallbackNS: 'common',
     detection: {
       order: ['localStorage', 'navigator'],
     },
-    backend: {
-      loadPath: '/locales/en/translation.json', // Adjust this path based on your folder structure
-    },
+    // backend: {
+    //   loadPath: '/locales/en/translation.json', // Adjust this path based on your folder structure '../../public/locales/{{lng}}/translation.json'
+    // },
     // debug: true, // should be false on production
     // interpolation: {
     // escapeValue: false, // to avoid cross-site scripting
