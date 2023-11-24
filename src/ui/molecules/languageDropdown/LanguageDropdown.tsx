@@ -11,6 +11,7 @@ import './LanguageDropdown.css'
 const LanguageDropdown = () => {
   const [locale, setLocale] = useState(i18next.language)
   const [OpenDropdown, setOpenDropdown] = useState(false)
+  console.log(locale,"??????????");
 
   useEffect(() => {
     const handleChange = (lng: any) => setLocale(lng)

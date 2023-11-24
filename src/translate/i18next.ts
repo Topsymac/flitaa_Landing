@@ -13,6 +13,9 @@ i18next
     detection: {
       order: ['localStorage', 'navigator'],
     },
+    backend: {
+      loadPath: '/locales/en/translation.json', // Adjust this path based on your folder structure
+    },
     // debug: true, // should be false on production
     // interpolation: {
     // escapeValue: false, // to avoid cross-site scripting
