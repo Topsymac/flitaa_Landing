@@ -20,7 +20,7 @@
   "kenyanShillings": "Shilingi za Kenya",
 
   "tradeAndHoldCryptocurrencies": "Nunua, Biashara na Shikilia Fedha za Crypto kwa njia rahisi zaidi",
-  "buyAndAccessToken": "Nunua na uuze fedha za siri kwa urahisi ukitumia programu yetu ambayo ni rafiki kwa watumiaji. Fikia zaidi ya tokeni 40. Pochi ya crypto umekuwa ukingojea.",
+  "buyAndAccessToken": "Nunua na uuze fedha za siri kwa urahisi ukitumia programu yetu ambayo ni rafiki kwa watumiaji. Fikia zaidi ya tokeni 40+. Pochi ya crypto umekuwa ukingojea.",
 
   "testimonials": "Ushuhuda",
   "hearUserSay": "Sikia watumiaji wetu wa kimataifa wanasema nini",
@@ -331,5 +331,12 @@
   "aLienIsPlacedOnTheMerchant": "Lipa huwekwa kwenye akaunti ya mfanyabiashara kwa vile utekelezaji wa sheria umewasiliana na mfanyabiashara au sisi, kuripoti pesa zilizopokelewa kutoka kwako kama zisizo halali, ili kushinikiza kurejeshewa pesa.",
   "consideringThatThePlatformIsAn": "Kwa kuzingatia kuwa Mfumo huu ni soko la mtandaoni kwa wafanyabiashara au wakandarasi huru, unakubali kwamba Flitaa haitawajibika na haitawajibikia kurejesha pesa za Miamala ambayo imechakatwa.",
   "uponCompletionOfTheInvestigation": "Baada ya uchunguzi kukamilika, Flitaa inasalia na haki ya kurejesha sarafu au Sarafu ya Dijiti kutoka kwa miamala ya ndani haramu au ya ulaghai kwa ajili ya mlalamikaji, mradi tu sarafu ya fiat au Digital Currency iliyopokelewa haijatumwa nje ya mfumo wa Flitaa.",
-  "youAreAdvisedToReachOutToTheirFinancial": "Unashauriwa kuwasiliana na taasisi zao za fedha kwa maelezo zaidi kuhusu shughuli hiyo na pia kutafuta ushauri wa kisheria na uwakilishi ili kulinda haki zako za kisheria na kuepuka kutendewa kama mshukiwa au mhalifu. Kwa upande wa Flitaa, tutashirikiana na mamlaka za kisheria na mahakama zenye mamlaka ili kuunga mkono mchakato unaotazamiwa wa kisheria na kuhakikisha kuwa Flitaa inalindwa dhidi ya watendaji wabovu."
+  "youAreAdvisedToReachOutToTheirFinancial": "Unashauriwa kuwasiliana na taasisi zao za fedha kwa maelezo zaidi kuhusu shughuli hiyo na pia kutafuta ushauri wa kisheria na uwakilishi ili kulinda haki zako za kisheria na kuepuka kutendewa kama mshukiwa au mhalifu. Kwa upande wa Flitaa, tutashirikiana na mamlaka za kisheria na mahakama zenye mamlaka ili kuunga mkono mchakato unaotazamiwa wa kisheria na kuhakikisha kuwa Flitaa inalindwa dhidi ya watendaji wabovu.",
+
+  "socials": {
+    "facebook": "https://www.facebook.com/flitaaKE/",
+    "linkedIn": "#",
+    "twitter": "https://twitter.com/flitaaKE",
+    "instagram": "https://www.instagram.com/flitaake/"
+  }
 }

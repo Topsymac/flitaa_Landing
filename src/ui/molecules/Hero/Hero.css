@@ -1,10 +1,16 @@
 .Hero {
   position: relative;
   padding: 0 100px;
+  padding-top: 70px;
   /* border: 1px solid red; */
   background-image: linear-gradient(to bottom, #0d100ffd, #0d100ffd),
-    url('../../../assets/Texture.png');
+    url("../../../assets/Texture.png");
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
 }
 .Appbottom {
   margin-bottom: 300px;
@@ -61,7 +67,7 @@
   padding: 20px;
   position: absolute;
   bottom: 40%;
-  left: 0%;
+  left: -15%;
   display: flex;
   gap: 20px;
   transform: translateY(50px);
@@ -73,7 +79,7 @@
   position: relative;
   width: fit-content;
   margin: 0 auto;
-  /* z-index: 2; */
+  z-index: 2;
   /* background: red; */
 }
 .logo-img-wrapper {
@@ -84,7 +90,7 @@
 .bottom_small_left_logo {
   position: absolute;
   top: 25%;
-  left: 5%;
+  left: -5%;
   transform: translateY(0px) translateX(0px);
 }
 .top_small_right_logo {
@@ -99,7 +105,7 @@
 }
 .top_small_right_orange_logo {
   position: absolute;
-  right: 20%;
+  right: 10%;
   top: 76%;
   transform: translateX(-100px);
   -webkit-transform: translateX(-100px);
@@ -109,7 +115,7 @@
 }
 .bottom_small_right_logo {
   position: absolute;
-  bottom: 45%;
+  bottom: 50%;
   right: 15%;
   transform: translateX(-200px);
   /* background: red; */
@@ -118,7 +124,7 @@
   height: 200px;
   background-color: #121514;
 }
-@media only screen and (min-width: 768px) and (max-width: 920px){
+@media only screen and (min-width: 768px) and (max-width: 920px) {
   .logo-img img {
     width: 660px;
   }
@@ -176,23 +182,24 @@
     bottom: 5%;
     right: 10%;
   }
-  .top_small_right_orange_logo{
+  .top_small_right_orange_logo {
     display: none;
   }
   /* .scrollbottom {
     margin-top: -60px;
     /* left: -10px; */
-  /* } */ 
+  /* } */
   .redbox {
     display: none;
   }
 }
 
-@media screen and (min-width: 1500px) {
+/* @media screen and (min-width: 1500px) {
   .Hero {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 30px;
   }
-}
+} */

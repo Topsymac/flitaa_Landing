@@ -12,11 +12,11 @@ import './Footer.css'
 const Footer = () => {
   const { t } = useTranslation()
   const socials = [
-    { icon: Facebook, name: 'Facebook', url: '#' },
-    { icon: LinkedIn, name: 'LinkedIn', url: '#' },
-    { icon: Twitter, name: 'Twitter', url: '#' },
-    { icon: Instagram, name: 'Instagram', url: '#' },
-  ]
+    { icon: Facebook, name: "Facebook", url: t("socials.facebook") },
+    { icon: LinkedIn, name: "LinkedIn", url: "#" },
+    { icon: Twitter, name: "Twitter", url: t("socials.twitter") },
+    { icon: Instagram, name: "Instagram", url: t("socials.instagram") },
+  ];
   return (
     <div>
       <div className='footer'>

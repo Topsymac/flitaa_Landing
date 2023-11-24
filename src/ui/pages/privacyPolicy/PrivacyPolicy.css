@@ -1,11 +1,17 @@
 .privacy_wrapper {
     background-color: #121514;
     color: #fff;
-    padding: 180px 131px 100px 130px;
+    padding-top: 180px;
+    /* padding: 180px 131px 100px 130px; */
 }
-.privacy_header{
+.policy {
+  max-width: 67rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+/* .privacy_header{
     font-size: 20px;
-}
+} */
 .privacy_content{
     padding: 20px 0px;
     font-weight: 500;
