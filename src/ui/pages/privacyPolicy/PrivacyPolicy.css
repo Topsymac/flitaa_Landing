@@ -1,19 +1,29 @@
 .privacy_wrapper {
-    background-color: #121514;
-    color: #fff;
-    padding: 180px 131px 100px 130px;
+  background-color: #121514;
+  color: #fff;
+  padding-top: 180px;
+  padding-bottom: 100px;
+
 }
-.privacy_header{
-    font-size: 20px;
+
+.privacy {
+  max-width: 67rem;
+  padding: 0 0rem;
+  margin: 0 auto;
+  /* padding: 180px 131px 100px 130px; */
 }
-.privacy_content{
-    padding: 20px 0px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px
+
+.privacy_header {
+  font-size: 20px;
+}
+.privacy_content {
+  padding: 20px 0px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
 }
 @media (max-width: 760px) {
-    .privacy_wrapper{
-        padding: 100px 20px;
-    }
+  .privacy_wrapper {
+    padding: 100px 20px;
+  }
 }

@@ -35,52 +35,52 @@ const Navbar = () => {
   const [navItems, setNavItems] = useState<IsideProp[]>([]);
   // const [openDropdown, setOpenDropdown] = useState(true);
 
-  const navbarLinkNames = [
-    {
-      name: t('home'),
-      id: 1,
-      nav: 1,
-      to: 'app',
-      active: location.pathname.includes('app'),
-    },
-    {
-      name: t('about'),
-      id: 2,
-      to: 'about',
-      nav: 2,
-      active: location.pathname.includes('about'),
-    },
-    {
-      name: t('features'),
-      id: 3,
-      nav: 3,
-      to: 'events',
-      active: location.pathname.includes('events'),
-    },
-  ];
+  // const navbarLinkNames = [
+  //   {
+  //     name: t('home'),
+  //     id: 1,
+  //     nav: 1,
+  //     to: 'app',
+  //     active: location.pathname.includes('app'),
+  //   },
+  //   {
+  //     name: t('about'),
+  //     id: 2,
+  //     to: 'about',
+  //     nav: 2,
+  //     active: location.pathname.includes('about'),
+  //   },
+  //   {
+  //     name: t('features'),
+  //     id: 3,
+  //     nav: 3,
+  //     to: 'events',
+  //     active: location.pathname.includes('events'),
+  //   },
+  // ];
 
   const dropDownFunction = () => {
     setMobileNav(!mobileNav);
   };
 
-  useEffect(() => {
-    const path = navbarLinkNames.map((item) => {
-      if (location.pathname.includes(item.to)) {
-        setActiveNav(item.id);
-      }
-      return item;
-    });
-    setNavItems(path);
-  }, [location.pathname, t]);
+  // useEffect(() => {
+  //   const path = navbarLinkNames.map((item) => {
+  //     if (location.pathname.includes(item.to)) {
+  //       setActiveNav(item.id);
+  //     }
+  //     return item;
+  //   });
+  //   setNavItems(path);
+  // }, [location.pathname, t]);
 
   return (
     <header className='navbar__header'>
       <div className='navbar'>
         <div className='navbar__navOne'>
-          <div className=''>
+          <Link to='/'>
             <img src={Logo} alt='flitaaLogo' className='navbar__logo' />
-          </div>
-          <div className='navbar__navItems'>
+          </Link>
+          {/* <div className='navbar__navItems'>
             {navItems.length > 0 &&
               navItems.map(({ name, id, to, nav, active }) => (
                 <div key={id}>
@@ -96,7 +96,7 @@ const Navbar = () => {
                   </Link>
                 </div>
               ))}
-          </div>
+          </div> */}
         </div>
         {/*  */}
         <div className='navbar__navTwo'>
@@ -117,7 +117,9 @@ const Navbar = () => {
         <div className='mobileNavbar'>
           <div className='mobileNavbar__div'>
             <div className='mobileNavbar__dash'>
-              <img src={mobileDash} alt='img' />
+              <Link to='/'>
+                <img src={mobileDash} alt='img' />
+              </Link>
             </div>
             <div
               className='mobileNavbar__cancel'
@@ -126,7 +128,7 @@ const Navbar = () => {
               {/* {mobileNav ? <img src={mobileCancel} alt='img' /> : ''} */}
               <img src={mobileCancel} alt='img' />
             </div>
-            <div className='mobileNavbar__navItems'>
+            {/* <div className='mobileNavbar__navItems'>
               {navItems.length > 0 &&
                 navItems.map(({ name, id, to, nav, active }) => (
                   <div key={id}>
@@ -135,7 +137,7 @@ const Navbar = () => {
                     </Link>
                   </div>
                 ))}
-            </div>
+            </div> */}
             <div className='mobileNavbar__navTwo-btn'>
               <Button buttonText={t('getStarted')} />
             </div>

@@ -64,7 +64,7 @@
   line-height: 24px;
   width: 365px;
   margin-bottom: 40px;
-  color: #d0d5dd;
+  color: white;
 }
 .featuresCard__walletImg {
   width: 546px;
@@ -366,7 +366,7 @@
     line-height: 24px;
     width: 365px;
     margin-bottom: 40px;
-    color: #d0d5dd;
+    color: white;
   }
   .featuresCard__walletImg {
     width: 546px;
