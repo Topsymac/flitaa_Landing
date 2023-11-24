@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
 
-import "./Hero.css"
+import "./Hero.css";
 import logo from "../../../assets/heroLogo.svg";
-import bottomleft from '../../../assets/Innovation & Knowledge copy.png';
-import topright from '../../../assets/Innovation & Knowledge.png';
-import topOrangeright from '../../../assets/Innovation & Knowledge copy 2.png';
+import bottomleft from "../../../assets/Innovation & Knowledge copy.png";
+import topright from "../../../assets/Innovation & Knowledge.png";
+import topOrangeright from "../../../assets/Innovation & Knowledge copy 2.png";
 import bottomright from "../../../assets/Forward Progress.png";
-import appstore from "../../../assets/heroAppStore.svg";
-import googlestore from "../../../assets/heroGoogleStore.svg";
+import googlestore from "../../../assets/heroAppStore.svg";
+import appstore from "../../../assets/heroGoogleStore.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [windowScroll, setWindowScroll] = useState<number>(0);
 
@@ -56,9 +57,17 @@ const Hero = () => {
       if (mediaElement) {
         const mediarect = mediaElement.getBoundingClientRect();
         if (mediarect.top < window.innerHeight && mediarect.bottom >= 0) {
-          const translateY = isMobileScreen ? 25 + window.scrollY / -0.75 : 50 + window.scrollY / -1.5 ;
-          (mediaElement as HTMLElement).style.transform = `translateY(${ isMobileScreen ? translateY > -250 ? translateY : -250 :
-            translateY > -150 ? translateY : -150
+          const translateY = isMobileScreen
+            ? 25 + window.scrollY / -0.75
+            : 50 + window.scrollY / -1.5;
+          (mediaElement as HTMLElement).style.transform = `translateY(${
+            isMobileScreen
+              ? translateY > -250
+                ? translateY
+                : -250
+              : translateY > -150
+              ? translateY
+              : -150
           }px)`;
         }
       }
@@ -73,7 +82,9 @@ const Hero = () => {
           bottom_small_left_logorect.top < window.innerHeight &&
           bottom_small_left_logorect.bottom >= 0
         ) {
-          const translateY = isMobileScreen ? window.scrollY / 1 : window.scrollY / 2;
+          const translateY = isMobileScreen
+            ? window.scrollY / 1
+            : window.scrollY / 2;
           const translateX = isMobileScreen
             ? window.scrollY / 1.5
             : window.scrollY / 3;
@@ -103,8 +114,12 @@ const Hero = () => {
           top_small_right_logorect.top < window.innerHeight &&
           top_small_right_logorect.bottom >= 0
         ) {
-          const translateY = isMobileScreen ? 50 + window.scrollY/-0.75 : 50 + window.scrollY / -1.5;
-          const translateX = isMobileScreen ? 50 + window.scrollY/ -1 : 50 + window.scrollY / -2;
+          const translateY = isMobileScreen
+            ? 50 + window.scrollY / -0.75
+            : 50 + window.scrollY / -1.5;
+          const translateX = isMobileScreen
+            ? 50 + window.scrollY / -1
+            : 50 + window.scrollY / -2;
           (top_small_right_logo as HTMLElement).style.transform = `translateY(${
             isMobileScreen
               ? translateY > -80
@@ -135,8 +150,12 @@ const Hero = () => {
           bottom_small_right_logorect.top < window.innerHeight &&
           bottom_small_right_logorect.bottom >= 0
         ) {
-          const translateY = isMobileScreen ? window.scrollY /-1 : window.scrollY / -2;
-          const translateX = isMobileScreen ? window.scrollY /-1.5 : window.scrollY / -3;
+          const translateY = isMobileScreen
+            ? window.scrollY / -1
+            : window.scrollY / -2;
+          const translateX = isMobileScreen
+            ? window.scrollY / -1.5
+            : window.scrollY / -3;
           (
             bottom_small_right_logo as HTMLElement
           ).style.transform = `translateY(${
@@ -179,8 +198,12 @@ const Hero = () => {
             </div>
           </div>
           <div className="media_logo">
-            <img src={googlestore} alt="img" />
-            <img src={appstore} alt="img" />
+            <Link to="https://play.google.com/store/apps/details?id=com.flitaa.app">
+              <img src={googlestore} alt="img" />
+            </Link>
+            <Link to="https://apps.apple.com/ng/app/flitaa/id1566777501">
+              <img src={appstore} alt="img" />
+            </Link>
           </div>
           <div className="bottom_small_left_logo">
             <img src={bottomleft} alt="img" />
