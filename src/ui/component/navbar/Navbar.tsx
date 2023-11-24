@@ -8,9 +8,8 @@ import LanguageDropdown from '../../molecules/languageDropdown/LanguageDropdown'
 import './Navbar.css';
 import menuButton from '../../../assets/Menu.png';
 import Logo from '../../../assets/LOGO.svg';
-import Modal from '../../wrappers/modal/Modal';
-import mobileDash from '../../../assets/mobileDash.png';
-import mobileCancel from '../../../assets/cancel.png';
+
+import MobileNavbar from './MobileNavbar';
 
 interface IsideProp {
   name: string;
@@ -75,6 +74,7 @@ const Navbar = () => {
 
   return (
     <header className='navbar__header'>
+      <MobileNavbar mobileNav={mobileNav} setMobileNav={setMobileNav}/>
       <div className='navbar'>
         <div className='navbar__navOne'>
           <Link to='/'>
@@ -111,39 +111,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
-      {/* mobile Navbar */}
-      {mobileNav && (
-        <div className='mobileNavbar'>
-          <div className='mobileNavbar__div'>
-            <div className='mobileNavbar__dash'>
-              <Link to='/'>
-                <img src={mobileDash} alt='img' />
-              </Link>
-            </div>
-            <div
-              className='mobileNavbar__cancel'
-              onClick={() => setMobileNav(!mobileNav)}
-            >
-              {/* {mobileNav ? <img src={mobileCancel} alt='img' /> : ''} */}
-              <img src={mobileCancel} alt='img' />
-            </div>
-            {/* <div className='mobileNavbar__navItems'>
-              {navItems.length > 0 &&
-                navItems.map(({ name, id, to, nav, active }) => (
-                  <div key={id}>
-                    <Link to={`/${to}`} className='navbar__navItems-link'>
-                      <span>{name}</span>
-                    </Link>
-                  </div>
-                ))}
-            </div> */}
-            <div className='mobileNavbar__navTwo-btn'>
-              <Button buttonText={t('getStarted')} />
-            </div>
-          </div>
-        </div>
-      )}
     </header>
   );
 };
