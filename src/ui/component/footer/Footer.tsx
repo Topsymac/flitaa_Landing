@@ -21,9 +21,9 @@ const Footer = () => {
     <div>
       <div className='footer'>
         <div className='footer__navOne'>
-          <div>
+          <Link to="/">
             <img src={Logo} alt='logo' className='footer__logo' />
-          </div>
+          </Link>
           <div>
             <p>
               © {t('copyRight')} {new Date().getFullYear()} :: Flitaa

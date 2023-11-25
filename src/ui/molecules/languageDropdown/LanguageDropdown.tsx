@@ -11,6 +11,7 @@ import './LanguageDropdown.css'
 const LanguageDropdown = () => {
   const [locale, setLocale] = useState(i18next.language)
   const [OpenDropdown, setOpenDropdown] = useState(false)
+  // console.log(locale,"??????????");
 
   useEffect(() => {
     const handleChange = (lng: any) => setLocale(lng)
@@ -43,7 +44,7 @@ const LanguageDropdown = () => {
           className='languageDropdown__text'
           // onClick={() => handleLanguageChange({ target: { value: 'sw' } })}
         >
-          {locale === 'en' ? 'EN' : 'SW'}
+          {locale === 'en-US' ? 'EN' : 'SW'}
         </p>
         <img
           src={arrowDown}
@@ -55,7 +56,7 @@ const LanguageDropdown = () => {
           <div className='selectLanguage'>
             <p className='selectLanguage__paragraph'>Select Language</p>
             <div
-              onClick={() => handleLanguageChange({ target: { value: 'en' } })}
+              onClick={() => handleLanguageChange({ target: { value: 'en-US' } })}
               className='selectLanguage_divOne'
             >
               <img

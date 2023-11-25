@@ -1,5 +1,5 @@
 const routeNames = {
-  home: '/app',
+  home: '/',
   noWhere: '*',
   terms: '/terms-and-conditions',
   privacy: '/privacy-policy'

@@ -45,9 +45,7 @@ const Testimonials = () => {
                 </p>
               </div>
               <div>
-                <p className='testimonial__header'>
-                  {t('hearUserSay')}
-                </p>
+                <p className='testimonial__header'>{t('hearUserSay')}</p>
               </div>
             </div>
           </div>
@@ -91,7 +89,7 @@ const Testimonials = () => {
           <div className='testimonial__content'>
             <img src={quote} alt='' className='testimonial__quoteImg' />
             <p className='testimonial__paragraphThree'>
-              {t('growingAtGeometricProgression')}
+              {t('oneOfTheBestApps')}
             </p>
             <div className='testimonial__userName'>
               <p>Chukwudi Udechukwu</p>
