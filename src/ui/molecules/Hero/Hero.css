@@ -23,6 +23,7 @@
   justify-content: center;
   gap: 166px;
   margin-top: 50px;
+  z-index: 2;
   /* padding: 100px 0; */
   /* background: red; */
 }
@@ -70,6 +71,7 @@
   left: -15%;
   display: flex;
   gap: 20px;
+  z-index: 2;
   transform: translateY(50px);
 }
 .logo-img {
@@ -133,10 +135,13 @@
   .Hero {
     padding: 10px;
     height: 820px;
+    padding-top: 0px;
   }
   .top {
+    padding: 5px;
     flex-direction: column;
     gap: 20px;
+    margin-top: 0px;
   }
   /* .margintop {
     margin-top: 400px;
