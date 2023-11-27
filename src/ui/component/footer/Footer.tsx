@@ -26,7 +26,7 @@ const Footer = () => {
           </Link>
           <div>
             <p>
-              © {t('copyRight')} {new Date().getFullYear()} :: Flitaa
+              © {t('copyRight')} {new Date().getFullYear()} Flitaa
             </p>
           </div>
         </div>

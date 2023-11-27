@@ -24,8 +24,8 @@
 }
 
 .home__getStarted {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 180px;
+  padding-bottom: 170px;
   background-image: url('../../../assets/Texture.png');
   background-color: #121514;
 }
@@ -37,7 +37,30 @@
   color: white;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 100px) {
+   .home__getStarted {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .home__tradeCrypto-paragraph {
+    padding-left: 0px;
+  }
+  .home__featureCard1 {
+    padding-left: 0px;
+  }
+  .home__featureCard2 {
+    padding-left: 0px;
+  }
+  /* .home__getStarted {
+    padding-bottom: 90px;
+  } */
+}
+
+@media screen and (min-width: 576px) {
+   .home__getStarted {
+    padding-top: 180px;
+    padding-bottom: 170px;
+  }
   .home__tradeCrypto {
     padding-top: 50px !important;
   }
@@ -56,21 +79,12 @@
     color: white;
   }
 }
-@media screen and (min-width: 100px) {
-  .home__tradeCrypto-paragraph {
-    padding-left: 0px;
-  }
-  .home__featureCard1 {
-    padding-left: 0px;
-  }
-  .home__featureCard2 {
-    padding-left: 0px;
-  }
-  .home__getStarted {
-    padding-bottom: 90px;
-  }
-}
+
 @media screen and (min-width: 768px) {
+  .home__getStarted {
+    padding-top: 180px;
+    padding-bottom: 170px;
+  }
   .home__tradeCrypto-paragraph {
     padding-left: 50px;
   }
