@@ -123,8 +123,8 @@
   /* background: red; */
 }
 .Hero .fade {
-  opacity: 0.1; /* Adjust the opacity value as needed */
-  transition: opacity 0.5s ease; /* Add a transition for a smooth fade effect */
+  opacity: 0.1; 
+  transition: opacity 0.5s ease; 
 }
 .redbox {
   height: 200px;
