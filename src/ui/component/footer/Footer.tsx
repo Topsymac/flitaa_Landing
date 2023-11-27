@@ -13,7 +13,7 @@ const Footer = () => {
   const { t } = useTranslation()
   const socials = [
     { icon: Facebook, name: "Facebook", url: t("socials.facebook") },
-    { icon: LinkedIn, name: "LinkedIn", url: "#" },
+    { icon: LinkedIn, name: "LinkedIn", url: t("socials.linkedIn") },
     { icon: Twitter, name: "Twitter", url: t("socials.twitter") },
     { icon: Instagram, name: "Instagram", url: t("socials.instagram") },
   ];

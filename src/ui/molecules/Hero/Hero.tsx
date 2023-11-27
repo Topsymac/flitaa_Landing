@@ -15,6 +15,8 @@ const Hero = () => {
   const { t } = useTranslation();
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [windowScroll, setWindowScroll] = useState<number>(0);
+    const [isIntersection, setIsIntersection] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -110,10 +112,13 @@ const Hero = () => {
       if (top_small_right_logo) {
         const top_small_right_logorect =
           top_small_right_logo.getBoundingClientRect();
+          const scrollThreshold = 80;
         if (
           top_small_right_logorect.top < window.innerHeight &&
           top_small_right_logorect.bottom >= 0
         ) {
+          // console.log("scrollY", window.scrollY, "threshold", scrollThreshold);
+          setIsIntersection(window.scrollY > scrollThreshold);
           const translateY = isMobileScreen
             ? 50 + window.scrollY / -0.75
             : 50 + window.scrollY / -1.5;
@@ -137,6 +142,8 @@ const Hero = () => {
               ? translateX
               : -100
           }px)`;
+        } else {
+          setIsIntersection(false);
         }
       }
       // coin at the bottom right
@@ -179,7 +186,7 @@ const Hero = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  
   return (
     <>
       <div className={`Hero`}>
@@ -208,7 +215,9 @@ const Hero = () => {
           <div className="bottom_small_left_logo">
             <img src={bottomleft} alt="img" />
           </div>
-          <div className="top_small_right_logo">
+          <div
+            className={`top_small_right_logo ${isIntersection ? "fade" : ""}`}
+          >
             <img src={topright} alt="img" />
           </div>
 
