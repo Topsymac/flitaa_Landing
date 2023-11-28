@@ -15,7 +15,8 @@ const Hero = () => {
   const { t } = useTranslation();
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [windowScroll, setWindowScroll] = useState<number>(0);
-    const [isIntersection, setIsIntersection] = useState(false);
+  const [isIntersection, setIsIntersection] = useState(false);
+  const [isIntersectionLeft, setIsIntersectionLeft] = useState(false);
 
 
   useEffect(() => {
@@ -80,10 +81,13 @@ const Hero = () => {
       if (bottom_small_left_logo) {
         const bottom_small_left_logorect =
           bottom_small_left_logo.getBoundingClientRect();
+          const scrollThreshold = 200;
         if (
           bottom_small_left_logorect.top < window.innerHeight &&
           bottom_small_left_logorect.bottom >= 0
         ) {
+          // console.log("scrollY", window.scrollY, "threshold", scrollThreshold);
+          setIsIntersectionLeft(window.scrollY > scrollThreshold);
           const translateY = isMobileScreen
             ? window.scrollY / 1
             : window.scrollY / 2;
@@ -103,6 +107,8 @@ const Hero = () => {
               ? translateX
               : 100
           }px)`;
+        } else {
+          setIsIntersectionLeft(false);
         }
       }
       // coin at the top right
@@ -117,7 +123,7 @@ const Hero = () => {
           top_small_right_logorect.top < window.innerHeight &&
           top_small_right_logorect.bottom >= 0
         ) {
-          // console.log("scrollY", window.scrollY, "threshold", scrollThreshold);
+          // console.log("scrollYgreen", window.scrollY, "thresholdgreen", scrollThreshold);
           setIsIntersection(window.scrollY > scrollThreshold);
           const translateY = isMobileScreen
             ? 50 + window.scrollY / -0.75
@@ -212,7 +218,9 @@ const Hero = () => {
               <img src={appstore} alt="img" />
             </Link>
           </div>
-          <div className="bottom_small_left_logo">
+          <div
+            className={`bottom_small_left_logo ${isIntersectionLeft ? "fade" : ""}`}
+          >
             <img src={bottomleft} alt="img" />
           </div>
           <div
