@@ -68,7 +68,7 @@
   padding: 20px;
   position: absolute;
   bottom: 40%;
-  left: -15%;
+  left: -20%;
   display: flex;
   gap: 20px;
   z-index: 2;
@@ -107,7 +107,7 @@
 }
 .top_small_right_orange_logo {
   position: absolute;
-  right: 10%;
+  right: 7%;
   top: 76%;
   transform: translateX(-100px);
   -webkit-transform: translateX(-100px);
