@@ -198,10 +198,14 @@ const Hero = () => {
       <div className={`Hero`}>
         <div className={`top`}>
           <div className="left">
-            <h1>{t("tradeAndHoldCryptocurrencies")}</h1>
+            <p className="blurLeft"></p>
+            <h1 className="blurLeftText">
+              {t("tradeAndHoldCryptocurrencies")}
+            </h1>
           </div>
           <div className="right">
-            <p>{t("buyAndAccessToken")}</p>
+            <p className="blurRight"></p>
+            <p className="blurRightText">{t("buyAndAccessToken")}</p>
           </div>
         </div>
         <div className={`bottom`}>
@@ -219,7 +223,9 @@ const Hero = () => {
             </Link>
           </div>
           <div
-            className={`bottom_small_left_logo ${isIntersectionLeft ? "fade" : ""}`}
+            className={`bottom_small_left_logo ${
+              isIntersectionLeft ? "fade" : ""
+            }`}
           >
             <img src={bottomleft} alt="img" />
           </div>

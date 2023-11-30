@@ -6,8 +6,10 @@
   left: 0;
   right: 0;
   z-index: 99;
+  /* background-color: #0e1110; */
+}
+.colorChange{
   background-color: #0e1110;
-
 }
 .navbar {
   max-width: 60rem;
@@ -62,7 +64,19 @@
   align-items: center;
   margin-left: auto;
   gap: 32px;
+  position: relative;
 }
+/* .blurNav {
+  width: 550px;
+  height: 550px;
+  border-radius: 550px;
+  opacity: 0.2;
+  background: linear-gradient(180deg, #82cab0 0%, rgba(130, 202, 176, 0) 100%);
+  filter: blur(125px);
+  position: absolute;
+  top: 0;
+  left: 50px;
+} */
 .navbar__navTwo-btn {
   align-items: center;
   width: 120px;

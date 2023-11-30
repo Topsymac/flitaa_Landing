@@ -27,6 +27,15 @@ interface IsideProp {
 const Navbar = () => {
   // const ref = useMenuOnScroll();
   const [mobileNav, setMobileNav] = useState(false);
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
 
   const { t } = useTranslation();
   const location = useLocation();
@@ -73,12 +82,12 @@ const Navbar = () => {
   // }, [location.pathname, t]);
 
   return (
-    <header className='navbar__header'>
-      <MobileNavbar mobileNav={mobileNav} setMobileNav={setMobileNav}/>
-      <div className='navbar'>
-        <div className='navbar__navOne'>
-          <Link to='/'>
-            <img src={Logo} alt='flitaaLogo' className='navbar__logo' />
+    <header className={`navbar__header ${colorChange ? "colorChange" : ""}`}>
+      <MobileNavbar mobileNav={mobileNav} setMobileNav={setMobileNav} />
+      <div className="navbar">
+        <div className="navbar__navOne">
+          <Link to="/">
+            <img src={Logo} alt="flitaaLogo" className="navbar__logo" />
           </Link>
           {/* <div className='navbar__navItems'>
             {navItems.length > 0 &&
@@ -99,15 +108,16 @@ const Navbar = () => {
           </div> */}
         </div>
         {/*  */}
-        <div className='navbar__navTwo'>
-          <div className='navbar__navTwo-lang'>
+        <div className="navbar__navTwo">
+          <p className="blurNav"></p>
+          <div className="navbar__navTwo-lang">
             <LanguageDropdown />
           </div>
-          <div className='navbar__navTwo-btn'>
-            <Button buttonText={t('getStarted')} />
+          <div className="navbar__navTwo-btn">
+            <Button buttonText={t("getStarted")} />
           </div>
-          <div className='navbar__navTwo-Menubtn'>
-            <img src={menuButton} alt='img' onClick={dropDownFunction} />
+          <div className="navbar__navTwo-Menubtn">
+            <img src={menuButton} alt="img" onClick={dropDownFunction} />
           </div>
         </div>
       </div>
