@@ -78,15 +78,15 @@
   order: 1;
 }
 
- .featuresCard_greenEllipse {
-    position: absolute;
-    top: -190px;
-    right: 80px;
-    background-image: url('../../../assets/featureEllipse.png');
-    width: 660px;
-    height: 550px;
-    /* z-index: -30px; */
-  }
+.featuresCard_greenEllipse {
+  position: absolute;
+  top: -190px;
+  right: 80px;
+  background-image: url('../../../assets/featureEllipse.png');
+  width: 660px;
+  height: 550px;
+  /* z-index: -30px; */
+}
 
 @media screen and (min-width: 100px) {
   .featuresCard {
@@ -136,7 +136,39 @@
     order: 1;
   }
   .featureCardOrderTwo {
+    z-index: 2;
     order: 2;
+  }
+  .featuresCard__blurRight {
+    width: 550px;
+    height: 550px;
+    border-radius: 550px;
+    opacity: 0.2;
+    background: linear-gradient(
+      180deg,
+      #82cab0 0%,
+      rgba(130, 202, 176, 0) 100%
+    );
+    filter: blur(125px);
+    position: absolute;
+    top: 50%;
+    right: 40px;
+  }
+  .featuresCard__blurLeft {
+    width: 550px;
+    height: 300px;
+    border-radius: 550px;
+    opacity: 0.2;
+    background: linear-gradient(
+      180deg,
+      rgba(249, 112, 102, 0.64) 0%,
+      rgba(88, 214, 170, 0.14) 100%
+    );
+    filter: blur(125px);
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 1;
   }
 }
 
@@ -291,7 +323,40 @@
     order: 1;
   }
   .featureCardOrderTwo {
+    z-index: 2;
     order: 2;
+  }
+
+  .featuresCard__blurRight {
+    width: 550px;
+    height: 550px;
+    border-radius: 550px;
+    opacity: 0.2;
+    background: linear-gradient(
+      180deg,
+      #82cab0 0%,
+      rgba(130, 202, 176, 0) 100%
+    );
+    filter: blur(125px);
+    position: absolute;
+    top: -10px;
+    right: 0px;
+  }
+  .featuresCard__blurLeft {
+    width: 450px;
+    height: 400px;
+    border-radius: 550px;
+    opacity: 0.2;
+    background: linear-gradient(
+      180deg,
+      rgba(249, 112, 102, 0.64) 0%,
+      rgba(88, 214, 170, 0.14) 100%
+    );
+    filter: blur(125px);
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 1;
   }
 }
 
@@ -377,7 +442,40 @@
     order: 2;
   }
   .featureCardOrderTwo {
+    z-index: 2;
     order: 1;
+  }
+
+  .featuresCard__blurRight {
+    width: 550px;
+    height: 550px;
+    border-radius: 550px;
+    opacity: 0.2;
+    background: linear-gradient(
+      180deg,
+      #82cab0 0%,
+      rgba(130, 202, 176, 0) 100%
+    );
+    filter: blur(125px);
+    position: absolute;
+    top: -10px;
+    right: 0px;
+  }
+  .featuresCard__blurLeft {
+    width: 450px;
+    height: 400px;
+    border-radius: 550px;
+    opacity: 0.2;
+    background: linear-gradient(
+      180deg,
+      rgba(249, 112, 102, 0.64) 0%,
+      rgba(88, 214, 170, 0.14) 100%
+    );
+    filter: blur(125px);
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 1;
   }
   /* .featuresCard__walletImg {
   width: 546px;
