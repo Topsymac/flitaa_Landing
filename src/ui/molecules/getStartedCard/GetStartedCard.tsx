@@ -44,6 +44,7 @@ const GetStartedCard = () => {
             <div>
               <div className='getStarted__paragraph'>
                 {t('noMatterWhereYouAre')}
+                <div>{t('stayUpdatedOnYourInvestment')}</div>
                 <br />
                 <div className='getStarted__paragraph-sub'>
                   {t('availableOnAndroidAndIOS')}
@@ -71,7 +72,7 @@ const GetStartedCard = () => {
               </div>
             </div>
           </div>
-            <img src={image} alt='img' className='getStarted__image' />
+          <img src={image} alt='img' className='getStarted__image' />
         </div>
       </div>
     </div>
