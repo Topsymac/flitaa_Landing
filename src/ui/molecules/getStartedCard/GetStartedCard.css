@@ -129,9 +129,12 @@
   }
   .getStarted__image {
     position: relative;
-    top: 23px;
+    /* left:10px; top: 23px;
     width: 323px;
-    height: 355px;
+    height: 355px;*/
+    top: 35px;
+    width: 293px;
+    height: 335px;
     padding-right: 0px;
   }
   .getStarted__introduction {
@@ -212,6 +215,7 @@
   .getStarted__image {
     position: relative;
     top: 46px;
+    left: unset;
     width: 427px;
     height: 422px;
     /* width: 323px;
