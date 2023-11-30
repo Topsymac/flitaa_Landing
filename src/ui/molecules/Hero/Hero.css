@@ -184,7 +184,10 @@
   } */
   .media_logo {
     bottom: -8%;
-    /* left: 8%; */
+    /* left: 8%; */ 
+  }
+  .media_logo img{
+    width: 150px;
   }
   .bottom_small_left_logo {
     top: 10%;
