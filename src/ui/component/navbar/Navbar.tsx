@@ -29,7 +29,7 @@ const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 20) {
       setColorchange(true);
     } else {
       setColorchange(false);
