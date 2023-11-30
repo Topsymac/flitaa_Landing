@@ -275,5 +275,8 @@
   .blurRight {
     width: 250px;
     height: 250px;
+    top: -210px;
+    left: 72px;
+    opacity: 0.8;
   }
 }
