@@ -68,6 +68,7 @@
  */
 .right {
   position: relative;
+  font-family: "Degular-Light" !important;
 }
 .blurRightText {
   font-size: 16px;
@@ -186,9 +187,9 @@
     padding-top: 0px;
   }
   .top {
-    padding: 5px;
+    padding: 5px 15px;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
     margin-top: 0px;
   }
   /* .margintop {
@@ -213,6 +214,7 @@
   }
   .left {
     font-size: 15px;
+    line-height: 38px; 
   }
   .right {
     font-size: 16px;
@@ -241,7 +243,7 @@
     width: 40px;
   }
   .bottom_small_right_logo {
-    bottom: 5%;
+    bottom: 7%;
     right: 10%;
   }
   .bottom_small_right_logo img{
