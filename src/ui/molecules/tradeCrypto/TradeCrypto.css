@@ -130,6 +130,7 @@
     line-height: 24px;
     padding-left: 24px;
     max-width: 85%;
+    font-family: "Degular Light" !important;
     /* max-width: 280px; */
   }
 }

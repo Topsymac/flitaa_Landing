@@ -15,6 +15,11 @@
     format('opentype');
 }
 
+@font-face {
+  font-family: 'Degular Light';
+  src: url('./font/Degular/Degular/Desktop/Degular-Light.otf')
+    format('opentype');
+}
 
 @font-face {
   font-family: 'Degular-Display-Semibold';

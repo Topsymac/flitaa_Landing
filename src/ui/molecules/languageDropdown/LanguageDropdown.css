@@ -4,6 +4,7 @@
   color: white;
   position: relative;
   cursor: pointer;
+  font-family: 'Degular Light' !important;
 }
 /* .languageDropdown:hover {
   align-items: center;
@@ -11,7 +12,7 @@
 .languageDropdown__text {
   font-size: 16px;
   font-weight: normal;
-  font-family: degular text;
+   font-family: "Degular Light" !important;
 }
 .languageDropdown__internetImg {
   width: 20px;
@@ -36,14 +37,17 @@
   top: 45px;
   left: -70px;
   /*right: 0px;
-  */padding: 24px;
+  */
+  padding: 24px;
   /*width: 160px;
-  */width: 189px;
+  */
+  width: 189px;
   z-index: 939;
   font-size: 16px;
   background-color: #121514;
   /*background-color: rgb(192, 192, 192);
-  */color: white;
+  */
+  color: white;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
