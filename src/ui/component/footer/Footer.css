@@ -16,6 +16,7 @@
   font-weight: 500;
   line-height: 20px;
   position: relative;
+   font-family: "Degular Light" !important;
 }
 .footer__logo {
   width: 99px;

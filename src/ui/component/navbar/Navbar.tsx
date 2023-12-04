@@ -38,9 +38,9 @@ const Navbar = () => {
   window.addEventListener("scroll", changeNavbarColor);
 
   const { t } = useTranslation();
-  const location = useLocation();
-  const [activeNav, setActiveNav] = useState(1);
-  const [navItems, setNavItems] = useState<IsideProp[]>([]);
+  // const location = useLocation();
+  // const [activeNav, setActiveNav] = useState(1);
+  // const [navItems, setNavItems] = useState<IsideProp[]>([]);
   // const [openDropdown, setOpenDropdown] = useState(true);
 
   // const navbarLinkNames = [

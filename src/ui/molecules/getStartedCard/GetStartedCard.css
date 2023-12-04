@@ -67,10 +67,12 @@
   line-height: 24px;
   margin-bottom: 28px;
   color: white;
+  font-family: 'Degular Light' !important;
 }
 
 .getStarted__paragraph-sub {
   margin-top: 20px;
+  font-family: 'Degular Light' !important;
 }
 
 .getStarted__store {
@@ -120,6 +122,7 @@
     margin-left: 15px;
     max-width: 90%;
     height: 190px;
+    font-family: 'Degular Light' !important;
   }
   .getStarted__header {
     margin-left: 15px;
@@ -163,6 +166,7 @@
   }
   .getStarted__paragraph-sub {
     margin-top: 0px;
+    font-family: 'Degular Light' !important;
   }
 
   .getStarted__div-border {

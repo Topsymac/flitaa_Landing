@@ -89,6 +89,7 @@
 .testimonial__paragraphTwo-div {
   position: relative;
   z-index: 80px;
+   /* font-family: "Degular Light" !important; */
 }
 
 .testimonial__content {
@@ -120,6 +121,7 @@
   /* padding-left: 48px; */
   max-width: 420px;
   color: #fcfcfd;
+   font-family: "Degular Light" !important;
 }
 
 .testimonial__paragraphTwo {
@@ -132,6 +134,7 @@
   z-index: 30px;
   max-width: 420px;
   color: #fcfcfd;
+   font-family: "Degular Light" !important;
 }
 .testimonial__paragraphThree {
   font-size: 18px;
@@ -142,6 +145,7 @@
   padding-bottom: 24px;
   max-width: 420px;
   color: #fcfcfd;
+   font-family: "Degular Light" !important;
 }
 
 .testimonial__userName {
