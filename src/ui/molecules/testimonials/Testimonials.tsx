@@ -51,7 +51,7 @@ const Testimonials = () => {
           </div>
         </div>
         {/* ellipse  */}
-        {/* <div className='testionial_ellipse'></div> */}
+        <div className='testimonial__blurLeft'></div>
         {/*  */}
         <div className='testimonial-divOne'>
           <img src={TestimonialImg} alt='' className='testimonialBg' />
@@ -67,7 +67,7 @@ const Testimonials = () => {
         </div>
       </div>
       {/*  */}
-      {/* <div className='testionial_greenEllipse'></div> */}
+      <div className='testimonial__blurRight'></div>
       {/*  */}
       <div className='testimonial_div'>
         <div className='testimonial__paragraphTwo-div'>

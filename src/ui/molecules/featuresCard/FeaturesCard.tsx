@@ -56,7 +56,7 @@ const FeaturesCard = ({
             <p className='featuresCard__header'>{heading}</p>
           </div>
           {/*  */}
-          {/* {order2 && <div className='featuresCard_greenEllipse'></div>} */}
+          {order2 && <div className='featuresCard__blurRight'></div>}
           {/*  */}
           <div>
             <p className='featuresCard__paragraph'>{paragraph}</p>
@@ -100,6 +100,9 @@ const FeaturesCard = ({
             </div>
           </div>
         </div>
+        {/*  */}
+        {order2 && <div className='featuresCard__blurLeft'></div>}
+        {/*  */}
         {/*  */}
         <div className={`${order2 ? 'featureCardOrderTwo' : ''}`}>
           {walletImgOne && (
