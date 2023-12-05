@@ -15,12 +15,12 @@
    font-family: "Degular Light" !important;
 }
 .languageDropdown__internetImg {
-  width: 20px;
-  height: 20px;
+  width: 16.67px;
+  height: 16.67px;
 }
 .languageDropdown__arrowDown {
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   /* transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;

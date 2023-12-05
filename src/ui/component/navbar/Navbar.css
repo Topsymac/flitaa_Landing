@@ -65,7 +65,8 @@
   display: flex;
   align-items: center;
   margin-left: auto;
-  gap: 32px;
+  /* gap: 32px; */
+  gap: 24px;
   position: relative;
 }
 /* .blurNav {
@@ -95,8 +96,8 @@
 
 @media (min-width: 100px) {
   .navbar {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     z-index: 80;
   }
   .navbar__navTwo-btn {
