@@ -18,20 +18,24 @@ const PrivacyPolicy = () => {
               <br />
               <p>{t("privacyParagraphTwo")}</p>
               <br />
-              <h3>{t("privacyAcceptance")}</h3>
+              <h3 className="privacy-content-head">{t("privacyAcceptance")}</h3>
               <p>{t("privacyParagraphThree")}</p>
               <br />
-              <h3>{t("privacyChanges")}</h3>
+              <h3 className="privacy-content-head">{t("privacyChanges")}</h3>
               <p>{t("privacyParagraphFour")}</p>
               <br />
-              <h3>{t("privacyRelationship")}</h3>
+              <h3 className="privacy-content-head">
+                {t("privacyRelationship")}
+              </h3>
               <p>{t("privacyParagraphFive")}</p>
               <br />
-              <h3>{t("privacyPersonal")}</h3>
+              <h3 className="privacy-content-head">{t("privacyPersonal")}</h3>
               <p>{t("privacyPersonalText")}</p>
             </div>
             <div className="privacy_content">
-              <h3>{t("privacyParagraphSix")}</h3>
+              <h3 className="privacy-content-head">
+                {t("privacyParagraphSix")}
+              </h3>
               <p className="underline">{t("privacyParagraphSeven")}</p>
               <br />
               <p>{t("privacyParagraphEight")}</p>
@@ -58,7 +62,9 @@ const PrivacyPolicy = () => {
               {/* <p>{t("privacyParagraphEighteen")}</p> */}
             </div>
             <div className="privacy_content">
-              <h3>{t("privacyParagraphNineteen")}</h3>
+              <h3 className="privacy-content-head">
+                {t("privacyParagraphNineteen")}
+              </h3>
               <br />
               <p>{t("privacyParagraphTwenty")}</p>
               <br />
@@ -80,14 +86,20 @@ const PrivacyPolicy = () => {
               <p>{t("privacyParagraphTwentyFive3")}</p>
             </div>
             <div className="privacy_content">
-              <h3>{t("privacyParagraphTwentySix")}</h3>
+              <h3 className="privacy-content-head">
+                {t("privacyParagraphTwentySix")}
+              </h3>
               <p>{t("privacyParagraphTwentySeven")}</p>
               <br />
-              <h3>{t("privacyParagraphTwentyEight")}</h3>
+              <h3 className="privacy-content-head">
+                {t("privacyParagraphTwentyEight")}
+              </h3>
               <br />
               <p>{t("privacyParagraphTwentyNine")}</p>
               <br />
-              <p>{t("privacyParagraphThirty")}</p>
+              <p className="privacy-content-head">
+                {t("privacyParagraphThirty")}
+              </p>
               <br />
               <p>{t("privacyParagraphThirtyOne")}</p>
               <br />
@@ -106,7 +118,9 @@ const PrivacyPolicy = () => {
               <p>{t("privacyParagraphThirtyEight")}</p>
             </div>
             <div className="privacy_content">
-              <h3>{t("privacyParagraphThirtyNine")}</h3>
+              <h3 className="privacy-content-head">
+                {t("privacyParagraphThirtyNine")}
+              </h3>
               <br />
               <p>{t("privacyParagraphForty")}</p>
               <br />
@@ -118,19 +132,25 @@ const PrivacyPolicy = () => {
               <br />
               <p>{t("privacyParagraphFortyFour")}</p>
               <div className="privacy_content">
-                <h3>{t("privacyParagraphFortyFive")}</h3>
+                <h3 className="privacy-content-head">
+                  {t("privacyParagraphFortyFive")}
+                </h3>
                 <br />
                 <p>{t("privacyParagraphFortySix")}</p>
                 <br />
                 <p>{t("privacyParagraphFortySeven")}</p>
               </div>
               <div className="privacy_content">
-                <h3>{t("privacyParagraphFortyEight")}</h3>
+                <h3 className="privacy-content-head">
+                  {t("privacyParagraphFortyEight")}
+                </h3>
                 <br />
                 <p>{t("privacyParagraphFortyNine")}</p>
               </div>
               <div className="privacy_content">
-                <h3>{t("privacyParagraphFifty")}</h3>
+                <h3 className="privacy-content-head">
+                  {t("privacyParagraphFifty")}
+                </h3>
                 <br />
                 <p>{t("privacyParagraphFiftyOne")}</p>
                 <br />
@@ -142,12 +162,16 @@ const PrivacyPolicy = () => {
               </div>
             </div>
             <div className="privacy_content">
-              <h3>{t("privacyParagraphFiftyFive")}</h3>
+              <h3 className="privacy-content-head">
+                {t("privacyParagraphFiftyFive")}
+              </h3>
               <br />
               <p>{t("privacyParagraphFiftySix")}</p>
             </div>
             <div className="privacy_content">
-              <h3>{t("privacyParagraphFiftySeven")}</h3>
+              <h3 className="privacy-content-head">
+                {t("privacyParagraphFiftySeven")}
+              </h3>
               <br />
               <p>{t("privacyParagraphFiftyEight")}</p>
               <br />

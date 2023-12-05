@@ -10,8 +10,8 @@
     format('opentype');
 }
 @font-face {
-  font-family: 'Degular Display';
-  src: url('./font/Degular/Degular Display/Desktop/DegularDisplay-Regular.otf')
+  font-family: 'Degular Regular';
+  src: url('./font/Degular/Degular/Desktop/Degular-Regular.otf')
     format('opentype');
 }
 

@@ -7,8 +7,8 @@ import bottomleft from "../../../assets/Innovation & Knowledge copy.png";
 import topright from "../../../assets/Innovation & Knowledge.png";
 import topOrangeright from "../../../assets/Innovation & Knowledge copy 2.png";
 import bottomright from "../../../assets/Forward Progress.png";
-import googlestore from "../../../assets/heroAppStore.svg";
-import appstore from "../../../assets/heroGoogleStore.svg";
+import appstore from "../../../assets/heroAppStore.svg";
+import googlestore from "../../../assets/heroGoogleStore.svg";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -199,9 +199,9 @@ const Hero = () => {
         <div className={`top`}>
           <div className="left">
             <p className="blurLeft"></p>
-            <h1 className="blurLeftText">
+            <p className="blurLeftText">
               {t("tradeAndHoldCryptocurrencies")}
-            </h1>
+            </p>
           </div>
           <div className="right">
             <p className="blurRight"></p>
@@ -215,11 +215,11 @@ const Hero = () => {
             </div>
           </div>
           <div className="media_logo">
-            <Link to="https://play.google.com/store/apps/details?id=com.flitaa.app">
-              <img src={googlestore} alt="img" />
-            </Link>
             <Link to="https://apps.apple.com/ng/app/flitaa/id1566777501">
               <img src={appstore} alt="img" />
+            </Link>
+            <Link to="https://play.google.com/store/apps/details?id=com.flitaa.app ">
+              <img src={googlestore} alt="img" />
             </Link>
           </div>
           <div

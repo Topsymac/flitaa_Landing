@@ -1,8 +1,9 @@
 .terms_wrapper {
   background-color: #121514;
-  color: #fff;
+  color: #D0D5DD;
   padding-top: 180px;
   padding-bottom: 100px;
+  font-family: "Degular Light";
   /* padding: 180px 131px 100px 130px; */
 }
 .terms {
@@ -14,11 +15,15 @@
 .terms_introduction{
   padding-top: 30px;
 }
+.terms-content-head{
+  color: #fff;
+}
 .terms_content {
   padding: 0px 0px;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
+  color: #D0D5DD;
 }
 
 .terms_bulletPoint{
@@ -43,5 +48,6 @@
 @media (max-width: 992px) {
   .terms_wrapper {
     padding: 10px 20px;
+    padding-top: 100px;
   }
 }
