@@ -12,9 +12,11 @@ const Terms = () => {
           <div className="terms">
             <div className="terms_header">
               <h1 className="terms-content-head">{t("terms&Condition")}</h1>
+              <p className="termsBlurRight"></p>
             </div>
             <div className="terms_content">
               <h3 className="terms_introduction terms-content-head">
+                <p className="termsBlurLeft"></p>
                 {t("introduction")}
               </h3>
               <p>{t("theseFlitaa")}</p>

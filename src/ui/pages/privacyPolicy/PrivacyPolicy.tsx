@@ -12,8 +12,10 @@ const PrivacyPolicy = () => {
           <div className="policy">
             <div className="privacy_header">
               <h1>{t("privacyPolicy")}</h1>
+              <p className="termsBlurRight"></p>
             </div>
             <div className="privacy_content">
+              <p className="termsBlurLeft"></p>
               <p>{t("privacyParagraphOne")}</p>
               <br />
               <p>{t("privacyParagraphTwo")}</p>
