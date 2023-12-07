@@ -15,15 +15,15 @@ import { useLocation } from 'react-router-dom';
 const Home = () => {
   const { t } = useTranslation();
   const { pathname } = useLocation();
-  console.log(pathname, 'me');
+  // console.log(pathname, 'me');
   useEffect(() => {
-    console.log(pathname, 'me');
+    // console.log(pathname, 'me');
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
     <div className='home'>
       <LandingWrapper>
-        {/* <Hero /> */}
+        <Hero />
         <div className='home__tradeCrypto'>
           <div className='home__tradeCrypto-paragraph'>
             <HeadingAndParagraph

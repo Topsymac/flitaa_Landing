@@ -1,8 +1,9 @@
 .terms_wrapper {
   background-color: #121514;
-  color: #fff;
+  color: #D0D5DD;
   padding-top: 180px;
   padding-bottom: 100px;
+  font-family: "Degular Light";
   /* padding: 180px 131px 100px 130px; */
 }
 .terms {
@@ -14,11 +15,15 @@
 .terms_introduction{
   padding-top: 30px;
 }
+.terms-content-head{
+  color: #fff;
+}
 .terms_content {
   padding: 0px 0px;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
+  color: #D0D5DD;
 }
 
 .terms_bulletPoint{
@@ -39,9 +44,49 @@
   display: flex;
   gap: 10px;
 }
+.termsBlurLeft {
+  width: 550px;
+  height: 550px;
+  border-radius: 550px;
+  opacity: 0.2;
+  background: linear-gradient(
+    180deg,
+    rgba(249, 112, 102, 0.64) 0%,
+    rgba(88, 214, 170, 0.14) 100%
+  );
+  filter: blur(125px);
+  position: absolute;
+  top: 280px;
+  left: 0;
+}
+.termsBlurRight {
+  width: 550px;
+  height: 550px;
+  border-radius: 550px;
+  opacity: 0.2;
+  background: linear-gradient(180deg, #82cab0 0%, rgba(130, 202, 176, 0) 100%);
+  filter: blur(125px);
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
 
 @media (max-width: 992px) {
   .terms_wrapper {
     padding: 10px 20px;
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .termsBlurLeft {
+    width: 250px;
+    height: 250px;
+  }
+  .termsBlurRight {
+    width: 250px;
+    height: 250px;
+    top: 0px;
+    left: 72px;
+    opacity: 0.8;
   }
 }

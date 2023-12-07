@@ -36,7 +36,7 @@
   right: 0;
 }
 .left {
-  font-size: 24px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -213,8 +213,8 @@
     width: 260px;
   }
   .left {
-    font-size: 15px;
-    line-height: 38px; 
+    font-size: 36px;
+    line-height: 44px; 
   }
   .right {
     font-size: 16px;
@@ -255,9 +255,20 @@
   .redbox {
     display: none;
   }
+  .blurLeft {
+    width: 250px;
+    height: 250px;
+  }
+  .blurRight {
+    width: 250px;
+    height: 250px;
+    top: -210px;
+    left: 72px;
+    opacity: 0.8;
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 979px) and (max-width: 1200px) {
   .blurLeft {
     width: 450px;
     height: 450px;
@@ -275,18 +286,5 @@
   .blurRight {
     width: 350px;
     height: 350px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .blurLeft {
-    width: 250px;
-    height: 250px;
-  }
-  .blurRight {
-    width: 250px;
-    height: 250px;
-    top: -210px;
-    left: 72px;
-    opacity: 0.8;
   }
 }
