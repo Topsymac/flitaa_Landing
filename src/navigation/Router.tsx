@@ -1,11 +1,19 @@
-import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import routeNames from './RouterNames'
-import Home from '../ui/pages/home/Home'
-import Terms from '../ui/pages/terms&conditions/TermsAndCondition'
-import PrivacyPolicy from '../ui/pages/privacyPolicy/PrivacyPolicy'
+import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import routeNames from './RouterNames';
+import Home from '../ui/pages/home/Home';
+import Terms from '../ui/pages/terms&conditions/TermsAndCondition';
+import PrivacyPolicy from '../ui/pages/privacyPolicy/PrivacyPolicy';
+import LandingWrapper from '../ui/wrappers/landingWrapper/LandingWrapper';
+// import ScrollToTop from '../hooks/ScrollToTop';
+// import ScrollToTop from '../hooks/ScrollToTop';
 
-const Router = (): JSX.Element => {
+interface IProps {
+  children: React.ReactNode;
+}
+
+const Router = ({ children }: IProps): JSX.Element => {
+  // <LandingWrapper
   const router = createBrowserRouter([
     {
       path: routeNames.home,
@@ -19,8 +27,8 @@ const Router = (): JSX.Element => {
       path: routeNames.privacy,
       element: <PrivacyPolicy />,
     },
-  ])
-  return <RouterProvider router={router} />
-}
+  ]);
+  return <RouterProvider router={router} />;
+};
 
-export default Router
+export default Router;

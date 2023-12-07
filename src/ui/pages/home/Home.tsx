@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import LandingWrapper from '../../wrappers/landingWrapper/LandingWrapper';
 import FeaturesCard from '../../molecules/featuresCard/FeaturesCard';
@@ -10,13 +10,20 @@ import Hero from '../../molecules/Hero/Hero';
 // import Terms from '../terms&conditions/TermsAndCondition';
 
 import './Home.css';
+import { useLocation } from 'react-router-dom';
 
 const Home = () => {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
+  console.log(pathname, 'me');
+  useEffect(() => {
+    console.log(pathname, 'me');
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className='home'>
       <LandingWrapper>
-        <Hero />
+        {/* <Hero /> */}
         <div className='home__tradeCrypto'>
           <div className='home__tradeCrypto-paragraph'>
             <HeadingAndParagraph

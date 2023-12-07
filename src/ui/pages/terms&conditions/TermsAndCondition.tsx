@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Terms.css';
 import LandingWrapper from '../../wrappers/landingWrapper/LandingWrapper';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 
 const Terms = () => {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
+  console.log(pathname, 'me');
+  useEffect(() => {
+    console.log(pathname, 'me');
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
       <LandingWrapper>

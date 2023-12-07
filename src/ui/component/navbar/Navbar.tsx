@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import Button from '../../atoms/button/Button';
+import Logo from '../../../assets/LOGO.svg';
 import LanguageDropdown from '../../molecules/languageDropdown/LanguageDropdown';
 
 import './Navbar.css';
-import menuButton from '../../../assets/Menu.png';
-import Logo from '../../../assets/LOGO.svg';
+import useMenuOnScroll from '../../../hooks/useMenuOnScroll';
+// import { useTranslation } from 'react-i18next';
+// import { useLocation } from 'react-router-dom';
+// import Button from '../../atoms/button/Button';
+// import menuButton from '../../../assets/Menu.png';
+// import MobileNavbar from './MobileNavbar';
 
-import MobileNavbar from './MobileNavbar';
-
-interface IsideProp {
-  name: string;
-  id: number;
-  nav: number;
-  to: string;
-  active: boolean;
-}
+// interface IsideProp {
+//   name: string;
+//   id: number;
+//   nav: number;
+//   to: string;
+//   active: boolean;
+// }
 
 // const lngs = {
 //   en: { nativeName: 'English' },
@@ -25,19 +25,19 @@ interface IsideProp {
 // }
 
 const Navbar = () => {
-  // const ref = useMenuOnScroll();
-  const [mobileNav, setMobileNav] = useState(false);
-  const [colorChange, setColorchange] = useState(false);
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 20) {
-      setColorchange(true);
-    } else {
-      setColorchange(false);
-    }
-  };
-  window.addEventListener("scroll", changeNavbarColor);
-
-  const { t } = useTranslation();
+  const ref = useMenuOnScroll();
+  // const [colorChange, setColorchange] = useState(false);
+  // const changeNavbarColor = () => {
+  //   if (window.scrollY >= 20) {
+  //     setColorchange(true);
+  //   } else {
+  //     setColorchange(false);
+  //   }
+  // };
+  // window.addEventListener("scroll", changeNavbarColor);
+  
+  // const [mobileNav, setMobileNav] = useState(false);
+  // const { t } = useTranslation();
   // const location = useLocation();
   // const [activeNav, setActiveNav] = useState(1);
   // const [navItems, setNavItems] = useState<IsideProp[]>([]);
@@ -67,9 +67,9 @@ const Navbar = () => {
   //   },
   // ];
 
-  const dropDownFunction = () => {
-    setMobileNav(!mobileNav);
-  };
+  // const dropDownFunction = () => {
+  //   setMobileNav(!mobileNav);
+  // };
 
   // useEffect(() => {
   //   const path = navbarLinkNames.map((item) => {
@@ -82,8 +82,8 @@ const Navbar = () => {
   // }, [location.pathname, t]);
 
   return (
-    <header className={`navbar__header ${colorChange ? "colorChange" : ""}`}>
-      <MobileNavbar mobileNav={mobileNav} setMobileNav={setMobileNav} />
+    <header ref={ref} className={`navbar__header`}>
+      {/* <MobileNavbar mobileNav={mobileNav} setMobileNav={setMobileNav} /> */}
       <div className="navbar">
         <div className="navbar__navOne">
           <Link to="/">
@@ -113,12 +113,12 @@ const Navbar = () => {
           <div className="navbar__navTwo-lang">
             <LanguageDropdown />
           </div>
-          <div className="navbar__navTwo-btn">
+          {/* <div className="navbar__navTwo-btn">
             <Button buttonText={t("getStarted")} />
           </div>
           <div className="navbar__navTwo-Menubtn">
             <img src={menuButton} alt="img" onClick={dropDownFunction} />
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

@@ -1,14 +1,15 @@
 .navbar__header {
-  /* position: relative; */
-  /* position: absolute; */
-  position: fixed;
+  /*position: relative;
+  *//*position: absolute;
+  */position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99;
   transition: 0.15s;
   font-family: 'Degular Light' !important;
-  /* background-color: #0e1110; */
+  /*background-color: #0e1110;
+    */
 }
 .colorChange {
   background-color: #0e1110;
