@@ -12,11 +12,6 @@ const LandingWrapper = ({children}:any) => {
         <Navbar />
         <main>{children}</main>
         <Footer />
-        {/* <Modal show={mobileNav} onClose={()=>{setMobileNav(false)}}>
-          <div style={{color: 'white'}}>
-            i'm here
-          </div>
-        </Modal> */}
       </div>
     </div>
   )

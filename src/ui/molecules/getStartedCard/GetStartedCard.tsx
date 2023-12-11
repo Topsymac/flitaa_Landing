@@ -2,11 +2,12 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import star from '../../../assets/star.png';
-import image from '../../../assets/Image.png';
+// import image from '../../../assets/Image.png';
+import getStartedPhoneImg from '../../../assets/getStartedPhoneImg.png';
 import googlePlay from '../../../assets/heroAppStore.svg';
 import applePlay from '../../../assets/heroGoogleStore.svg';
 import getStartedBorder from '../../../assets/getStartedBorder.svg';
-import mobileScreenGetStarted from '../../../assets/mobileScreenGetStarted.svg';
+// import mobileScreenGetStarted from '../../../assets/mobileScreenGetStarted.svg';
 
 import './GetStartedCard.css';
 import { Link } from 'react-router-dom';
@@ -72,7 +73,11 @@ const GetStartedCard = () => {
               </div>
             </div>
           </div>
-          <img src={image} alt="img" className="getStarted__image" />
+          <img
+            src={getStartedPhoneImg}
+            alt='img'
+            className='getStarted__image'
+          />
         </div>
       </div>
     </div>
