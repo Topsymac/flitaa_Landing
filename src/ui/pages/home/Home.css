@@ -1,6 +1,28 @@
 /* .home{
   background-color: #0e1110;
 } */
+.loading {
+  background-color: #0e1110;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animate-bounce {
+  width: 15rem;
+  animation: bounce 1s linear infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 .home__tradeCrypto {
   background-color: #121514;
   padding-top: 160px;
@@ -14,7 +36,7 @@
   /* width: 45vw; */
 }
 .home__featureCard1 {
-  background-image: url('../../../assets/Texture.png');
+  background-image: url("../../../assets/Texture.png");
   /* background: url('../../../assets/Texture.png'), lightgray 0% 0% / 60.90909242630005px 60.90909242630005px no-repeat; */
   /* linear-gradient(to bottom, #0d100ffd, #0d100ffd), */
   background-color: #121514;
@@ -26,7 +48,7 @@
 .home__getStarted {
   padding-top: 180px;
   padding-bottom: 170px;
-  background-image: url('../../../assets/Texture.png');
+  background-image: url("../../../assets/Texture.png");
   background-color: #121514;
 }
 
@@ -38,7 +60,7 @@
 }
 
 @media screen and (min-width: 100px) {
-   .home__getStarted {
+  .home__getStarted {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -57,7 +79,7 @@
 }
 
 @media screen and (min-width: 576px) {
-   .home__getStarted {
+  .home__getStarted {
     padding-top: 180px;
     padding-bottom: 170px;
   }
@@ -65,7 +87,7 @@
     padding-top: 50px !important;
   }
   .home__featureCard1 {
-    background-image: url('../../../assets/Texture.png');
+    background-image: url("../../../assets/Texture.png");
     background-color: #121514;
     /* background: url('../../../assets/Texture.png'), lightgray 0% 0% / 60.90909242630005px 60.90909242630005px no-repeat; */
     padding-top: 100px;
