@@ -170,6 +170,10 @@
   background-color: #121514;
 }
 @media only screen and (min-width: 768px) and (max-width: 1270px) {
+  .logo-img {
+    min-height: none;
+    min-width: none;
+  }
   .logo-img img {
     width: 550px;
   }
@@ -192,23 +196,13 @@
     gap: 16px;
     margin-top: 0px;
   }
-  /* .margintop {
-    margin-top: 400px;
-  } */
-  /* .fixedtop {
-  position: sticky;
-  top: 100px;
-  left: 0;
-  right: 0;
-} */
+  .logo-img {
+    min-height: none;
+    min-width: none;
+  }
   .bottom {
     margin-top: 0px;
   }
-  /* .bottomfixed {
-    top: 300px;
-    left: 0px;
-    right: -20px;
-  } */
   .logo-img img {
     width: 260px;
   }
@@ -219,12 +213,8 @@
   .right {
     font-size: 16px;
   }
-  /* .Appbottom {
-    margin-bottom: 0px;
-  } */
   .media_logo {
     bottom: -15%;
-    /* left: 8%; */
   }
   .media_logo img {
     width: 150px;
@@ -265,6 +255,12 @@
     top: -210px;
     left: 72px;
     opacity: 0.8;
+  }
+}
+@media screen and (min-width: 1024px){
+  .logo-img {
+    min-width: 886px;
+  min-height: 963px;
   }
 }
 
