@@ -7,12 +7,13 @@ import HeadingAndParagraph from '../../molecules/headingAndParagraph/HeadingAndP
 import Testimonials from '../../molecules/testimonials/Testimonials';
 import TradeCrypto from '../../molecules/tradeCrypto/TradeCrypto';
 import Hero from '../../molecules/Hero/Hero';
-import loadingLogo from "../../../assets/LOGO.svg"
+// import loadingLogo from "../../../assets/LOGO.svg"
 
 // import Terms from '../terms&conditions/TermsAndCondition';
 
 import './Home.css';
 import { useLocation } from 'react-router-dom';
+import Loading from '../../molecules/loading/Loading';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -35,9 +36,9 @@ const Home = () => {
   return (
     <div className="home">
       {loading ? (
-        <div className='loading'>
-          <img src={loadingLogo} alt="logo" className="animate-bounce" />
-        </div>
+        <>
+        <Loading/>
+        </>
       ) : (
         <LandingWrapper>
           <Hero />
