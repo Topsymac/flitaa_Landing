@@ -27,6 +27,10 @@ const Router = ({ children }: IProps): JSX.Element => {
       path: routeNames.privacy,
       element: <PrivacyPolicy />,
     },
+    {
+      path: routeNames.noFound,
+      element: <NotFound />,
+    },
   ]);
   return <RouterProvider router={router} />;
 };
