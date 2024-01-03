@@ -1,27 +1,6 @@
 /* .home{
   background-color: #0e1110;
 } */
-.loading {
-  background-color: #0e1110;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.animate-bounce {
-  width: 15rem;
-  animation: bounce 1s linear infinite;
-}
-@keyframes bounce {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-}
 
 .home__tradeCrypto {
   background-color: #121514;
