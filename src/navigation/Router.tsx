@@ -5,6 +5,7 @@ import Home from '../ui/pages/home/Home';
 import Terms from '../ui/pages/terms&conditions/TermsAndCondition';
 import PrivacyPolicy from '../ui/pages/privacyPolicy/PrivacyPolicy';
 import LandingWrapper from '../ui/wrappers/landingWrapper/LandingWrapper';
+import NotFound from '../ui/pages/noFound/NotFound';
 // import ScrollToTop from '../hooks/ScrollToTop';
 // import ScrollToTop from '../hooks/ScrollToTop';
 
@@ -26,6 +27,10 @@ const Router = ({ children }: IProps): JSX.Element => {
     {
       path: routeNames.privacy,
       element: <PrivacyPolicy />,
+    },
+    {
+      path: routeNames.noFound,
+      element: <NotFound />,
     },
   ]);
   return <RouterProvider router={router} />;
