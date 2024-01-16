@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 166px;
+  gap: 130px;
   margin-top: 50px;
   z-index: 2;
   /* padding: 100px 0; */
@@ -66,10 +66,20 @@
   line-height: normal;
 }
  */
+.blurLeftText {
+  max-width: 690px;
+}
+.leftTextSpan {
+  background: linear-gradient(96deg, #2AE884 0.28%, #E0E9E6 97.38%);
+  background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 .right {
   position: relative;
 }
 .blurRightText {
+  max-width: 405px;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -208,7 +218,7 @@
   }
   .left {
     font-size: 36px;
-    line-height: 44px; 
+    line-height: 44px;
   }
   .right {
     font-size: 16px;
@@ -229,14 +239,14 @@
     right: 28%;
     top: -5%;
   }
-  .top_small_right_logo img{
+  .top_small_right_logo img {
     width: 40px;
   }
   .bottom_small_right_logo {
     bottom: 7%;
     right: 10%;
   }
-  .bottom_small_right_logo img{
+  .bottom_small_right_logo img {
     width: 40px;
   }
   .top_small_right_orange_logo {
@@ -257,10 +267,10 @@
     opacity: 0.8;
   }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   .logo-img {
     min-width: 886px;
-  min-height: 963px;
+    min-height: 963px;
   }
 }
 
