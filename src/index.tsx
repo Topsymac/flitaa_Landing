@@ -13,11 +13,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<Loading />}>
+    {/* <Suspense fallback={<Loading />}> */}
       {/* <ScrollToTop> */}
         <App />
       {/* </ScrollToTop> */}
-    </Suspense>
+    {/* </Suspense> */}
   </React.StrictMode>
 );
 reportWebVitals();

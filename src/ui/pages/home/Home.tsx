@@ -28,9 +28,7 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, []); 
   const { pathname } = useLocation();
-  // console.log(pathname, 'me');
   useEffect(() => {
-    // console.log(pathname, 'me');
     window.scrollTo(0, 0);
   }, [pathname]);
   return (

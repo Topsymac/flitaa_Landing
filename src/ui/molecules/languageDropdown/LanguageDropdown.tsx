@@ -12,7 +12,7 @@ const LanguageDropdown = () => {
   const [locale, setLocale] = useState(i18next.language);
   const [OpenDropdown, setOpenDropdown] = useState(false);
   const [openSlide, setOpenSlide] = useState(true);
-  // console.log(locale,"??????????");
+  console.log(locale,"??????????");
 
   useEffect(() => {
     const handleChange = (lng: any) => setLocale(lng);
@@ -32,7 +32,8 @@ const LanguageDropdown = () => {
   const OpenDropdownFunction = () => {
     setOpenDropdown(!OpenDropdown);
   };
-
+  
+// the language dropdown disappear when there is a click outside the dropdown
   const dropdownRef = useRef<HTMLDivElement>(null);
   const closeOpenMenus = (event: MouseEvent): void => {
     if (
