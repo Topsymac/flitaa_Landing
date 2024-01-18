@@ -17,6 +17,12 @@ const Hero = () => {
   const [windowScroll, setWindowScroll] = useState<number>(0);
   const [isIntersection, setIsIntersection] = useState(false);
   const [isIntersectionLeft, setIsIntersectionLeft] = useState(false);
+  const [textKeys, setTextKeys] = useState([
+    "faster",
+    "withEase",
+    "efficiently",
+  ]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
 
   useEffect(() => {
@@ -192,6 +198,16 @@ const Hero = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    // Change the text key at intervals (e.g., every 3 seconds)
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % textKeys.length);
+    }, 1000);
+
+    // Cleanup the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, [textKeys.length]);
   
   return (
     <>
@@ -200,7 +216,8 @@ const Hero = () => {
           <div className="left">
             <p className="blurLeft"></p>
             <p className="blurLeftText">
-              {t("tradeAndHoldCryptocurrencies")}
+              {t("tradeAndHoldCryptocurrencies")}{" "}
+              <span className="leftTextSpan">{t(textKeys[currentIndex])}</span>
             </p>
           </div>
           <div className="right">

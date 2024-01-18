@@ -19,7 +19,10 @@
   "supportLocalCurrency": "Inasaidia sarafu za eneo lako",
   "kenyanShillings": "Shilingi za Kenya",
 
-  "tradeAndHoldCryptocurrencies": "Nunua, Biashara na Shikilia Fedha za Crypto kwa njia rahisi zaidi",
+  "tradeAndHoldCryptocurrencies": "Nunua, Biashara na Ushikilie Fedha za Crypto",
+  "faster": "Haraka",
+  "withEase": "Kwa urahisi",
+  "efficiently": "Kwa ufanisi", 
   "buyAndAccessToken": "Nunua na uuze fedha za siri kwa urahisi ukitumia programu yetu ambayo ni rafiki kwa watumiaji. Fikia zaidi ya tokeni 40+. Pochi ya crypto umekuwa ukingojea.",
 
   "testimonials": "Ushuhuda",
