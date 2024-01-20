@@ -96,6 +96,7 @@
 @media screen and (min-width: 100px) {
   .tradeCrypto {
     flex-direction: column;
+    padding-bottom: 160px;
     /* justify-items: center; */
     /* margin: auto; */
   }
