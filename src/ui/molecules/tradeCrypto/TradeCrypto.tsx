@@ -9,12 +9,12 @@ import CardBg from '../../../assets/3.png'
 
 import './TradeCrypto.css'
 
-interface TradeCryptoProp {
-  bgImg?: boolean
-  img: string
-  heading: string
-  paragraph?: string
-}
+// interface TradeCryptoProp {
+//   bgImg?: boolean
+//   img: string
+//   heading: string
+//   paragraph?: string
+// }
 
 const TradeCrypto = () => {
   const { t } = useTranslation()

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import star from '../../../assets/star.png';
@@ -10,7 +11,6 @@ import getStartedBorder from '../../../assets/getStartedBorder.svg';
 // import mobileScreenGetStarted from '../../../assets/mobileScreenGetStarted.svg';
 
 import './GetStartedCard.css';
-import { Link } from 'react-router-dom';
 
 const GetStartedCard = () => {
   const { t } = useTranslation();

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import './Terms.css';
-import LandingWrapper from '../../wrappers/landingWrapper/LandingWrapper';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
+import LandingWrapper from '../../wrappers/landingWrapper/LandingWrapper';
+import './Terms.css';
 
 const Terms = () => {
   const { t } = useTranslation();

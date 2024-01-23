@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import HeadingAndParagraph from '../headingAndParagraph/HeadingAndParagraph';
+// import HeadingAndParagraph from '../headingAndParagraph/HeadingAndParagraph';
 import quote from '../../../assets/quote.png';
 import TestimonialImg from '../../../assets/3.png';
 import star from '../../../assets/star.png';
