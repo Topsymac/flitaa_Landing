@@ -1,8 +1,27 @@
-.footer {
+.footerHome {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-image: url('../../../assets/Texture.png');
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-color: #121514;
+  color: white;
+  padding-top: 0px;
+  padding-left: 80px;
+  padding-bottom: 87px;
+  padding-right: 142px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  position: relative;
+  font-family: 'Degular Light' !important;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
   background-color: #121514;

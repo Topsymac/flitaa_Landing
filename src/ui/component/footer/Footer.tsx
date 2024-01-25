@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
@@ -10,6 +11,7 @@ import Logo from '../../../assets/LOGO.svg';
 import './Footer.css';
 
 const Footer = () => {
+  const location = useLocation();
   const { t } = useTranslation();
   const socials = [
     { icon: Facebook, name: 'Facebook', url: t('socials.facebook') },
@@ -19,7 +21,14 @@ const Footer = () => {
   ];
   return (
     <div>
-      <div className='footer'>
+      <div
+        className={`${
+          location.pathname === '/privacy-policy' ||
+          location.pathname === '/terms-and-conditions'
+            ? 'footer'
+            : 'footer footerHome'
+        }`}
+      >
         <div className='footer__navOne'>
           <Link to='/'>
             <img src={Logo} alt='logo' className='footer__logo' />

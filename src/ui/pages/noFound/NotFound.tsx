@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 const NotFound = () => {
   return (
     <div className='notFound'>
+      <div className='termsBlurRight'></div>
+      <div className='termsBlurLeft'></div>
       <img src={notFoundImg} alt='' className='nofoundImg' />
       <div className='notFound__paragraph'>
         <p className='notFound__text'>

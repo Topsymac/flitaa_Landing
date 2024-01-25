@@ -7,9 +7,7 @@ import { useLocation } from 'react-router-dom';
 const PrivacyPolicy = () => {
   const { t } = useTranslation();
     const { pathname } = useLocation();
-    // console.log(pathname, 'me');
     useEffect(() => {
-      // console.log(pathname, 'me');
       window.scrollTo(0, 0);
     }, [pathname]);
   return (

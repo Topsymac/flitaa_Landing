@@ -1,9 +1,9 @@
 .terms_wrapper {
   background-color: #121514;
-  color: #D0D5DD;
+  color: #d0d5dd;
   padding-top: 180px;
-  padding-bottom: 100px;
-  font-family: "Degular Light";
+  padding-bottom: 50px;
+  font-family: 'Degular Light';
   /* padding: 180px 131px 100px 130px; */
 }
 .terms {
@@ -12,10 +12,10 @@
   margin: 0 auto;
   /* padding: 180px 131px 100px 130px; */
 }
-.terms_introduction{
+.terms_introduction {
   padding-top: 30px;
 }
-.terms-content-head{
+.terms-content-head {
   color: #fff;
 }
 .terms_content {
@@ -23,15 +23,15 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  color: #D0D5DD;
+  color: #d0d5dd;
 }
 
-.terms_bulletPoint{
+.terms_bulletPoint {
   max-width: 66rem;
   margin: 30px auto;
 }
 
-.terms_bulletPoint-div{
+.terms_bulletPoint-div {
   max-width: 66rem;
   margin: 0px auto;
 }
@@ -40,10 +40,11 @@
   list-style: none;
 }
 
-.terms_bulletPoint-span{
+.terms_bulletPoint-span {
   display: flex;
   gap: 10px;
 }
+
 .termsBlurLeft {
   width: 550px;
   height: 550px;
@@ -88,5 +89,14 @@
     top: 0px;
     left: 72px;
     opacity: 0.8;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .termsBlurLeft {
+    left: 310px !important;
+  }
+  .termsBlurRight {
+    right: 400px;
   }
 }
