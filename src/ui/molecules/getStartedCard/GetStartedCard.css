@@ -92,6 +92,7 @@
   width: 557px;
   height: 552px;
   padding-right: 37px;
+  object-fit: contain;
 }
 
 .getStartedBorder {
