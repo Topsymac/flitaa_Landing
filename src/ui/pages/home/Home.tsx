@@ -89,10 +89,10 @@ const Home = () => {
               introductionText={t('introducingSimplicity')}
               heading={t('featuresFromSimpleWallet')}
               paragraph='Track price movement in real time using valuable insight to make timely decisions'
-              subHeading1={t('fundsSafety')}
+              subHeading1={t('managePortfolio')}
               subHeadingParagraph1='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
                 nullam auctor lectus in nulla.'
-              subHeading2={t('multiAssets')}
+              subHeading2={t('ManageAccounts')}
               subHeadingParagraph2='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh
                   nam nullam auctor lectus in nulla.'
               walletImgThree
