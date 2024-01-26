@@ -74,6 +74,11 @@
   background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+opacity: 1;
+  transition: opacity 1s ease;
+}
+.leftTextSpan.fade {
+  opacity: 0;
 }
 .right {
   position: relative;

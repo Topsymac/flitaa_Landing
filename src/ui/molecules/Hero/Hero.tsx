@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -199,15 +200,54 @@ const Hero = () => {
     };
   }, []);
 
-  useEffect(() => {
-    // Change the text key at intervals (e.g., every 3 seconds)
-    const intervalId = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % textKeys.length);
-    }, 1000);
 
-    // Cleanup the interval when the component unmounts
-    return () => clearInterval(intervalId);
-  }, [textKeys.length]);
+  // Trial 1
+  // useEffect(() => {
+  //   const leftTextSpan = document.querySelector(".leftTextSpan");
+  //   leftTextSpan?.classList.add("fade");
+  //   const intervalId = setInterval(() => {
+  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % textKeys.length);
+  //     leftTextSpan?.classList.remove("fade");
+  //   }, 2000);
+
+  //   // Cleanup the interval when the component unmounts
+  //   return () => clearInterval(intervalId);
+  // }, [textKeys.length]);
+
+
+  // Trial 2 
+  
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     // Add and remove the "fade" class to trigger the fade effect for leftTextSpan
+  //     const leftTextSpan = document.querySelector(".leftTextSpan");
+  //     leftTextSpan?.classList.add("fade");
+  //     setTimeout(() => {
+  //       setCurrentIndex((prevIndex) => (prevIndex + 1) % textKeys.length);
+  //       leftTextSpan?.classList.remove("fade");
+  //     }, 500); // Adjust the timeout to match the transition duration
+  //   }, 4000);
+
+  //   return () => clearInterval(intervalId);
+  // }, [textKeys.length]);
+
+
+  // Trial 3 
+   useEffect(() => {
+     const intervalId = setInterval(() => {
+       // Add and remove the "fade" class to trigger the fade effect for leftTextSpan
+       const leftTextSpan = document.querySelector(".leftTextSpan");
+       leftTextSpan?.classList.add("fade");
+       setTimeout(() => {
+         setTimeout(() => {
+           setCurrentIndex((prevIndex) => (prevIndex + 1) % textKeys.length);
+           leftTextSpan?.classList.remove("fade");
+         }, 400);
+       }, 300); // Adjust the timeout to match the transition duration
+     }, 4000);
+
+     return () => clearInterval(intervalId);
+   }, [textKeys.length]);
   
   return (
     <>
