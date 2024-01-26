@@ -17,7 +17,7 @@ import Loading from '../../molecules/loading/Loading';
 
 const Home = () => {
   const { t } = useTranslation();
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -33,73 +33,71 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <div className="home">
+    <div className='home'>
       {loading ? (
         <>
-        <Loading/>
+          <Loading />
         </>
       ) : (
         <LandingWrapper>
           <Hero />
-          <div className="home__tradeCrypto">
-            <div className="home__tradeCrypto-paragraph">
+          <div className='home__tradeCrypto'>
+            <div className='home__tradeCrypto-paragraph'>
               <HeadingAndParagraph
-                introductionText={t("introducingSimplicity")}
-                heading={t("easyWaytoTradeCryptocurrency")}
+                introductionText={t('introducingSimplicity')}
+                heading={t('easyWaytoTradeCryptocurrency')}
               />
             </div>
             <div>
               <TradeCrypto />
             </div>
           </div>
-          <div className="home__featureCard1">
+          <div className='home__featureCard1'>
             <FeaturesCard
-              introductionText={t("introducingSimplicity")}
-              heading={t("featuresFromSimpleWallet")}
-              paragraph={t("inAWorldOfComplexity")}
-              subHeading1={t("fundsSafety")}
-              subHeadingParagraph1={t("theSafetyOfCustomers")}
-              subHeading2={t("multiAssets")}
-              subHeadingParagraph2={t("weSupportMultiChains")}
+              introductionText={t('introducingSimplicity')}
+              heading={t('getStartedWithCryptoLike')}
+              paragraph={t('inAWorldOfComplexity')}
+              subHeading1={t('fundsSafety')}
+              subHeadingParagraph1={t('theSafetyOfCustomers')}
+              subHeading2={t('multiAssets')}
+              subHeadingParagraph2={t('weSupportMultiChains')}
               walletImgOne
             />
           </div>
           {/*  */}
-          <div className="home__featureCard2">
+          <div className='home__featureCard2'>
             <FeaturesCard
-              introductionText={t("introducingVariety")}
+              introductionText={t('introducingVariety')}
               heading={t(`supportLocalCurrency`)}
-              paragraph="Track price movement in real time using valuable insight to make timely decisions"
-              subHeading1="Nigerian Naira"
-              subHeadingParagraph1=""
-              subHeading2={t("kenyanShillings")}
-              subHeadingParagraph2=""
+              paragraph='Track price movement in real time using valuable insight to make timely decisions'
+              subHeading1='Nigerian Naira'
+              subHeadingParagraph1=''
+              subHeading2={t('kenyanShillings')}
+              subHeadingParagraph2=''
               order1
               order2
               walletImgTwo
             />
           </div>
           {/*  */}
-          <div className="home__featureCard1">
+          <div className='home__featureCard1'>
             <FeaturesCard
-              introductionText={t("introducingSimplicity")}
-              heading={t("featuresFromSimpleWallet")}
-              paragraph="Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
-              nullam auctor lectus in nulla. Sed leo mattis neque ullamcorper
-              ultricies.Lorem ipsum dolor sit amet consectetur."
-              subHeading1={t("fundsSafety")}
-              subHeadingParagraph1="Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
-                nullam auctor lectus in nulla."
-              subHeading2={t("multiAssets")}
-              subHeadingParagraph2="Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh
-                  nam nullam auctor lectus in nulla."
+              introductionText={t('introducingSimplicity')}
+              heading={t('featuresFromSimpleWallet')}
+              paragraph='Track price movement in real time using valuable insight to make timely decisions'
+              subHeading1={t('fundsSafety')}
+              subHeadingParagraph1='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
+                nullam auctor lectus in nulla.'
+              subHeading2={t('multiAssets')}
+              subHeadingParagraph2='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh
+                  nam nullam auctor lectus in nulla.'
               walletImgThree
             />
           </div>
           <div>
             <Testimonials />
           </div>
-          <div className="home__getStarted">
+          <div className='home__getStarted'>
             <GetStartedCard />
           </div>
         </LandingWrapper>
