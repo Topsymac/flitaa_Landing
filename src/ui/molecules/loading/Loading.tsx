@@ -1,5 +1,7 @@
 import React from "react";
 import loadingLogo from "../../../assets/LOGO.svg";
+
+
 // import icon from "../../../assets/Icon.svg";
 import "./Loading.css";
 

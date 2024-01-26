@@ -96,8 +96,9 @@
     height: 150px;
     /* width: 100%; */
     /* margin: 0 auto; */
+    width: 500px;
     color: white;
-    font-size: 56px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;

@@ -68,6 +68,8 @@
  */
 .blurLeftText {
   max-width: 690px;
+  font-size: 90px;
+  line-height: 94px;
 }
 .leftTextSpan {
   background: linear-gradient(96deg, #2AE884 0.28%, #E0E9E6 97.38%);
@@ -90,6 +92,7 @@ opacity: 1;
   font-weight: 300;
   line-height: 24px;
   font-family: "Degular Light" !important;
+  color: transparent;
 }
 .blurRight {
   width: 550px;

@@ -27,6 +27,7 @@ const Home = () => {
 
     return () => clearTimeout(timeout);
   }, []); 
+
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -68,15 +69,11 @@ const Home = () => {
             <FeaturesCard
               introductionText={t("introducingVariety")}
               heading={t(`supportLocalCurrency`)}
-              paragraph="Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
-              nullam auctor lectus in nulla. Sed leo mattis neque ullamcorper
-              ultricies.Lorem ipsum dolor sit amet consectetur."
+              paragraph="Track price movement in real time using valuable insight to make timely decisions"
               subHeading1="Nigerian Naira"
-              subHeadingParagraph1="Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
-                nullam auctor lectus in nulla."
+              subHeadingParagraph1=""
               subHeading2={t("kenyanShillings")}
-              subHeadingParagraph2="Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh
-                  nam nullam auctor lectus in nulla."
+              subHeadingParagraph2=""
               order1
               order2
               walletImgTwo
