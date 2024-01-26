@@ -7,6 +7,8 @@ import HeadingAndParagraph from '../../molecules/headingAndParagraph/HeadingAndP
 import Testimonials from '../../molecules/testimonials/Testimonials';
 import TradeCrypto from '../../molecules/tradeCrypto/TradeCrypto';
 import Hero from '../../molecules/Hero/Hero';
+import nigeriaIcon from '../../../assets/ngn.png';
+import kenyaIcon from '../../../assets/kenyaIcon.svg';
 // import loadingLogo from "../../../assets/LOGO.svg"
 
 // import Terms from '../terms&conditions/TermsAndCondition';
@@ -69,7 +71,7 @@ const Home = () => {
             <FeaturesCard
               introductionText={t('introducingVariety')}
               heading={t(`supportLocalCurrency`)}
-              paragraph='Track price movement in real time using valuable insight to make timely decisions'
+              paragraph='Deposit and withdraw cash straight to your bank account in your local currency'
               subHeading1='Nigerian Naira'
               subHeadingParagraph1=''
               subHeading2={t('kenyanShillings')}
@@ -77,6 +79,8 @@ const Home = () => {
               order1
               order2
               walletImgTwo
+              nigeriaFlag={nigeriaIcon}
+              kenyaFlag={kenyaIcon}
             />
           </div>
           {/*  */}
