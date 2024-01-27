@@ -20,6 +20,8 @@ interface FeaturesCardProp {
   walletImgOne?: boolean;
   walletImgTwo?: boolean;
   walletImgThree?: boolean;
+  nigeriaFlag?: string;
+  kenyaFlag?: string;
 }
 
 const FeaturesCard = ({
@@ -35,6 +37,8 @@ const FeaturesCard = ({
   walletImgOne,
   walletImgTwo,
   walletImgThree,
+  nigeriaFlag,
+  kenyaFlag,
 }: FeaturesCardProp) => {
   return (
     <div>
@@ -64,11 +68,19 @@ const FeaturesCard = ({
           {/*  */}
           <div className='featuresCard__div4'>
             <div>
-              <img
-                src={downloadIcon}
-                alt='downloadIcon'
-                className='featuresCard__downloadIcon'
-              />
+              {nigeriaFlag ? (
+                <img
+                  src={nigeriaFlag}
+                  alt='nigeria flag'
+                  className='featuresCard__downloadIcon'
+                />
+              ) : (
+                <img
+                  src={downloadIcon}
+                  alt='downloadIcon'
+                  className='featuresCard__downloadIcon'
+                />
+              )}
             </div>
             <div>
               <div>
@@ -83,11 +95,19 @@ const FeaturesCard = ({
           <div>
             <div className='featuresCard__div4'>
               <div>
-                <img
-                  src={transactIcon}
-                  alt='downloadIcon'
-                  className='featuresCard__downloadIcon'
-                />
+                {kenyaFlag ? (
+                  <img
+                    src={kenyaFlag}
+                    alt='kenya flag'
+                    className='featuresCard__downloadIcon'
+                  />
+                ) : (
+                  <img
+                    src={downloadIcon}
+                    alt='downloadIcon'
+                    className='featuresCard__downloadIcon'
+                  />
+                )}
               </div>
               <div>
                 <div>

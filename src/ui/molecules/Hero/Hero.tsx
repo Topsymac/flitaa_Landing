@@ -19,8 +19,8 @@ const Hero = () => {
   const [isIntersection, setIsIntersection] = useState(false);
   const [isIntersectionLeft, setIsIntersectionLeft] = useState(false);
   const [textKeys, setTextKeys] = useState([
-    "faster",
     "withEase",
+    "faster",
     "efficiently",
   ]);
   const [currentIndex, setCurrentIndex] = useState(0);
