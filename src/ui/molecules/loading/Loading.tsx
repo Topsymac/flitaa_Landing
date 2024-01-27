@@ -1,14 +1,13 @@
 import React from "react";
-import loadingLogo from "../../../assets/LOGO.svg";
-
-
-// import icon from "../../../assets/Icon.svg";
+import loadingVid from "../../../assets/Flitaa_Logo_2.webm"
 import "./Loading.css";
 
 const Loading = () => {
   return (
     <div className="loading">
-      <img src={loadingLogo} alt="logo" className="animate-bounce" />
+      <video autoPlay loop muted className="loading_video">
+        <source src={loadingVid} type="video/mp4" />
+      </video>
     </div>
   );
 };
