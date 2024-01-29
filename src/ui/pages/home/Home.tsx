@@ -19,7 +19,7 @@ import Loading from '../../molecules/loading/Loading';
 
 const Home = () => {
   const { t } = useTranslation();
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
