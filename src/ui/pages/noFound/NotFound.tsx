@@ -1,14 +1,18 @@
 import React from 'react';
-import notFoundImg from '../../../assets/noFound.png';
-import Button from '../../atoms/button/Button';
-import './NotFound.css';
 import { Link } from 'react-router-dom';
+import Button from '../../atoms/button/Button';
+import errorAnimation from '../../../assets/Flitaa_Illustrations_Error.webm'
+import './NotFound.css';
+// import notFoundImg from '../../../assets/noFound.png';
 const NotFound = () => {
   return (
     <div className='notFound'>
       <div className='termsBlurRight'></div>
       <div className='termsBlurLeft'></div>
-      <img src={notFoundImg} alt='' className='nofoundImg' />
+      <video autoPlay loop muted className='nofoundImg'>
+        <source src={errorAnimation} type='video/mp4' />
+      </video>
+      {/* <img src={notFoundImg} alt='' className='nofoundImg' /> */}
       <div className='notFound__paragraph'>
         <p className='notFound__text'>
           Oops! the page you're looking for doesn't exist. Double-check the link
