@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { DotLottiePlayer, Controls } from '@dotlottie/react-player';
+import { DotLottiePlayer } from '@dotlottie/react-player';
 import '@dotlottie/react-player/dist/index.css';
 import Button from '../../atoms/button/Button';
-// import errorAnimation from '../../../assets/Flitaa_Illustrations_Error.webm'
-import errorAnimation from '../../../assets/notfound.lottie'
+import errorAnimation from '../../../assets/notfound.lottie';
 import './NotFound.css';
+// import errorAnimation from '../../../assets/Flitaa_Illustrations_Error.webm'
 // import notFoundImg from '../../../assets/noFound.png';
 const NotFound = () => {
   return (
@@ -22,9 +22,7 @@ const NotFound = () => {
       </video> */}
       {/* <img src={notFoundImg} alt='' className='nofoundImg' /> */}
       <div className='nofoundImg'>
-        <DotLottiePlayer src={errorAnimation} autoplay loop>
-          {/* <Controls /> */}
-        </DotLottiePlayer>
+        <DotLottiePlayer src={errorAnimation} autoplay loop></DotLottiePlayer>
       </div>
       <div className='notFound__paragraph'>
         <p className='notFound__text'>
