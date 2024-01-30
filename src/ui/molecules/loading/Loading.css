@@ -5,6 +5,9 @@
   justify-content: center;
   align-items: center;
 }
+.loading_video {
+    width: 1200px;
+  }
 @media screen and (max-width: 768px) {
   .loading_video {
     width: 500px;
