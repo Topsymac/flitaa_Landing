@@ -26,19 +26,16 @@ const Home = () => {
       setLoading(false);
     }, 3000);
 
-
     return () => clearTimeout(timeout);
-  }, []); 
-
+  }, []);
 
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-
   return (
-    <div className="home">
+    <div className='home'>
       {loading ? (
         <>
           <Loading />
@@ -57,28 +54,28 @@ const Home = () => {
               <TradeCrypto />
             </div>
           </div>
-          <div className="home__featureCard1">
+          <div className='home__featureCard1'>
             <FeaturesCard
-              introductionText={'Built for beginners and experienced traders'}
+              introductionText={t('builtForBeginnersAndExperiencedTraders')}
               heading={t('getStartedWithCryptoLike')}
-              paragraph={t('inAWorldOfComplexity')}
-              subHeading1={t('fundsSafety')}
-              subHeadingParagraph1={t('theSafetyOfCustomers')}
-              subHeading2={t('multiAssets')}
-              subHeadingParagraph2={t('weSupportMultiChains')}
+              paragraph={t('executeInstantBuySwap')}
+              subHeading1={t('instantBuy')}
+              subHeadingParagraph1={t('executeInstantBuyOrders')}
+              subHeading2={t('fastWithdrawal')}
+              subHeadingParagraph2={t('needToConvertYourCryptoToCash')}
               walletImgOne
             />
           </div>
           {/*  */}
-          <div className="home__featureCard2">
+          <div className='home__featureCard2'>
             <FeaturesCard
-              introductionText={'Easiest Crypto platform'}
-              heading={t(`supportLocalCurrency`)}
-              paragraph="Deposit and withdraw cash straight to your bank account in your local currency"
-              subHeading1="Nigerian Naira"
-              subHeadingParagraph1=""
-              subHeading2={t("kenyanShillings")}
-              subHeadingParagraph2=""
+              introductionText={t('easiestCryptoPlatform')}
+              heading={t(`investWithYourLocalCurrency`)}
+              paragraph={t('depositAndWithdrawCashStraight')}
+              subHeading1='Nigerian Naira'
+              subHeadingParagraph1=''
+              subHeading2={t('kenyanShillings')}
+              subHeadingParagraph2=''
               order1
               order2
               walletImgTwo
@@ -87,22 +84,24 @@ const Home = () => {
             />
           </div>
           {/*  */}
-          <div className="home__featureCard1">
+          <div className='home__featureCard1'>
             <FeaturesCard
-              introductionText={'Take ownership of your digital assets'}
-              heading={t('featuresFromSimpleWallet')}
-              paragraph='Track price movement in real time using valuable insight to make timely decisions'
-              subHeading1={t('managePortfolio')}
-              subHeadingParagraph1='Never miss out on price movement opportunities, get price notices sent to you everyday.'
-              subHeading2={t('ManageAccounts')}
-              subHeadingParagraph2='Send & receive crypto across multiple chains, from Bitcoin to Solana.'
+              introductionText={t('takeOwnershipOfYourDigitalAssets')}
+              heading={t('manageYourPortfolioLikeAPro')}
+              paragraph={t('trackPriceMovementInRealTime')}
+              subHeading1={t('getDailyPriceAlerts')}
+              subHeadingParagraph1={t('neverMissOutOnPriceMovement')}
+              subHeading2={t('multiChainSupport')}
+              subHeadingParagraph2={t(
+                'sendAndReceiveCryptoAcrossMultipleChains'
+              )}
               walletImgThree
             />
           </div>
           <div>
             <Testimonials />
           </div>
-          <div className="home__getStarted">
+          <div className='home__getStarted'>
             <GetStartedCard />
           </div>
         </LandingWrapper>

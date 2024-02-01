@@ -72,7 +72,7 @@ const FeaturesCard = ({
                 <img
                   src={nigeriaFlag}
                   alt='nigeria flag'
-                  className='featuresCard__downloadIcon'
+                  className='featuresCard__downloadIcon-ng'
                 />
               ) : (
                 <img
