@@ -74,10 +74,10 @@ const TradeCrypto = () => {
             </div>
             <div className='tradeCrypto__text'>
               <div className='tradeCrypto__heading'>
-                {t('depositCashOrCrypto')}
+                {t('depositCash')}
               </div>
               <p className='tradeCrypto__paragraph'>
-                {t('depositingCashOrCryptoHaveNeverBeen')}
+                {t('bringInOrTakeOutCashAtZeroDeposit')}
               </p>
             </div>
           </div>
@@ -99,7 +99,7 @@ const TradeCrypto = () => {
             </div>
             <div className='tradeCrypto__textOne'>
               <div className='tradeCrypto__headingOne'>
-                {t('transactAndObserveGrowth')}
+                {t('startInvesting')}
               </div>
             </div>
           </div>

@@ -42,12 +42,12 @@ const Home = () => {
         </>
       ) : (
         <LandingWrapper>
-          <Hero />
+          {/* <Hero /> */}
           <div className='home__tradeCrypto'>
             <div className='home__tradeCrypto-paragraph'>
               <HeadingAndParagraph
-                introductionText={t('introducingSimplicity')}
-                heading={t('easyWaytoTradeCryptocurrency')}
+                introductionText={'A seamless and interactive crypto journey'}
+                heading={t('aNewAndEasyWayToGetIntoCrypto')}
               />
             </div>
             <div>
@@ -56,7 +56,7 @@ const Home = () => {
           </div>
           <div className='home__featureCard1'>
             <FeaturesCard
-              introductionText={t('introducingSimplicity')}
+              introductionText={'Built for beginners and experienced traders'}
               heading={t('getStartedWithCryptoLike')}
               paragraph={t('inAWorldOfComplexity')}
               subHeading1={t('fundsSafety')}
@@ -69,7 +69,7 @@ const Home = () => {
           {/*  */}
           <div className='home__featureCard2'>
             <FeaturesCard
-              introductionText={t('introducingVariety')}
+              introductionText={'Easiest Crypto platform'}
               heading={t(`supportLocalCurrency`)}
               paragraph='Deposit and withdraw cash straight to your bank account in your local currency'
               subHeading1='Nigerian Naira'
@@ -86,15 +86,13 @@ const Home = () => {
           {/*  */}
           <div className='home__featureCard1'>
             <FeaturesCard
-              introductionText={t('introducingSimplicity')}
+              introductionText={'Take ownership of your digital assets'}
               heading={t('featuresFromSimpleWallet')}
               paragraph='Track price movement in real time using valuable insight to make timely decisions'
               subHeading1={t('managePortfolio')}
-              subHeadingParagraph1='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh nam
-                nullam auctor lectus in nulla.'
+              subHeadingParagraph1='Never miss out on price movement opportunities, get price notices sent to you everyday.'
               subHeading2={t('ManageAccounts')}
-              subHeadingParagraph2='Lorem ipsum dolor sit amet consectetur. Nisi quam cras nibh
-                  nam nullam auctor lectus in nulla.'
+              subHeadingParagraph2='Send & receive crypto across multiple chains, from Bitcoin to Solana.'
               walletImgThree
             />
           </div>

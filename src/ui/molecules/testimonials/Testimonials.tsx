@@ -58,10 +58,14 @@ const Testimonials = () => {
           <div className='testimonial__content'>
             <img src={quote} alt='' className='testimonial__quoteImg' />
             <p className='testimonial__paragraph'>
-              {t('happyToBeginCryptoJourney')}
+              I just can't give nothing less to a 5 star. fast withdrawals and
+              deposits, good interface that when I compare with the previous
+              when it started.... so awesome and client friendly. speaking of
+              friendly, the customer services are so reliable when it comes to
+              fixing any problem on the app. I just love flitta
             </p>
             <div className='testimonial__userName'>
-              <p>Chukwudi Udechukwu</p>
+              <p>Dancun Nyabuti</p>
             </div>
           </div>
         </div>
@@ -75,10 +79,15 @@ const Testimonials = () => {
           <div className='testimonial__content'>
             <img src={quote} alt='' className='testimonial__quoteImg' />
             <p className='testimonial__paragraphTwo'>
-              {t('growingAtGeometricProgression')}
+              I have no bad issues with flitaa, it is the perfect wallet I can
+              recommend out there, deposit and withdrawal works exactly the same
+              time they said it would be completed. Immediate customer support
+              and all cool features. Please consider the minimum amount to be
+              received into wallets do that we can receive any amount we can at
+              the moment
             </p>
             <div className='testimonial__userName'>
-              <p>Chukwudi Udechukwu</p>
+              <p>Justice Ehiz</p>
             </div>
           </div>
         </div>
@@ -89,11 +98,15 @@ const Testimonials = () => {
           <div className='testimonial__content'>
             <img src={quote} alt='' className='testimonial__quoteImg' />
             <p className='testimonial__paragraphThree'>
-              {t('oneOfTheBestApps')}
+              I have never seen an app like this before, all those wallet am
+              coming across with, they are different from these, some of those
+              wallet you might be facing some issues like sending of crypto
+              without reflecting where you send it too. But this wallet is not
+              like that. This app is really amazing i will recommend to other.
+              thanks alot
             </p>
-            <div className='testimonial__userName'>
-              <p>Chukwudi Udechukwu</p>
-            </div>
+
+            <p className='testimonial__userName'>Adeuga Olanrewaju</p>
           </div>
         </div>
       </div>

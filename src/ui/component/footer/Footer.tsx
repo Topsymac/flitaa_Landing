@@ -45,7 +45,7 @@ const Footer = () => {
         <div className='footer__navTwo'>
           <div className='footer__copyright'>
             <p>
-              © {t('copyRight')} {new Date().getFullYear()} Flitaa
+              © Flitaa {new Date().getFullYear()}
             </p>
           </div>
           <div className='footer__socials'>
