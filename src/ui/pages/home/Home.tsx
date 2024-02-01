@@ -46,7 +46,7 @@ const Home = () => {
           <div className='home__tradeCrypto'>
             <div className='home__tradeCrypto-paragraph'>
               <HeadingAndParagraph
-                introductionText={'A seamless and interactive crypto journey'}
+                introductionText={t('aSeamlessAndInteractiveCryptoJourney')}
                 heading={t('aNewAndEasyWayToGetIntoCrypto')}
               />
             </div>
