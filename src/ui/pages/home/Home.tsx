@@ -30,12 +30,15 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, []); 
 
+
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+
   return (
-    <div className='home'>
+    <div className="home">
       {loading ? (
         <>
           <Loading />
@@ -54,7 +57,7 @@ const Home = () => {
               <TradeCrypto />
             </div>
           </div>
-          <div className='home__featureCard1'>
+          <div className="home__featureCard1">
             <FeaturesCard
               introductionText={'Built for beginners and experienced traders'}
               heading={t('getStartedWithCryptoLike')}
@@ -67,15 +70,15 @@ const Home = () => {
             />
           </div>
           {/*  */}
-          <div className='home__featureCard2'>
+          <div className="home__featureCard2">
             <FeaturesCard
               introductionText={'Easiest Crypto platform'}
               heading={t(`supportLocalCurrency`)}
-              paragraph='Deposit and withdraw cash straight to your bank account in your local currency'
-              subHeading1='Nigerian Naira'
-              subHeadingParagraph1=''
-              subHeading2={t('kenyanShillings')}
-              subHeadingParagraph2=''
+              paragraph="Deposit and withdraw cash straight to your bank account in your local currency"
+              subHeading1="Nigerian Naira"
+              subHeadingParagraph1=""
+              subHeading2={t("kenyanShillings")}
+              subHeadingParagraph2=""
               order1
               order2
               walletImgTwo
@@ -84,7 +87,7 @@ const Home = () => {
             />
           </div>
           {/*  */}
-          <div className='home__featureCard1'>
+          <div className="home__featureCard1">
             <FeaturesCard
               introductionText={'Take ownership of your digital assets'}
               heading={t('featuresFromSimpleWallet')}
@@ -99,7 +102,7 @@ const Home = () => {
           <div>
             <Testimonials />
           </div>
-          <div className='home__getStarted'>
+          <div className="home__getStarted">
             <GetStartedCard />
           </div>
         </LandingWrapper>

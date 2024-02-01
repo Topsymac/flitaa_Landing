@@ -201,37 +201,6 @@ const Hero = () => {
   }, []);
 
 
-  // Trial 1
-  // useEffect(() => {
-  //   const leftTextSpan = document.querySelector(".leftTextSpan");
-  //   leftTextSpan?.classList.add("fade");
-  //   const intervalId = setInterval(() => {
-  //     setCurrentIndex((prevIndex) => (prevIndex + 1) % textKeys.length);
-  //     leftTextSpan?.classList.remove("fade");
-  //   }, 2000);
-
-  //   // Cleanup the interval when the component unmounts
-  //   return () => clearInterval(intervalId);
-  // }, [textKeys.length]);
-
-
-  // Trial 2 
-  
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     // Add and remove the "fade" class to trigger the fade effect for leftTextSpan
-  //     const leftTextSpan = document.querySelector(".leftTextSpan");
-  //     leftTextSpan?.classList.add("fade");
-  //     setTimeout(() => {
-  //       setCurrentIndex((prevIndex) => (prevIndex + 1) % textKeys.length);
-  //       leftTextSpan?.classList.remove("fade");
-  //     }, 500); // Adjust the timeout to match the transition duration
-  //   }, 4000);
-
-  //   return () => clearInterval(intervalId);
-  // }, [textKeys.length]);
-
-
   // Trial 3 
    useEffect(() => {
      const intervalId = setInterval(() => {
