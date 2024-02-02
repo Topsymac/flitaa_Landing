@@ -46,11 +46,11 @@ const Home = () => {
       ) : (
         <LandingWrapper>
           <Hero />
-          <div className='home__tradeCrypto'>
-            <div className='home__tradeCrypto-paragraph'>
+          <div className="home__tradeCrypto">
+            <div className="home__tradeCrypto-paragraph">
               <HeadingAndParagraph
-                introductionText={'A seamless and interactive crypto journey'}
-                heading={t('aNewAndEasyWayToGetIntoCrypto')}
+                introductionText={t("introducingSimplicity")}
+                heading={t("aNewAndEasyWayToGetIntoCrypto")}
               />
             </div>
             <div>
@@ -59,23 +59,23 @@ const Home = () => {
           </div>
           <div className="home__featureCard1">
             <FeaturesCard
-              introductionText={'Built for beginners and experienced traders'}
-              heading={t('getStartedWithCryptoLike')}
-              paragraph={t('inAWorldOfComplexity')}
-              subHeading1={t('fundsSafety')}
-              subHeadingParagraph1={t('theSafetyOfCustomers')}
-              subHeading2={t('multiAssets')}
-              subHeadingParagraph2={t('weSupportMultiChains')}
+              introductionText={t("introducingVariety")}
+              heading={t("getStartedWithCryptoLike")}
+              paragraph={t("inAWorldOfComplexity")}
+              subHeading1={t("fundsSafety")}
+              subHeadingParagraph1={t("theSafetyOfCustomers")}
+              subHeading2={t("multiAssets")}
+              subHeadingParagraph2={t("weSupportMultiChains")}
               walletImgOne
             />
           </div>
           {/*  */}
           <div className="home__featureCard2">
             <FeaturesCard
-              introductionText={'Easiest Crypto platform'}
+              introductionText={t("introducingEasiest")}
               heading={t(`supportLocalCurrency`)}
-              paragraph="Deposit and withdraw cash straight to your bank account in your local currency"
-              subHeading1="Nigerian Naira"
+              paragraph={t("depositStraightToBank")}
+              subHeading1={t("NigerianNaira")}
               subHeadingParagraph1=""
               subHeading2={t("kenyanShillings")}
               subHeadingParagraph2=""
@@ -89,13 +89,13 @@ const Home = () => {
           {/*  */}
           <div className="home__featureCard1">
             <FeaturesCard
-              introductionText={'Take ownership of your digital assets'}
-              heading={t('featuresFromSimpleWallet')}
-              paragraph='Track price movement in real time using valuable insight to make timely decisions'
-              subHeading1={t('managePortfolio')}
-              subHeadingParagraph1='Never miss out on price movement opportunities, get price notices sent to you everyday.'
-              subHeading2={t('ManageAccounts')}
-              subHeadingParagraph2='Send & receive crypto across multiple chains, from Bitcoin to Solana.'
+              introductionText={t("takeOwnership")}
+              heading={t("featuresFromSimpleWallet")}
+              paragraph={t("trackPriceMovements")}
+              subHeading1={t("managePortfolio")}
+              subHeadingParagraph1={t("neverMissOut")}
+              subHeading2={t("ManageAccounts")}
+              subHeadingParagraph2={t("sendAndReceiveCryptoAcrossMultiple")}
               walletImgThree
             />
           </div>
