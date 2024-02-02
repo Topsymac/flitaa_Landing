@@ -16,6 +16,7 @@ import kenyaIcon from '../../../assets/kenyaIcon.svg';
 import './Home.css';
 import { useLocation } from 'react-router-dom';
 import Loading from '../../molecules/loading/Loading';
+import TradeCryptoTwo from '../../molecules/tradeCrypto/TradeCryptoTwo';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -42,7 +43,7 @@ const Home = () => {
         </>
       ) : (
         <LandingWrapper>
-          <Hero />
+          {/* <Hero /> */}
           <div className='home__tradeCrypto'>
             <div className='home__tradeCrypto-paragraph'>
               <HeadingAndParagraph
@@ -51,7 +52,8 @@ const Home = () => {
               />
             </div>
             <div>
-              <TradeCrypto />
+              {/* <TradeCrypto /> */}
+              <TradeCryptoTwo />
             </div>
           </div>
           <div className='home__featureCard1'>

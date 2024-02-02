@@ -6,16 +6,31 @@
   width: 100%;
   margin: auto;
   padding-bottom: 100px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .tradeCrypto__div-content {
   position: relative;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .tradeCrypto__content {
   position: absolute;
   top: 40px;
   width: 100%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .tradeCrypto__icon {
@@ -131,7 +146,7 @@
     line-height: 24px;
     padding-left: 24px;
     max-width: 85%;
-    font-family: "Degular Light" !important;
+    font-family: 'Degular Light' !important;
     /* max-width: 280px; */
   }
 }
@@ -235,6 +250,10 @@
   .tradeCrypto__bgImgTwo {
     width: 313px;
     height: 314px;
+  }
+  .tradeCrypto__bgImgOne:hover {
+    width: 413px;
+    height: 414px;
   }
   .tradeCrypto__bgImgOne {
     width: 429px;
