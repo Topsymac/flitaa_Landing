@@ -26,19 +26,16 @@ const Home = () => {
       setLoading(false);
     }, 3000);
 
-
     return () => clearTimeout(timeout);
-  }, []); 
-
+  }, []);
 
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-
   return (
-    <div className="home">
+    <div className='home'>
       {loading ? (
         <>
           <Loading />
@@ -49,28 +46,28 @@ const Home = () => {
           <div className="home__tradeCrypto">
             <div className="home__tradeCrypto-paragraph">
               <HeadingAndParagraph
-                introductionText={t("introducingSimplicity")}
-                heading={t("aNewAndEasyWayToGetIntoCrypto")}
+                introductionText={t('aSeamlessAndInteractiveCryptoJourney')}
+                heading={t('aNewAndEasyWayToGetIntoCrypto')}
               />
             </div>
             <div>
               <TradeCrypto />
             </div>
           </div>
-          <div className="home__featureCard1">
+          <div className='home__featureCard1'>
             <FeaturesCard
-              introductionText={t("introducingVariety")}
-              heading={t("getStartedWithCryptoLike")}
-              paragraph={t("inAWorldOfComplexity")}
-              subHeading1={t("fundsSafety")}
-              subHeadingParagraph1={t("theSafetyOfCustomers")}
-              subHeading2={t("multiAssets")}
-              subHeadingParagraph2={t("weSupportMultiChains")}
+              introductionText={t('builtForBeginnersAndExperiencedTraders')}
+              heading={t('getStartedWithCryptoLike')}
+              paragraph={t('executeInstantBuySwap')}
+              subHeading1={t('instantBuy')}
+              subHeadingParagraph1={t('executeInstantBuyOrders')}
+              subHeading2={t('fastWithdrawal')}
+              subHeadingParagraph2={t('needToConvertYourCryptoToCash')}
               walletImgOne
             />
           </div>
           {/*  */}
-          <div className="home__featureCard2">
+          <div className='home__featureCard2'>
             <FeaturesCard
               introductionText={t("introducingEasiest")}
               heading={t(`supportLocalCurrency`)}
@@ -87,7 +84,7 @@ const Home = () => {
             />
           </div>
           {/*  */}
-          <div className="home__featureCard1">
+          <div className='home__featureCard1'>
             <FeaturesCard
               introductionText={t("takeOwnership")}
               heading={t("featuresFromSimpleWallet")}
@@ -102,7 +99,7 @@ const Home = () => {
           <div>
             <Testimonials />
           </div>
-          <div className="home__getStarted">
+          <div className='home__getStarted'>
             <GetStartedCard />
           </div>
         </LandingWrapper>
