@@ -19,7 +19,6 @@ const TradeCryptoTwo = () => {
   return (
     <>
       <div className='tradeCryptoTwo'>
-        <div>
           {/* <Card img={downloadIcon} heading={t('downloadApp')} /> */}
           <div
             className='tradeCrypto_div moreWidthColoredOne'
@@ -38,9 +37,7 @@ const TradeCryptoTwo = () => {
               </div>
             </div>
           </div>
-        </div>
         {/*  */}
-        <div>
           <div
             className={`tradeCrypto_div moreWidthColored ${
               !isVisible ? 'moreWidthColored__reducedWidth' : 'moreWidthColored'
@@ -66,7 +63,6 @@ const TradeCryptoTwo = () => {
               </div>
             </div>
           </div>
-        </div>
         {/*  */}
 
         <div
