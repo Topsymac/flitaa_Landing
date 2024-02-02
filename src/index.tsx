@@ -5,7 +5,6 @@ import './index.css';
 import App from './App';
 
 import reportWebVitals from './reportWebVitals';
-import Loading from './ui/molecules/loading/Loading';
 // import Loading from './Loading';
 // import ScrollToTop from './hooks/ScrollToTop';
 
@@ -16,7 +15,6 @@ root.render(
   <React.StrictMode>
     {/* <Suspense fallback={<Loading />}> */}
       {/* <ScrollToTop> */}
-      <Loading/>
         <App />
       {/* </ScrollToTop> */}
     {/* </Suspense> */}

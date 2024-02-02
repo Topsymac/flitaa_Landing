@@ -43,9 +43,9 @@ const Home = () => {
         </>
       ) : (
         <LandingWrapper>
-          {/* <Hero /> */}
-          <div className='home__tradeCrypto'>
-            <div className='home__tradeCrypto-paragraph'>
+          <Hero />
+          <div className="home__tradeCrypto">
+            <div className="home__tradeCrypto-paragraph">
               <HeadingAndParagraph
                 introductionText={t('aSeamlessAndInteractiveCryptoJourney')}
                 heading={t('aNewAndEasyWayToGetIntoCrypto')}
@@ -71,13 +71,13 @@ const Home = () => {
           {/*  */}
           <div className='home__featureCard2'>
             <FeaturesCard
-              introductionText={t('easiestCryptoPlatform')}
-              heading={t(`investWithYourLocalCurrency`)}
-              paragraph={t('depositAndWithdrawCashStraight')}
-              subHeading1='Nigerian Naira'
-              subHeadingParagraph1=''
-              subHeading2={t('kenyanShillings')}
-              subHeadingParagraph2=''
+              introductionText={t("introducingEasiest")}
+              heading={t(`supportLocalCurrency`)}
+              paragraph={t("depositStraightToBank")}
+              subHeading1={t("NigerianNaira")}
+              subHeadingParagraph1=""
+              subHeading2={t("kenyanShillings")}
+              subHeadingParagraph2=""
               order1
               order2
               walletImgTwo
@@ -88,15 +88,13 @@ const Home = () => {
           {/*  */}
           <div className='home__featureCard1'>
             <FeaturesCard
-              introductionText={t('takeOwnershipOfYourDigitalAssets')}
-              heading={t('manageYourPortfolioLikeAPro')}
-              paragraph={t('trackPriceMovementInRealTime')}
-              subHeading1={t('getDailyPriceAlerts')}
-              subHeadingParagraph1={t('neverMissOutOnPriceMovement')}
-              subHeading2={t('multiChainSupport')}
-              subHeadingParagraph2={t(
-                'sendAndReceiveCryptoAcrossMultipleChains'
-              )}
+              introductionText={t("takeOwnership")}
+              heading={t("featuresFromSimpleWallet")}
+              paragraph={t("trackPriceMovements")}
+              subHeading1={t("managePortfolio")}
+              subHeadingParagraph1={t("neverMissOut")}
+              subHeading2={t("ManageAccounts")}
+              subHeadingParagraph2={t("sendAndReceiveCryptoAcrossMultiple")}
               walletImgThree
             />
           </div>
