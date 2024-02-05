@@ -87,11 +87,7 @@ const Testimonials = () => {
               <img src={stars} alt='' />
             </div>
             <p className='testimonial__paragraph'>
-              I just can't give nothing less to a 5 star. Fast withdrawals and
-              deposits, good interface that when I compare with the previous
-              when it started.. So awesome and client friendly. Speaking of
-              friendly, the customer services are so reliable when it comes to
-              fixing any problem on the app. I just love flitta
+              {t('testimony_one')}
             </p>
             <div className='testimonial__userName'>
               <p>Dancun Nyabuti</p>
@@ -115,12 +111,7 @@ const Testimonials = () => {
               <img src={stars} alt='' />
             </div>
             <p className='testimonial__paragraphTwo'>
-              I have no bad issues with flitaa, it is the perfect wallet I can
-              recommend out there, deposit and withdrawal works exactly the same
-              time they said it would be completed. Immediate customer support
-              and all cool features. Please consider the minimum amount to be
-              received into wallets so that we can receive any amount we can at
-              the moment
+              {t('testimony_two')}
             </p>
             <div className='testimonial__userName'>
               <p>Justice Ehiz</p>
@@ -141,12 +132,7 @@ const Testimonials = () => {
               <img src={stars} alt='' />
             </div>
             <p className='testimonial__paragraphThree'>
-              I have never seen an app like this before, all those wallet am
-              coming across with, they are different from these, some of those
-              wallet you might be facing some issues like sending of crypto
-              without reflecting where you send it too. But this wallet is not
-              like that. This app is really amazing i will recommend to others.
-              thanks alot
+              {t('testimony_three')}
             </p>
 
             <p className='testimonial__userName'>Adeuga Olanrewaju</p>
