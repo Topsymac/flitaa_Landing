@@ -43,7 +43,7 @@ const FeaturesCard = ({
   return (
     <div>
       <div className='featuresCard'>
-        <div className={`${order1 ? 'featureCardOrderOne' : ''}`}>
+        <div className={`${order1 ? 'featureCardOrderOne' : ''} featureCardOrder`}>
           <div className='featuresCard__introduction'>
             <div>
               <img
@@ -92,7 +92,7 @@ const FeaturesCard = ({
             </div>
           </div>
           {/*  */}
-          <div>
+          {/* <div> */}
             <div className='featuresCard__div4'>
               <div>
                 {kenyaFlag ? (
@@ -118,7 +118,7 @@ const FeaturesCard = ({
                 </div>
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </div>
         {/*  */}
         {order2 && <div className='featuresCard__blurLeft'></div>}

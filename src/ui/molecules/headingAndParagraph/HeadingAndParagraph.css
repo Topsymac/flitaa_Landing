@@ -91,14 +91,9 @@
     font-weight: 700;
   }
   .headingAndParagraph__header {
-    /* max-width: 515px; */
-    /* width: 562px; */
-    /* height: 150px; */
-    /* width: 100%; */
-    /* margin: 0 auto; */
     width: 565px;
     color: white;
-    font-size: 60px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -111,4 +106,14 @@
   }
 }
 @media screen and (min-width: 1200px) {
+    .headingAndParagraph__header {
+    width: 565px;
+    color: white;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 0px;
+
+  }
 }

@@ -58,8 +58,8 @@
   -o-transition: all 0.5s ease-in-out;
 }
 
-.tradeCrypto_div .moreWidthColored{
-   background: linear-gradient(
+.tradeCrypto_div .moreWidthColored {
+  background: linear-gradient(
     220deg,
     #23262595 28.69%,
     #131716 100%
@@ -135,7 +135,7 @@
 }
 
 .moreWidthColoredOne:hover .tradeCrypto_content {
- background: linear-gradient(
+  background: linear-gradient(
     220deg,
     #23262595 28.69%,
     #131716 100%
@@ -145,7 +145,8 @@
 .moreWidthTwo .moreWidthTwo-paragraph {
   visibility: hidden;
   /*font-size: 60px;
-  */opacity: 0;
+  */
+  opacity: 0;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -199,7 +200,7 @@
     font-family: Degular Text;
     color: white;
     padding-left: 0px;
-    width: 300px;
+    /* width: 300px; */
   }
   .moreWidth {
     height: 400px;
@@ -218,7 +219,18 @@
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 768px) {
+  .tradeCryptoTwo {
+    height: 68rem;
+    gap: 34px;
+  }
   .tradeCrypto_content {
+    width: 100%;
+    height: 300px;
+    padding: 40px 50px;
+  }
+  .tradeCrypto_div {
+    width: 70%;
+    height: 300px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -228,6 +240,8 @@
     justify-content: center;
     padding-bottom: 130px;
     padding-top: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
     max-width: 47rem;
     height: 550px;
     margin: 0 auto;
@@ -258,8 +272,14 @@
   .moreWidth {
     height: 400px;
   }
-
+  .moreWidthColoredOne{
+     width: 393px;
+  }
+  .moreWidthColoredTwo{
+     width: 393px;
+  }
   .moreWidthColored {
+    width: 400px;
     height: 400px;
   }
   .tradeCrypto__para {
@@ -268,15 +288,13 @@
   .moreWidthColored__reducedWidth {
     height: 300px;
   }
-  .moreWidthColoredOne,
+  /* .moreWidthColoredOne,
   .moreWidthColoredTwo {
     width: 390px;
-    /* height: 314px; */
-  }
-  .moreWidthColored {
+  } */
+  /* .moreWidthColored {
     width: 310px;
-    /* height: 314px; */
-  }
+  } */
 }
 @media screen and (min-width: 1200px) {
   .tradeCryptoTwo {
@@ -285,7 +303,7 @@
     justify-content: center;
     padding-bottom: 130px;
     padding-top: 40px;
-    max-width: 77rem;
+    max-width: 70rem;
     height: 550px;
     margin: 0 auto;
     gap: 24px;
@@ -297,7 +315,9 @@
   .tradeCrypto_content {
     width: 100%;
     height: 300px;
-    padding: 40px 20px;
+    padding: 40px 0px;
+    padding-left: 20px;
+    padding-right: 25px;
   }
   .tradeCrypto_div {
     width: 100%;
@@ -310,7 +330,13 @@
     font-family: Degular Text;
     color: white;
     padding-left: 24px;
-    width: 380px;
+    width: 340px;
+  }
+  .moreWidthColoredOne{
+     width: 353px;
+  }
+  .moreWidthColoredTwo{
+     width: 400px;
   }
   .moreWidth {
     height: 400px;

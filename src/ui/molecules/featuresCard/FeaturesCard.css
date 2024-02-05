@@ -185,7 +185,8 @@
   .featuresCard {
     gap: 0px;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: start; */
+    justify-content: space-between;
     padding-right: 0px;
   }
   .featuresCard__introduction-img {
@@ -238,6 +239,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .featureCardOrder{
+    align-self: self-start;
+  }
   .featuresCard__header {
     font-size: 36px;
     width: 100%;
@@ -247,6 +251,7 @@
     height: 14px;
   }
   .featuresCard__introduction {
+    width: 100%;
     margin-left: 24px;
   }
   .featuresCard__introduction-text {
@@ -263,10 +268,10 @@
   }
   .featuresCard__paragraph {
     margin-left: 24px;
-    width: 90%;
+    width: 100%;
   }
   .featuresCard__paragraph-two {
-    width: 80%;
+    width: 90%;
   }
   .featuresCard__walletImg {
     /* margin-left: 0px; */
@@ -290,10 +295,6 @@
     gap: 0px;
     padding-right: 30px;
   }
-  .featuresCard__header {
-    font-size: 36px;
-    width: 80%;
-  }
   .featuresCard__introduction-img {
     width: 14px;
     height: 14px;
@@ -310,7 +311,7 @@
   .featuresCard__header {
     font-size: 36px;
     font-weight: 700;
-    width: 80%;
+    width: 100%;
     margin-left: 24px;
     line-height: 44px;
   }
