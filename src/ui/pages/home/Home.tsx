@@ -43,7 +43,7 @@ const Home = () => {
         </>
       ) : (
         <LandingWrapper>
-          {/* <Hero /> */}
+          <Hero />
           <div className='home__tradeCryptoCard'>
             <div className='home__tradeCrypto'>
               <div className='home__tradeCrypto-paragraph'>
