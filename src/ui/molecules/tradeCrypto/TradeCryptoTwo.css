@@ -34,9 +34,10 @@
 
 .tradeCrypto_div {
   position: relative;
-  padding: 0.6px;
   border-radius: 32px;
-  background: linear-gradient(to right, #ffffff2d, #58d6aa37);
+  border: 1px solid #669b893b;
+  /* padding: 0.6px; */
+  /* background: linear-gradient(to right, #ffffff2d, #58d6aa37); */
   -webkit-border-radius: 32px;
   -moz-border-radius: 32px;
   -ms-border-radius: 32px;
@@ -55,6 +56,14 @@
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
+}
+
+.tradeCrypto_div .moreWidthColored{
+   background: linear-gradient(
+    220deg,
+    #23262595 28.69%,
+    #131716 100%
+  ) !important;
 }
 
 /* .moreWidthColoredOne:hover .love {
@@ -119,16 +128,24 @@
 }
 .moreWidthColoredTwo:hover .tradeCrypto_content {
   background: linear-gradient(
-    270deg,
-    rgba(0, 0, 0, 0.616) 28.69%,
-    rgba(8, 8, 8, 0.681) 100%
-  );
+    220deg,
+    #23262595 28.69%,
+    #131716 100%
+  ) !important;
 }
+
+.moreWidthColoredOne:hover .tradeCrypto_content {
+ background: linear-gradient(
+    220deg,
+    #23262595 28.69%,
+    #131716 100%
+  ) !important;
+}
+
 .moreWidthTwo .moreWidthTwo-paragraph {
   visibility: hidden;
   /*font-size: 60px;
-    */
-  opacity: 0;
+  */opacity: 0;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
