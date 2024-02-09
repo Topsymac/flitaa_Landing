@@ -227,7 +227,8 @@
     gap: 40px;
   }
   .top {
-    padding: -3px 15px;
+    /* padding: -3px 15px; */
+    padding-top: 95px;
     flex-direction: column;
     gap: 16px;
     margin-left: 0px;
@@ -255,8 +256,8 @@
     margin: 0 auto;
   }
   .hero_mobile_logo-img img {
-    margin-left: 30px;
-    width: 260px;
+    /* margin-left: 30px; */
+    width: 320px;
   }
   .logo-img img {
     width: 260px;
@@ -309,7 +310,7 @@
   .hero_mobile_orange_icon {
     /* border: 2px solid green; */
     position: absolute;
-    right: 20%;
+    right: 10%;
     bottom: 40%;
   }
   .hero_mobile_orange_icon img {
@@ -318,8 +319,8 @@
   .hero_mobile_greenarrow_icon {
     /* border: 2px solid yellowgreen; */
     position: absolute;
-    left: 30%;
-    bottom: 25%;
+    left: 35%;
+    bottom: 22%;
   }
   .hero_mobile_greenarrow_icon img {
     width: 40px;
