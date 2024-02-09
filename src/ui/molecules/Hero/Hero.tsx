@@ -225,8 +225,9 @@ const Hero = () => {
           <div className="left">
             <p className="blurLeft"></p>
             <p className="blurLeftText">
-              {t("tradeAndHoldCryptocurrencies")}{" "}
+              <span className="leftTextSpanOne">{t("tradeAndHoldCryptocurrencies")} </span>
               <span className="leftTextSpan">{t(textKeys[currentIndex])}</span>
+              {t("forEveryone")}
             </p>
           </div>
           <div className="right">
@@ -265,6 +266,32 @@ const Hero = () => {
             <img src={topOrangeright} alt="img" />
           </div>
           <div className="top_small_right_orange_logo">
+            <img src={bottomright} alt="img" />
+          </div>
+        </div>
+        <div className="hero_bottom_mobile">
+          <div className="hero_mobile_logo-img">
+            <img src={logo} alt="img" />
+          </div>
+          <div className="hero_mobile_media_logo">
+            <Link to="https://apps.apple.com/ng/app/flitaa/id1566777501">
+              <img src={appstore} alt="img" />
+            </Link>
+            <Link to="https://play.google.com/store/apps/details?id=com.flitaa.app ">
+              <img src={googlestore} alt="img" />
+            </Link>
+          </div>
+          <div className={`hero_mobile_purple_icon`}>
+            <img src={bottomleft} alt="img" />
+          </div>
+          <div className={`hero_mobile_green_icon`}>
+            <img src={topright} alt="img" />
+          </div>
+
+          <div className="hero_mobile_orange_icon">
+            <img src={topOrangeright} alt="img" />
+          </div>
+          <div className="hero_mobile_greenarrow_icon">
             <img src={bottomright} alt="img" />
           </div>
         </div>
