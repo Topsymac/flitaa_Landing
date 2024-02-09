@@ -45,16 +45,16 @@ const Home = () => {
         <LandingWrapper>
           <Hero />
           <div className='home__tradeCryptoCard'>
-            <div className='home__tradeCrypto'>
+            {/* <div className='home__tradeCrypto'>
               <div className='home__tradeCrypto-paragraph'>
                 <HeadingAndParagraph
                   introductionText={t('aSeamlessAndInteractiveCryptoJourney')}
                   heading={t('aNewAndEasyWayToGetIntoCrypto')}
                 />
               </div>
-            </div>
+            </div> */}
             {/* <TradeCrypto /> */}
-            <TradeCryptoTwo />
+            {/* <TradeCryptoTwo /> */}
           </div>
           <div className='home__featureCard1'>
             <FeaturesCard
@@ -75,9 +75,9 @@ const Home = () => {
               heading={t(`supportLocalCurrency`)}
               paragraph={t('depositStraightToBank')}
               subHeading1={t('NigerianNaira')}
-              subHeadingParagraph1=''
+              subHeadingParagraph1={t('investEasilyUsingNaira')}
               subHeading2={t('kenyanShillings')}
-              subHeadingParagraph2=''
+              subHeadingParagraph2={t('investingMadeSimpleWithKes')}
               order1
               order2
               walletImgTwo
@@ -99,7 +99,7 @@ const Home = () => {
             />
           </div>
           <div>
-            <Testimonials />
+            {/* <Testimonials /> */}
           </div>
           <div className='home__getStarted'>
             <GetStartedCard />

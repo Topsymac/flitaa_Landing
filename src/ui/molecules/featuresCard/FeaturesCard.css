@@ -41,7 +41,7 @@
   margin-bottom: 48px;
   width: 515px;
   color: white;
-   font-family: "Degular Light" !important;
+  font-family: 'Degular Light' !important;
 }
 .featuresCard__div4 {
   display: flex;
@@ -72,7 +72,7 @@
   width: 365px;
   margin-bottom: 40px;
   color: white;
-   font-family: "Degular Light" !important;
+  font-family: 'Degular Light' !important;
 }
 .featuresCard__walletImg {
   width: 546px;
@@ -239,7 +239,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .featureCardOrder{
+  .featureCardOrder {
     align-self: self-start;
   }
   .featuresCard__header {
@@ -294,6 +294,9 @@
     flex-direction: row;
     gap: 0px;
     padding-right: 30px;
+  }
+  .featureCardOrder {
+    align-self: center;
   }
   .featuresCard__introduction-img {
     width: 14px;
@@ -376,9 +379,9 @@
     gap: 70px;
     align-items: center;
     justify-content: center;
-    max-width: 77rem;
+    max-width: 81rem;
     margin: 0 auto;
-    padding-right: 0px;
+    /* padding-right: 0px; */
     /* margin-left: 75px; */
     /* margin-left: 135px; */
   }
