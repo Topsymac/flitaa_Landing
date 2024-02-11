@@ -10,7 +10,7 @@ const LandingWrapper = ({children}:any) => {
     <div>
       <div className=''>
         <Navbar />
-        <main>{children}</main>
+        <main >{children}</main>
         <Footer />
       </div>
     </div>
