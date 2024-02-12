@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import './PrivacyPolicy.css'
 import LandingWrapper from '../../wrappers/landingWrapper/LandingWrapper';
 import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const PrivacyPolicy = () => {
      const { t } = useTranslation();
@@ -14,6 +15,10 @@ const PrivacyPolicy = () => {
     }, [pathname]);
   return (
     <>
+      <Helmet>
+        <title>{t("PrivacyPageTitle")}</title>
+        <meta name="description" content={t("PrivacyPageDescription")} />
+      </Helmet>
       <LandingWrapper>
         <div className="privacy_wrapper">
           <div className="policy">

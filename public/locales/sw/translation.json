@@ -1,4 +1,10 @@
 {
+  "pageTitle": "home page",
+  "pageDescription": "this is the flitaa home page ",
+  "PrivacyPageTitle": "privacy page",
+  "PrivacyPageDescription": "this is the flitaa privacy page",
+  "TermsPageTitle": "terms and conditions",
+  "TermsPageDescription": "this is the flitaa terms and conditions",
   "home": "Mh",
   "about": "kuhusu",
   "features": "Vipengele",
