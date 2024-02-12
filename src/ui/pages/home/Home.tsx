@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import LandingWrapper from "../../wrappers/landingWrapper/LandingWrapper";
 import FeaturesCard from "../../molecules/featuresCard/FeaturesCard";
@@ -38,6 +39,10 @@ const Home = () => {
 
   return (
     <div className="home">
+      <Helmet>
+        <title>{t("pageTitle")}</title>
+        <meta name="description" content={t("pageDescription")} />
+      </Helmet>
       {loading ? (
         <>
           <Loading />
