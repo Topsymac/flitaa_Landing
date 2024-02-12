@@ -13,25 +13,29 @@ const HeadingAndParagraph = ({
   heading,image
 }: HeadingAndParagraphProp) => {
   return (
-    <div className="headingAndParagraph__divOne">
-      <div className="">
-        <div className="headingAndParagraph__introduction">
+    <div className='headingAndParagraph__divOne'>
+      <div className=''>
+        <div className='headingAndParagraph__introduction'>
           <div>
             <img
               src={star}
-              alt="star"
-              className="headingAndParagraph__introduction-img"
+              alt='star'
+              className='headingAndParagraph__introduction-img'
             />
           </div>
-          <p className="headingAndParagraph__introduction-text">
+          <p className='headingAndParagraph__introduction-text'>
             {introductionText}
           </p>
         </div>
         <div>
-          <p className="headingAndParagraph__header">
-            {heading}{" "}
-            <span className="headingAndParagraph__header_image">
-              <img src={image} alt="" />
+          <p className='headingAndParagraph__header'>
+            {heading}
+            <span className='headingAndParagraph__header_image'>
+              <img
+                src={image}
+                alt='img'
+                className='headingAndParagraph__header_img'
+              />
             </span>
           </p>
         </div>

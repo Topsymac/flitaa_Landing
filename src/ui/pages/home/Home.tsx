@@ -13,7 +13,7 @@ import "./Home.css";
 import { useLocation } from "react-router-dom";
 import Loading from "../../molecules/loading/Loading";
 import TradeCryptoTwo from "../../molecules/tradeCrypto/TradeCryptoTwo";
-import CardBg from "../../../assets/3.png";
+import CardBg from '../../../assets/cryptoCard.png';
 import downloadIcon from "../../../assets/downloadIcon.svg";
 import deposit from "../../../assets/depositIcon.svg";
 import rocket from "../../../assets/transactIcon.svg";
@@ -37,7 +37,7 @@ const Home = () => {
   }, [pathname]);
 
   return (
-    <div className="home">
+    <div className='home'>
       {loading ? (
         <>
           <Loading />
@@ -45,7 +45,7 @@ const Home = () => {
       ) : (
         <LandingWrapper>
           <Hero />
-          <div className="home__tradeCryptoCard">
+          <div className='home__tradeCryptoCard'>
             {/* <div className="home__tradeCrypto">
               <div className="home__tradeCrypto-paragraph">
                 <HeadingAndParagraph
@@ -57,81 +57,81 @@ const Home = () => {
             <TradeCrypto />
             <TradeCryptoTwo /> */}
             {/* new design */}
-            <div className="new_design_trade">
-              <div className="new_design_trade_top">
+            <div className='new_design_trade'>
+              <div className='new_design_trade_top'>
                 <HeadingAndParagraph
-                  introductionText={t("aSeamlessAndInteractiveCryptoJourney")}
-                  heading={t("aNewAndEasyWayToGetIntoCrypto")}
+                  introductionText={t('aSeamlessAndInteractiveCryptoJourney')}
+                  heading={t('aNewAndEasyWayToGetIntoCrypto')}
                   image={forwardProgress}
                 />
                 <div>
-                  <div className="new_design_trade_div_content">
+                  <div className='new_design_trade_div_content'>
                     <img
                       src={CardBg}
-                      alt=""
-                      className="new_design_trade_image"
+                      alt=''
+                      className='new_design_trade_image'
                     />
-                    <div className="new_design_trade_content">
+                    <div className='new_design_trade_content'>
                       <div>
                         <img
                           src={downloadIcon}
-                          alt="icon"
-                          className="new_design_trade_icon"
+                          alt='icon'
+                          className='new_design_trade_icon'
                         />
                       </div>
-                      <div className="new_design_trade_textOne">
-                        <div className="new_design_trade_heading">
-                          {t("downloadApp")}
+                      <div className='new_design_trade_textOne'>
+                        <div className='new_design_trade_heading'>
+                          {t('downloadApp')}
                         </div>
-                        <p className="new_design_trade_paragraph">
-                          {"Download our app on app store and googleplay store"}
+                        <p className='new_design_trade_paragraph'>
+                          {t('downloadOurappOnAppStore')}
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="new_design_trade_bottom">
-                <div className="new_design_trade_div_content">
-                  <img src={CardBg} alt="" className="new_design_trade_image" />
-                  <div className="new_design_trade_content">
+              <div className='new_design_trade_bottom'>
+                <div className='new_design_trade_div_content'>
+                  <img src={CardBg} alt='' className='new_design_trade_image' />
+                  <div className='new_design_trade_content'>
                     <div>
                       <img
                         src={deposit}
-                        alt="icon"
-                        className="new_design_trade_icon"
+                        alt='icon'
+                        className='new_design_trade_icon'
                       />
                     </div>
-                    <div className="new_design_trade_textOne">
-                      <div className="new_design_trade_heading">
-                        {t("depositCash")}
+                    <div className='new_design_trade_textOne'>
+                      <div className='new_design_trade_heading'>
+                        {t('depositCash')}
                       </div>
-                      <p className="new_design_trade_paragraph">
-                        {t("bringInOrTakeOutCashAtZeroDeposit")}
+                      <p className='new_design_trade_paragraph'>
+                        {t('bringInOrTakeOutCashAtZeroDeposit')}
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className="new_design_trade_div_content">
+                <div className='new_design_trade_div_content'>
                   <img
                     src={CardBg}
-                    alt=""
-                    className="new_design_trade_imageThree"
+                    alt=''
+                    className='new_design_trade_imageThree'
                   />
-                  <div className="new_design_trade_content">
+                  <div className='new_design_trade_content'>
                     <div>
                       <img
                         src={rocket}
-                        alt="icon"
-                        className="new_design_trade_icon"
+                        alt='icon'
+                        className='new_design_trade_icon'
                       />
                     </div>
-                    <div className="new_design_trade_textOne">
-                      <div className="new_design_trade_heading">
-                        {t("startInvesting")}
+                    <div className='new_design_trade_textOne'>
+                      <div className='new_design_trade_heading'>
+                        {t('startInvesting')}
                       </div>
-                      <p className="new_design_trade_paragraph">
-                        {t("bringInOrTakeOutCashAtZeroDeposit")}
+                      <p className='new_design_trade_paragraph'>
+                        {t('bringInOrTakeOutCashAtZeroDeposit')}
                       </p>
                     </div>
                   </div>
@@ -141,22 +141,22 @@ const Home = () => {
             {/* end of new design  */}
           </div>
 
-          <div className="home__featureCard1">
+          <div className='home__featureCard1'>
             <FeaturesCard
-              introductionText={t("builtForBeginnersAndExperiencedTraders")}
-              heading={t("getStartedWithCryptoLike")}
-              paragraph={t("executeInstantBuySwap")}
-              subHeading1={t("instantBuy")}
-              subHeadingParagraph1={t("executeInstantBuyOrders")}
-              subHeading2={t("fastWithdrawal")}
-              subHeadingParagraph2={t("needToConvertYourCryptoToCash")}
+              introductionText={t('builtForBeginnersAndExperiencedTraders')}
+              heading={t('getStartedWithCryptoLike')}
+              paragraph={t('executeInstantBuySwap')}
+              subHeading1={t('instantBuy')}
+              subHeadingParagraph1={t('executeInstantBuyOrders')}
+              subHeading2={t('fastWithdrawal')}
+              subHeadingParagraph2={t('needToConvertYourCryptoToCash')}
               walletImgOne
             />
           </div>
           {/*  */}
-          <div className="home__featureCard2">
+          <div className='home__featureCard2'>
             <FeaturesCard
-              introductionText={t("introducingEasiest")}
+              introductionText={t('introducingEasiest')}
               heading={t(`supportLocalCurrency`)}
               paragraph={t('depositStraightToBank')}
               subHeading1={t('NigerianNaira')}
@@ -171,22 +171,22 @@ const Home = () => {
             />
           </div>
           {/*  */}
-          <div className="home__featureCard1">
+          <div className='home__featureCard1'>
             <FeaturesCard
-              introductionText={t("takeOwnership")}
-              heading={t("featuresFromSimpleWallet")}
-              paragraph={t("trackPriceMovements")}
-              subHeading1={t("managePortfolio")}
-              subHeadingParagraph1={t("neverMissOut")}
-              subHeading2={t("ManageAccounts")}
-              subHeadingParagraph2={t("sendAndReceiveCryptoAcrossMultiple")}
+              introductionText={t('takeOwnership')}
+              heading={t('featuresFromSimpleWallet')}
+              paragraph={t('trackPriceMovements')}
+              subHeading1={t('managePortfolio')}
+              subHeadingParagraph1={t('neverMissOut')}
+              subHeading2={t('ManageAccounts')}
+              subHeadingParagraph2={t('sendAndReceiveCryptoAcrossMultiple')}
               walletImgThree
             />
           </div>
           <div>
-            {/* <Testimonials /> */}
+            <Testimonials />
           </div>
-          <div className="home__getStarted">
+          <div className='home__getStarted'>
             <GetStartedCard />
           </div>
         </LandingWrapper>

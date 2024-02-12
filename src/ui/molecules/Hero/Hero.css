@@ -15,15 +15,15 @@
   margin-bottom: 300px;
 }
 .top {
-  max-width: 1200px;
-  padding-top: 30px;
+  /* max-width: 1400px; */
+  /* padding-top: 30px; */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 180px;
-  margin-top: 50px;
+  gap: 220px;
+  margin-top: 80px;
   z-index: 2;
-  margin-left: -100px;
+  /* margin-left: -100px; */
   /* padding: 100px 0; */
   /* background: red; */
 }
@@ -57,6 +57,9 @@
   top: 280px;
   left: 0;
 }
+.left {
+  width: 618px;
+}
 .blurLeftText {
   max-width: 618px;
   font-size: 48px;
@@ -85,7 +88,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: 24px;
-  font-family: "Degular Light" !important;
+  font-family: 'Degular Light' !important;
   /* color: transparent; */
 }
 .blurRight {
@@ -228,16 +231,17 @@
   }
   .top {
     /* padding: -3px 15px; */
-    padding-top: 95px;
+    padding-top: 0px;
     flex-direction: column;
     gap: 16px;
-    margin-left: 0px;
+    margin-left: 10px;
     align-items: flex-start;
+    padding-bottom: 50px;
   }
 
   .blurLeftText {
-    font-size: 48px;
-    line-height: 64px;
+    font-size: 30px;
+    line-height: 38px;
   }
   .logo-img {
     min-height: none;
@@ -265,6 +269,7 @@
   .left {
     font-size: 36px;
     line-height: 44px;
+    width: fit-content;
   }
   .right {
     font-size: 16px;

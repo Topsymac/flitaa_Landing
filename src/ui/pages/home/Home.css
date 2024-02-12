@@ -201,6 +201,7 @@
   position: absolute;
   top: 40px;
   width: 100%;
+  margin-left: 20px;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -211,7 +212,7 @@
   margin: 0 20px;
 }
 .new_design_trade_textOne {
-  margin-top: 30px;
+  margin-top: 17px;
   max-width: 100%;
 }
 .new_design_trade_heading {
@@ -220,14 +221,17 @@
   line-height: 48px;
   font-family: Degular Text;
   color: white;
-  padding-left: 24px;
+  padding-left: 20px;
   /* max-width: 310px; */
 }
 .new_design_trade_paragraph {
   color: white;
   font-size: 17px;
+  line-height: 28px;
   padding-left: 24px;
-  font-family: Degular Regular;
+  padding-top: 7px;
+  font-family: 'Degular Light';
+  font-weight: normal;
   max-width: 400px;
 
 }
