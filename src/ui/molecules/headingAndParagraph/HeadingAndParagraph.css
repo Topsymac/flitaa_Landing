@@ -22,6 +22,9 @@
 .headingAndParagraph__header {
   color: white;
 }
+.headingAndParagraph__header_image{
+  margin-left: 20px;
+}
 
 @media screen and (min-width: 100px) {
   .headingAndParagraph__divOne {
