@@ -95,7 +95,7 @@
 @media screen and (min-width: 768px) {
   .home__getStarted {
     padding-top: 180px;
-    padding-bottom: 170px;
+    padding-bottom: 80px;
   }
   .home__tradeCrypto-paragraph {
     padding-left: 50px;
@@ -141,17 +141,13 @@
   .home__tradeCrypto {
     padding-top: 160px;
   }
+  .home__getStarted {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
 }
 
-@media screen and (max-width: 1200px) {
-  /* .home__tradeCrypto {
-    padding-left: 24px;
-  } */
-  /* .home__featureCard2 {
-    padding-top: 180px;
-    padding-bottom: 180px;
-  } */
-}
+
 
 /* new design  */
 

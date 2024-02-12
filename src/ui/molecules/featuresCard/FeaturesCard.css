@@ -303,7 +303,7 @@
     height: 14px;
   }
   .featuresCard__introduction {
-    margin-left: 24px;
+    margin-left: 0px;
   }
   .featuresCard__introduction-text {
     font-size: 16px;
@@ -319,7 +319,7 @@
     line-height: 44px;
   }
   .featuresCard__paragraph {
-    margin-left: 24px;
+    margin-left: 0px;
     width: 80%;
   }
   .featuresCard__paragraph-two {
@@ -330,7 +330,7 @@
     height: 419px;
   }
   .featuresCard__div4 {
-    margin-left: 24px;
+    margin-left: 0px;
   }
   .featureCardOrderOne {
     order: 1;
@@ -376,11 +376,12 @@
 @media screen and (min-width: 1200px) {
   .featuresCard {
     display: flex;
-    gap: 70px;
+    gap: 140px;
     align-items: center;
-    justify-content: center;
-    max-width: 81rem;
+    justify-content: space-between;
+    max-width: 78rem;
     margin: 0 auto;
+    padding-right: 0px;
     /* padding-right: 0px; */
     /* margin-left: 75px; */
     /* margin-left: 135px; */
@@ -405,13 +406,14 @@
   .featuresCard__header {
     /* max-width: 515px; */
     /* max-width: 780px; */
-    width: 95%;
+    width: 98%;
     /* min-width: 100%; */
     font-size: 56px;
     font-style: normal;
     font-weight: 600;
     line-height: 74px;
     margin-bottom: 16px;
+    margin-left: 0px;
   }
   .featuresCard__paragraph {
     font-size: 16px;
@@ -450,7 +452,11 @@
     width: 546px;
     height: 641px;
   }
-
+  .featuresCard__walletImg-one {
+    /* object-fit: contain; */
+    width: 576px;
+    height: 751px;
+  }
   .featureCardOrderOne {
     order: 2;
   }

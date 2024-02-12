@@ -136,7 +136,7 @@ const FeaturesCard = ({
             <img
               src={walletImg2}
               alt='WalletPicture'
-              className='featuresCard__walletImg'
+              className='featuresCard__walletImg-one'
             />
           )}
           {walletImgThree && (

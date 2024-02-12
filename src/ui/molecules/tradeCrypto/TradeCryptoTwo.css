@@ -36,9 +36,9 @@
   position: relative;
   border-radius: 32px;
   border: 1px solid #669b893b;
-  /* padding: 0.6px; */
-  /* background: linear-gradient(to right, #ffffff2d, #58d6aa37); */
-  -webkit-border-radius: 32px;
+  /*padding: 0.6px;
+  *//*background: linear-gradient(to right, #ffffff2d, #58d6aa37);
+  */-webkit-border-radius: 32px;
   -moz-border-radius: 32px;
   -ms-border-radius: 32px;
   -o-border-radius: 32px;
@@ -47,6 +47,7 @@
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 32px;
 }
 
 .tradeCrypto_text {

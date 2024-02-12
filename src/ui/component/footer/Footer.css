@@ -9,7 +9,7 @@
   color: white;
   padding-top: 0px;
   padding-left: 80px;
-  padding-bottom: 87px;
+  padding-bottom: 30px;
   padding-right: 142px;
   font-size: 14px;
   font-style: normal;
@@ -28,7 +28,7 @@
   color: white;
   padding-top: 0px;
   padding-left: 80px;
-  padding-bottom: 87px;
+  padding-bottom: 30px;
   padding-right: 142px;
   font-size: 14px;
   font-style: normal;
@@ -242,7 +242,7 @@
     color: white;
     padding-top: 50px;
     padding-left: 80px;
-    padding-bottom: 87px;
+    padding-bottom: 30px;
     padding-right: 142px;
     font-size: 14px;
     font-style: normal;
@@ -295,7 +295,7 @@
   }
   .footer__socials-img {
     position: absolute;
-    top: 26%;
+    top: 28%;
     width: 40px;
     height: 40px;
     transition: all 0.5s ease-in-out;
@@ -318,9 +318,9 @@
     justify-content: space-between;
     background-color: #121514;
     color: white;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 80px;
-    padding-bottom: 87px;
+    padding-bottom: 30px;
     padding-right: 142px;
     font-size: 14px;
     font-style: normal;
