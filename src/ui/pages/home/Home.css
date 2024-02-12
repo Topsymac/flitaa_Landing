@@ -227,6 +227,8 @@
   color: white;
   font-size: 17px;
   padding-left: 24px;
+  font-family: Degular Regular;
+  max-width: 400px;
 
 }
 @media screen and (max-width: 768px) {
