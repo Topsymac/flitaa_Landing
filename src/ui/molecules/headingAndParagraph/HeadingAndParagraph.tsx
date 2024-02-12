@@ -13,9 +13,9 @@ const HeadingAndParagraph = ({
   heading,image
 }: HeadingAndParagraphProp) => {
   return (
-    <div className="headingAndParagraph__divOne">
-      <div className="">
-        <div className="headingAndParagraph__introduction">
+    <div className='headingAndParagraph__divOne'>
+      <div className=''>
+        <div className='headingAndParagraph__introduction'>
           <div>
             <img
               src={star}
@@ -23,7 +23,7 @@ const HeadingAndParagraph = ({
               className="headingAndParagraph__introduction-img"
             />
           </div>
-          <p className="headingAndParagraph__introduction-text">
+          <p className='headingAndParagraph__introduction-text'>
             {introductionText}
           </p>
         </div>
