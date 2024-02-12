@@ -14,10 +14,10 @@ const Footer = () => {
   const location = useLocation();
   const { t } = useTranslation();
   const socials = [
-    { icon: Facebook, name: 'Facebook', url: t('socials.facebook') },
-    { icon: LinkedIn, name: 'LinkedIn', url: t('socials.linkedIn') },
-    { icon: Twitter, name: 'Twitter', url: t('socials.twitter') },
-    { icon: Instagram, name: 'Instagram', url: t('socials.instagram') },
+    { icon: Facebook, name: 'filtaa Facebook', url: t('socials.facebook') },
+    { icon: LinkedIn, name: 'flitaa LinkedIn', url: t('socials.linkedIn') },
+    { icon: Twitter, name: 'flitaa Twitter', url: t('socials.twitter') },
+    { icon: Instagram, name: 'flitaa Instagram', url: t('socials.instagram') },
   ];
   return (
     <div>
@@ -31,7 +31,7 @@ const Footer = () => {
       >
         <div className='footer__navOne'>
           <Link to='/'>
-            <img src={Logo} alt='logo' className='footer__logo' />
+            <img src={Logo} alt='flitaa logo' className='footer__logo' />
           </Link>
           <div className='footer__navTwo-terms'>
             <Link to='/terms-and-conditions'>

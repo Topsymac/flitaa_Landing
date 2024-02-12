@@ -45,12 +45,12 @@ const TradeCrypto = () => {
       <div>
         {/* <Card img={downloadIcon} heading={t('downloadApp')} /> */}
         <div className='tradeCrypto__div-content'>
-          <img src={CardBg} alt='' className='tradeCrypto__bgImgTwo' />
+          <img src={CardBg} alt='flitaa card bg' className='tradeCrypto__bgImgTwo' />
           <div className='tradeCrypto__content'>
             <div style={{ textAlign: 'end' }}>
               <img
                 src={downloadIcon}
-                alt='icon'
+                alt='flitaa download icon'
                 className='tradeCrypto__icon'
               />
             </div>
@@ -65,12 +65,12 @@ const TradeCrypto = () => {
         <div className='tradeCrypto__div-content'>
           <img
             src={depositMiddleCardBg}
-            alt='img'
+            alt='flitaa deposit img'
             className='tradeCrypto__bgImg'
           />
           <div className='tradeCrypto__content'>
             <div style={{ textAlign: 'end' }}>
-              <img src={deposit} alt='icon' className='tradeCrypto__icon-1' />
+              <img src={deposit} alt='flitaa deposit icon' className='tradeCrypto__icon-1' />
             </div>
             <div className='tradeCrypto__text'>
               <div className='tradeCrypto__heading'>
@@ -92,10 +92,10 @@ const TradeCrypto = () => {
       {/*  */}
       <div>
         <div className='tradeCrypto__div-content'>
-          <img src={CardBg} alt='' className='tradeCrypto__bgImgOne' />
+          <img src={CardBg} alt='flitaa card bg' className='tradeCrypto__bgImgOne' />
           <div className='tradeCrypto__content'>
             <div style={{ textAlign: 'end' }}>
-              <img src={rocket} alt='icon' className='tradeCrypto__iconOne' />
+              <img src={rocket} alt='flitaa rocket icon' className='tradeCrypto__iconOne' />
             </div>
             <div className='tradeCrypto__textOne'>
               <div className='tradeCrypto__headingOne'>

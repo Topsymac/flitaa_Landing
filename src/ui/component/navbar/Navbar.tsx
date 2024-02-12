@@ -87,7 +87,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="navbar__navOne">
           <Link to="/">
-            <img src={Logo} alt="flitaaLogo" className="navbar__logo" />
+            <img src={Logo} alt="flitaa Logo" className="navbar__logo" />
           </Link>
           {/* <div className='navbar__navItems'>
             {navItems.length > 0 &&

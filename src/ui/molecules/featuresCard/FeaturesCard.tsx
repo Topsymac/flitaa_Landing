@@ -48,7 +48,7 @@ const FeaturesCard = ({
             <div>
               <img
                 src={star}
-                alt='star'
+                alt='flitaa star'
                 className='featuresCard__introduction-img'
               />
             </div>
@@ -71,13 +71,13 @@ const FeaturesCard = ({
               {nigeriaFlag ? (
                 <img
                   src={nigeriaFlag}
-                  alt='nigeria flag'
+                  alt='flitaa nigeria flag'
                   className='featuresCard__downloadIcon-ng'
                 />
               ) : (
                 <img
                   src={downloadIcon}
-                  alt='downloadIcon'
+                  alt='flitaa download icon'
                   className='featuresCard__downloadIcon'
                 />
               )}
@@ -98,13 +98,13 @@ const FeaturesCard = ({
                 {kenyaFlag ? (
                   <img
                     src={kenyaFlag}
-                    alt='kenya flag'
+                    alt='flitaa kenya flag'
                     className='featuresCard__downloadIcon'
                   />
                 ) : (
                   <img
                     src={downloadIcon}
-                    alt='downloadIcon'
+                    alt='flitaa download icon'
                     className='featuresCard__downloadIcon'
                   />
                 )}
@@ -128,21 +128,21 @@ const FeaturesCard = ({
           {walletImgOne && (
             <img
               src={walletImg1}
-              alt='WalletPicture'
+              alt='flitaa walletPicture'
               className='featuresCard__walletImg'
             />
           )}
           {walletImgTwo && (
             <img
               src={walletImg2}
-              alt='WalletPicture'
+              alt='flitaa walletpicture'
               className='featuresCard__walletImg'
             />
           )}
           {walletImgThree && (
             <img
               src={walletImg3}
-              alt='WalletPicture'
+              alt='flitaa walletpicture'
               className='featuresCard__walletImg'
             />
           )}
