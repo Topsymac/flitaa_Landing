@@ -19,8 +19,8 @@ const HeadingAndParagraph = ({
           <div>
             <img
               src={star}
-              alt='star'
-              className='headingAndParagraph__introduction-img'
+              alt="flitaa star"
+              className="headingAndParagraph__introduction-img"
             />
           </div>
           <p className='headingAndParagraph__introduction-text'>
@@ -28,14 +28,10 @@ const HeadingAndParagraph = ({
           </p>
         </div>
         <div>
-          <p className='headingAndParagraph__header'>
-            {heading}
-            <span className='headingAndParagraph__header_image'>
-              <img
-                src={image}
-                alt='img'
-                className='headingAndParagraph__header_img'
-              />
+          <p className="headingAndParagraph__header">
+            {heading}{" "}
+            <span className="headingAndParagraph__header_image">
+              <img src={image} alt="flitaa header" />
             </span>
           </p>
         </div>

@@ -27,7 +27,7 @@ const TradeCryptoTwo = () => {
           >
             <div className='tradeCrypto_content moreWidthOne'>
               <div style={{ textAlign: 'end' }}>
-                <img src={downloadIcon} alt='icon' className='tradeCrypto' />
+                <img src={downloadIcon} alt='flitaa download icon' className='tradeCrypto' />
               </div>
               <div className='tradeCrypto_text'>
                 <div className='tradeCrypto__head'>{t('downloadApp')}</div>
@@ -47,7 +47,7 @@ const TradeCryptoTwo = () => {
               !isVisible ? 'moreWidthColored__reducedWidth' : 'moreWidthColored'
             }`}>
               <div style={{ textAlign: 'end' }}>
-                <img src={deposit} alt='icon' className='tradeCrypto' />
+                <img src={deposit} alt='flitaa deposit icon' className='tradeCrypto' />
               </div>
               <div className='tradeCrypto_text'>
                 <div className='tradeCrypto__head'>{t('depositCash')}</div>
@@ -72,7 +72,7 @@ const TradeCryptoTwo = () => {
         >
           <div className='tradeCrypto_content moreWidthTwo'>
             <div style={{ textAlign: 'end' }}>
-              <img src={rocket} alt='icon' className='tradeCrypto' />
+              <img src={rocket} alt='flitaa rocket icon' className='tradeCrypto' />
             </div>
             <div className='tradeCrypto_text'>
               <div className='tradeCrypto__head'>{t('startInvesting')}</div>

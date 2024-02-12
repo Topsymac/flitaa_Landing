@@ -43,6 +43,7 @@ const Home = () => {
       <Helmet>
         <title>{t("pageTitle")}</title>
         <meta name="description" content={t("pageDescription")} />
+        <meta name="keywords" content={t("seoKeywords")} />
       </Helmet>
       {loading ? (
         <>
@@ -74,15 +75,15 @@ const Home = () => {
                   <div className='new_design_trade_div_content'>
                     <img
                       src={CardBg}
-                      alt=''
-                      className='new_design_trade_image'
+                      alt="flitaa card bg"
+                      className="new_design_trade_image"
                     />
                     <div className='new_design_trade_content'>
                       <div>
                         <img
                           src={downloadIcon}
-                          alt='icon'
-                          className='new_design_trade_icon'
+                          alt="flitaa download icon"
+                          className="new_design_trade_icon"
                         />
                       </div>
                       <div className='new_design_trade_textOne'>
@@ -97,15 +98,15 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className='new_design_trade_bottom'>
-                <div className='new_design_trade_div_content'>
-                  <img src={CardBg} alt='' className='new_design_trade_image' />
-                  <div className='new_design_trade_content'>
+              <div className="new_design_trade_bottom">
+                <div className="new_design_trade_div_content">
+                  <img src={CardBg} alt="flitaa card bg" className="new_design_trade_image" />
+                  <div className="new_design_trade_content">
                     <div>
                       <img
                         src={deposit}
-                        alt='icon'
-                        className='new_design_trade_icon'
+                        alt="flitaa deposit icon"
+                        className="new_design_trade_icon"
                       />
                     </div>
                     <div className='new_design_trade_textOne'>
@@ -121,15 +122,15 @@ const Home = () => {
                 <div className='new_design_trade_div_content'>
                   <img
                     src={CardBg}
-                    alt=''
-                    className='new_design_trade_imageThree'
+                    alt="flitaa card bg"
+                    className="new_design_trade_imageThree"
                   />
                   <div className='new_design_trade_content'>
                     <div>
                       <img
                         src={rocket}
-                        alt='icon'
-                        className='new_design_trade_icon'
+                        alt="flitaa rocket icon"
+                        className="new_design_trade_icon"
                       />
                     </div>
                     <div className='new_design_trade_textOne'>

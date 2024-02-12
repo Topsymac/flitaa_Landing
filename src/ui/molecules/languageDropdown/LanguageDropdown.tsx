@@ -63,7 +63,7 @@ const LanguageDropdown = () => {
       >
         <img
           src={InternetImg}
-          alt='internet'
+          alt='flitaa internet'
           className='languageDropdown__internetImg'
         />
         <p
@@ -74,7 +74,7 @@ const LanguageDropdown = () => {
         </p>
         <img
           src={arrowDown}
-          alt='arrow'
+          alt='flitaa arrow'
           className='languageDropdown__arrowDown'
         />
 
@@ -89,7 +89,7 @@ const LanguageDropdown = () => {
             >
               <img
                 src={englishIcon}
-                alt='icon'
+                alt='flitaa english icon'
                 className='selectLanguage-icon'
               />
               <p>English</p>
@@ -98,7 +98,7 @@ const LanguageDropdown = () => {
               onClick={() => handleLanguageChange({ target: { value: 'sw' } })}
               className='selectLanguage_div'
             >
-              <img src={kenyaIcon} alt='icon' className='selectLanguage-icon' />
+              <img src={kenyaIcon} alt='flitaa kenya icon' className='selectLanguage-icon' />
               <p>Swahili</p>
             </div>
           </div>

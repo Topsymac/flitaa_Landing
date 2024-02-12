@@ -21,7 +21,7 @@ const MobileNavbar = ({ mobileNav, setMobileNav }: MobileNavbarProp) => {
           <div className='mobileNavbar__div'>
             <div className='mobileNavbar__dash'>
               <Link to='/'>
-                <img src={mobileDash} alt='img' />
+                <img src={mobileDash} alt='flitaa img' />
               </Link>
             </div>
             <div
@@ -29,7 +29,7 @@ const MobileNavbar = ({ mobileNav, setMobileNav }: MobileNavbarProp) => {
               onClick={() => setMobileNav(!mobileNav)}
             >
               {/* {mobileNav ? <img src={mobileCancel} alt='img' /> : ''} */}
-              <img src={mobileCancel} alt='img' />
+              <img src={mobileCancel} alt='flitaa img' />
             </div>
             {/* <div className='mobileNavbar__navItems'>
               {navItems.length > 0 &&

@@ -18,7 +18,7 @@ const GetStartedCard = () => {
   return (
     <div className="getStarted">
       <div className="getStarted__div-border">
-        <img src={getStartedBorder} alt="img" className="getStartedBorder" />
+        <img src={getStartedBorder} alt="flitaa get started" className="getStartedBorder" />
         {/* for mobile screen   */}
         {/* <img
           src={mobileScreenGetStarted}
@@ -31,7 +31,7 @@ const GetStartedCard = () => {
               <div>
                 <img
                   src={star}
-                  alt="star"
+                  alt="flitaa star"
                   className="getStarted__introduction-img"
                 />
               </div>
@@ -57,7 +57,7 @@ const GetStartedCard = () => {
                 <Link to="https://apps.apple.com/ng/app/flitaa/id1566777501">
                   <img
                     src={googlePlay}
-                    alt="googlePlay"
+                    alt="flitaa google store"
                     className="getStarted__googlePlay"
                   />
                 </Link>
@@ -66,7 +66,7 @@ const GetStartedCard = () => {
                 <Link to="https://play.google.com/store/apps/details?id=com.flitaa.app ">
                   <img
                     src={applePlay}
-                    alt="applePlay"
+                    alt="flitaa apple store"
                     className="getStarted__applePlay"
                   />
                 </Link>
@@ -75,7 +75,7 @@ const GetStartedCard = () => {
           </div>
           <img
             src={getStartedPhoneImg}
-            alt='img'
+            alt='flitaa get started img'
             className='getStarted__image'
           />
         </div>

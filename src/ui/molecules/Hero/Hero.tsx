@@ -238,15 +238,15 @@ const Hero = () => {
         <div className={`bottom`}>
           <div className="logo-img-wrapper">
             <div className="logo-img">
-              <img src={logo} alt="img" />
+              <img src={logo} alt="flitaa logo" />
             </div>
           </div>
           <div className="media_logo">
             <Link to="https://apps.apple.com/ng/app/flitaa/id1566777501">
-              <img src={appstore} alt="img" />
+              <img src={appstore} alt="flitaa appstore" />
             </Link>
             <Link to="https://play.google.com/store/apps/details?id=com.flitaa.app ">
-              <img src={googlestore} alt="img" />
+              <img src={googlestore} alt="flitaa playstore" />
             </Link>
           </div>
           <div
@@ -254,45 +254,45 @@ const Hero = () => {
               isIntersectionLeft ? "fade" : ""
             }`}
           >
-            <img src={bottomleft} alt="img" />
+            <img src={bottomleft} alt="flitaa left icon" />
           </div>
           <div
             className={`top_small_right_logo ${isIntersection ? "fade" : ""}`}
           >
-            <img src={topright} alt="img" />
+            <img src={topright} alt="flitaa right icon" />
           </div>
 
           <div className="bottom_small_right_logo">
-            <img src={topOrangeright} alt="img" />
+            <img src={topOrangeright} alt="flitaa top icon" />
           </div>
           <div className="top_small_right_orange_logo">
-            <img src={bottomright} alt="img" />
+            <img src={bottomright} alt="flitaa green icon" />
           </div>
         </div>
         <div className="hero_bottom_mobile">
           <div className="hero_mobile_logo-img">
-            <img src={logo} alt="img" />
+            <img src={logo} alt="flitaa mobile logo" />
           </div>
           <div className="hero_mobile_media_logo">
             <Link to="https://apps.apple.com/ng/app/flitaa/id1566777501">
-              <img src={appstore} alt="img" />
+              <img src={appstore} alt="flitaa appstore" />
             </Link>
             <Link to="https://play.google.com/store/apps/details?id=com.flitaa.app ">
-              <img src={googlestore} alt="img" />
+              <img src={googlestore} alt="flitaa playstore" />
             </Link>
           </div>
           <div className={`hero_mobile_purple_icon`}>
-            <img src={bottomleft} alt="img" />
+            <img src={bottomleft} alt="flitaa purple icon" />
           </div>
           <div className={`hero_mobile_green_icon`}>
-            <img src={topright} alt="img" />
+            <img src={topright} alt="flitaa green icon" />
           </div>
 
           <div className="hero_mobile_orange_icon">
-            <img src={topOrangeright} alt="img" />
+            <img src={topOrangeright} alt="flitaa orange icon" />
           </div>
           <div className="hero_mobile_greenarrow_icon">
-            <img src={bottomright} alt="img" />
+            <img src={bottomright} alt="flitaa greenarrow icon" />
           </div>
         </div>
       </div>
