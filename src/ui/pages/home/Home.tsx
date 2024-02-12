@@ -158,19 +158,11 @@ const Home = () => {
             <FeaturesCard
               introductionText={t("introducingEasiest")}
               heading={t(`supportLocalCurrency`)}
-<<<<<<< HEAD
               paragraph={t('depositStraightToBank')}
               subHeading1={t('NigerianNaira')}
               subHeadingParagraph1={t('investEasilyUsingNaira')}
               subHeading2={t('kenyanShillings')}
               subHeadingParagraph2={t('investingMadeSimpleWithKes')}
-=======
-              paragraph={t("depositStraightToBank")}
-              subHeading1={t("NigerianNaira")}
-              subHeadingParagraph1=""
-              subHeading2={t("kenyanShillings")}
-              subHeadingParagraph2=""
->>>>>>> 69cc550641db590175a60c93fd5419c484a740cc
               order1
               order2
               walletImgTwo
