@@ -18,6 +18,7 @@ import downloadIcon from "../../../assets/downloadIcon.svg";
 import deposit from "../../../assets/depositIcon.svg";
 import rocket from "../../../assets/transactIcon.svg";
 import forwardProgress from "../../../assets/forwarddProgress.svg";
+import Test from "../../molecules/testimonials/Test";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -184,7 +185,8 @@ const Home = () => {
             />
           </div>
           <div>
-            <Testimonials />
+            <Test />
+            {/* <Testimonials /> */}
           </div>
           <div className='home__getStarted'>
             <GetStartedCard />
