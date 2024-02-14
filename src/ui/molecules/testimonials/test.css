@@ -46,7 +46,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 40px;
+   gap: 75px;
+   /* background-color: red; */
 }
 
 .testionial_ellipse {
@@ -166,6 +167,54 @@
   font-size: 20px;
 }
 
+/* Start of mobile testimonial  */
+@media screen and (max-width: 768px){
+  .testimonial__headerDiv {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+   .testimonial_div {
+    justify-content: center !important;
+    width: 100%;
+  }
+  .testimonial-divOne{
+    width: 350px !important;
+    height: 500px !important;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #669b893b;
+    background: none;
+  }
+  .testimonial__content{
+    /* width: 300px !important; */
+    height: 500px !important;
+    top: 22px !important;
+    left: 28px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 15px !important;
+    padding-bottom: 40px !important;
+    
+    
+    /* background: yellow; */
+  }
+  .testimonial__paragraphTwo-div{
+    width: 350px !important;
+    height: 500px !important;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #669b893b;
+    background: none;
+  }
+}
+
+/* end of mobile testimonial */
+
 @media (min-width: 100px) {
   .testimonial_onlyDisplayDesktop {
     display: none;
@@ -230,13 +279,6 @@
   }
   .testimonial__paragraph {
     padding-bottom: 40px;
-    width: 85%;
-  }
-  .testimonial__paragraphTwo {
-    width: 85%;
-  }
-  .testimonial__paragraphThree {
-    width: 85%;
   }
   .testimonialBg {
     margin-left: 15px;
@@ -373,9 +415,7 @@
   .testimonial__headerDiv {
     align-self: center;
   }
-  .testimonial_div {
-    align-self: center;
-  }
+ 
   .testimonial__headerText {
     padding-left: 80px;
     width: 590px;
@@ -473,16 +513,6 @@
   .testimonial__headerText {
     padding-left: 0px;
     width: 482px;
-  }
-
-  .testimonial_div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 75px;
-    /* position: relative;
-  left: 5%; */
   }
 
   .testionial_ellipse {

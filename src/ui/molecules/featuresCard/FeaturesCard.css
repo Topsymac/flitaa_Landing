@@ -97,6 +97,14 @@
   /* z-index: -30px; */
 }
 
+@media screen and (max-width:768px){
+  .featuresCard__walletImg-one {
+    /* object-fit: contain; */
+    width: 322px;
+    height: 419px;
+  }
+}
+
 @media screen and (min-width: 100px) {
   .featuresCard {
     gap: 0px;

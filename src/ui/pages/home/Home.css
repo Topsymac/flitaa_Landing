@@ -243,41 +243,26 @@
     justify-items: center;
     justify-self: center;
     margin: 0 auto;
-    /* width: 100%; */
     gap: 40px;
+  }
+  .new_design_trade_div_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .new_design_trade_content {
     position: absolute;
     top: 40px;
-    width: 80%;
+    width: 86%;
+    margin-left: 0px;
   }
-  /* .new_design_trade_textOne {
-  margin-top: 17px;
-  max-width: 80%;
-} */
   .new_design_trade_image {
-    margin: 0 auto;
-    text-align: center;
-    justify-self: center;
     width: 85%;
     height: 314px;
   }
   .new_design_trade_imageThree {
     margin: 0 auto;
     width: 85%;
-    /* width: 310px; */
     height: 314px;
-  }
-}
-@media screen and (max-width: 930px) {
-  .new_design_trade_top {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  .new_design_trade_bottom {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
   }
 }

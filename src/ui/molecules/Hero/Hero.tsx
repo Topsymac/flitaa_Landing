@@ -202,21 +202,32 @@ const Hero = () => {
 
 
   // Trial 3 
-   useEffect(() => {
-     const intervalId = setInterval(() => {
-       // Add and remove the "fade" class to trigger the fade effect for leftTextSpan
-       const leftTextSpan = document.querySelector(".leftTextSpan");
-       leftTextSpan?.classList.add("fade");
-       setTimeout(() => {
-         setTimeout(() => {
-           setCurrentIndex((prevIndex) => (prevIndex + 1) % textKeys.length);
-           leftTextSpan?.classList.remove("fade");
-         }, 400);
-       }, 300); // Adjust the timeout to match the transition duration
-     }, 4000);
+  //  useEffect(() => {
+  //    const intervalId = setInterval(() => {
+  //      // Add and remove the "fade" class to trigger the fade effect for leftTextSpan
+  //      const leftTextSpan = document.querySelector(".leftTextSpan");
+  //      leftTextSpan?.classList.add("fade");
+  //      setTimeout(() => {
+  //        setTimeout(() => {
+  //          setCurrentIndex((prevIndex) => (prevIndex + 1) % textKeys.length);
+  //          leftTextSpan?.classList.remove("fade");
+  //        }, 400);
+  //      }, 300); // Adjust the timeout to match the transition duration
+  //    }, 4000);
 
-     return () => clearInterval(intervalId);
-   }, [textKeys.length]);
+  //    return () => clearInterval(intervalId);
+  //  }, [textKeys.length]);
+
+  // trial 4
+useEffect(() => {
+  const intervalId = setInterval(() => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % textKeys.length);
+  }, 3000);
+
+  return () => clearInterval(intervalId);
+}, [textKeys.length]);
+
+
   
   return (
     <>
