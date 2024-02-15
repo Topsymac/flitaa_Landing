@@ -96,6 +96,7 @@ const Test = () => {
       {/*  */}
       <div className='testimonial__blurRight'></div>
       {/*  */}
+      {/*  */}
       <div className='testimonial_div'>
         <div className='testimonial__paragraphTwo-div'>
           {/* <img src={TestimonialImg} alt='' className='testimonialBg' /> */}
