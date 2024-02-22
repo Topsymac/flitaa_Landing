@@ -1,25 +1,25 @@
-import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
-import { useTranslation } from "react-i18next";
-import LandingWrapper from "../../wrappers/landingWrapper/LandingWrapper";
-import FeaturesCard from "../../molecules/featuresCard/FeaturesCard";
-import GetStartedCard from "../../molecules/getStartedCard/GetStartedCard";
-import HeadingAndParagraph from "../../molecules/headingAndParagraph/HeadingAndParagraph";
-import Testimonials from "../../molecules/testimonials/Testimonials";
-import TradeCrypto from "../../molecules/tradeCrypto/TradeCrypto";
-import Hero from "../../molecules/Hero/Hero";
-import nigeriaIcon from "../../../assets/ngn.png";
-import kenyaIcon from "../../../assets/kenyaIcon.svg";
-import "./Home.css";
-import { useLocation } from "react-router-dom";
-import Loading from "../../molecules/loading/Loading";
-import TradeCryptoTwo from "../../molecules/tradeCrypto/TradeCryptoTwo";
+import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
+import { useTranslation } from 'react-i18next';
+import LandingWrapper from '../../wrappers/landingWrapper/LandingWrapper';
+import FeaturesCard from '../../molecules/featuresCard/FeaturesCard';
+import GetStartedCard from '../../molecules/getStartedCard/GetStartedCard';
+import HeadingAndParagraph from '../../molecules/headingAndParagraph/HeadingAndParagraph';
+import Testimonials from '../../molecules/testimonials/Testimonials';
+import TradeCrypto from '../../molecules/tradeCrypto/TradeCrypto';
+import Hero from '../../molecules/Hero/Hero';
+import nigeriaIcon from '../../../assets/ngn.png';
+import kenyaIcon from '../../../assets/kenyaIcon.svg';
+import './Home.css';
+import { useLocation } from 'react-router-dom';
+import Loading from '../../molecules/loading/Loading';
+import TradeCryptoTwo from '../../molecules/tradeCrypto/TradeCryptoTwo';
 import CardBg from '../../../assets/cryptoCard.png';
-import downloadIcon from "../../../assets/downloadIcon.svg";
-import deposit from "../../../assets/depositIcon.svg";
-import rocket from "../../../assets/transactIcon.svg";
-import forwardProgress from "../../../assets/forwarddProgress.svg";
-import Test from "../../molecules/testimonials/Test";
+import downloadIcon from '../../../assets/downloadIcon.svg';
+import deposit from '../../../assets/depositIcon.svg';
+import rocket from '../../../assets/transactIcon.svg';
+import forwardProgress from '../../../assets/forwarddProgress.svg';
+import Test from '../../molecules/testimonials/Test';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -39,11 +39,11 @@ const Home = () => {
   }, [pathname]);
 
   return (
-    <div className="home">
+    <div className='home'>
       <Helmet>
-        <title>{t("pageTitle")}</title>
-        <meta name="description" content={t("pageDescription")} />
-        <meta name="keywords" content={t("seoKeywords")} />
+        <title>{t('pageTitle')}</title>
+        <meta name='description' content={t('pageDescription')} />
+        <meta name='keywords' content={t('seoKeywords')} />
       </Helmet>
       {loading ? (
         <>
@@ -63,6 +63,7 @@ const Home = () => {
             </div>
             <TradeCrypto />
             <TradeCryptoTwo /> */}
+
             {/* new design */}
             <div className='new_design_trade'>
               <div className='new_design_trade_top'>

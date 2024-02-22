@@ -97,13 +97,13 @@
   /* z-index: -30px; */
 }
 
-@media screen and (max-width:768px){
+/* @media screen and (max-width:768px){
   .featuresCard__walletImg-one {
-    /* object-fit: contain; */
+    object-fit: contain;
     width: 322px;
     height: 419px;
   }
-}
+} */
 
 @media screen and (min-width: 100px) {
   .featuresCard {
@@ -145,6 +145,11 @@
     /* margin-left: 0px; */
     width: 322px;
     height: 419px;
+  }
+  .featuresCard__walletImg-one {
+    /* object-fit: contain; */
+    width: 322px;
+    height: 462px;
   }
   .featuresCard__div4 {
     margin-left: 15px;
@@ -231,8 +236,16 @@
     width: 322px;
     height: 419px;
   }
+  .featuresCard__walletImg-one {
+    /* margin-left: 0px; */
+    width: 322px;
+    height: 449px;
+  }
   .featuresCard__div4 {
     margin-left: 15px;
+  }
+  .featureCardOrder {
+    align-self: self-start;
   }
   .featureCardOrderOne {
     order: 1;
@@ -259,7 +272,7 @@
     height: 14px;
   }
   .featuresCard__introduction {
-    width: 100%;
+    /* width: 100%; */
     margin-left: 24px;
   }
   .featuresCard__introduction-text {
@@ -276,7 +289,7 @@
   }
   .featuresCard__paragraph {
     margin-left: 24px;
-    width: 100%;
+    /* width: 100%; */
   }
   .featuresCard__paragraph-two {
     width: 90%;
@@ -285,6 +298,11 @@
     /* margin-left: 0px; */
     width: 492px;
     height: 499px;
+  }
+  .featuresCard__walletImg-one {
+    /* margin-left: 0px; */
+    width: 432px;
+    height: 609px;
   }
   .featuresCard__div4 {
     margin-left: 24px;
@@ -302,6 +320,7 @@
     flex-direction: row;
     gap: 0px;
     padding-right: 30px;
+    padding-left: 20px;
   }
   .featureCardOrder {
     align-self: center;
@@ -323,7 +342,7 @@
     font-size: 36px;
     font-weight: 700;
     width: 100%;
-    margin-left: 24px;
+    margin-left: 0px;
     line-height: 44px;
   }
   .featuresCard__paragraph {
@@ -336,6 +355,10 @@
   .featuresCard__walletImg {
     width: 342px;
     height: 419px;
+  }
+  .featuresCard__walletImg-one {
+    width: 342px;
+    height: 469px;
   }
   .featuresCard__div4 {
     margin-left: 0px;
@@ -389,6 +412,7 @@
     justify-content: space-between;
     max-width: 78rem;
     margin: 0 auto;
+    padding-left: 0px;
     padding-right: 0px;
     /* padding-right: 0px; */
     /* margin-left: 75px; */
