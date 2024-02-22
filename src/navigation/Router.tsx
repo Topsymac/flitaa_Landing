@@ -6,6 +6,7 @@ import Terms from '../ui/pages/terms&conditions/TermsAndCondition';
 import PrivacyPolicy from '../ui/pages/privacyPolicy/PrivacyPolicy';
 import LandingWrapper from '../ui/wrappers/landingWrapper/LandingWrapper';
 import NotFound from '../ui/pages/noFound/NotFound';
+import Help from '../ui/pages/help/Help';
 // import ScrollToTop from '../hooks/ScrollToTop';
 // import ScrollToTop from '../hooks/ScrollToTop';
 
@@ -32,6 +33,10 @@ const Router = ({ children }: IProps): JSX.Element => {
       path: routeNames.noFound,
       element: <NotFound />,
     },
+    {
+      path: routeNames.help,
+      element: <Help/>
+    }
   ]);
   return <RouterProvider router={router} />;
 };

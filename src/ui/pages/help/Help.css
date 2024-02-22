@@ -1,0 +1,155 @@
+.help_wrapper {
+  color: #fff;
+  padding-top: 180px;
+  font-family: "Degular Light";
+  max-width: 72rem;
+  margin: 0 auto;
+}
+.help_wrapper .top_text {
+  text-align: center;
+}
+.help_wrapper .top_text .contact_us {
+  color: #2fa67c;
+  font-size: 16px;
+  font-family: Degular;
+}
+.help_wrapper .top_text .get_in_touch {
+  font-size: 40px;
+  font-family: Degular;
+}
+.help_wrapper .help_map {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.help_map img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.help_map .map_green {
+  display: none;
+}
+
+.help_map:hover .map_grey {
+  display: none;
+}
+
+.help_map:hover .map_green {
+  display: block;
+}
+
+.help_wrapper .help_card_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 55rem;
+}
+.help_wrapper .help_card {
+  position: relative;
+}
+.help_wrapper .help_card_wrapper .help_card_text {
+  position: absolute;
+  top: 0;
+  padding: 48px;
+}
+.help_wrapper .help_card_wrapper .help_card_text .help_card_words {
+  margin-top: 48px;
+}
+.help_wrapper .help_card_text .help_card_words .help_card_words_bold {
+  font-size: 20px;
+  font-family: Degular;
+}
+.help_wrapper .help_card_text .help_card_words .help_card_words_button {
+  margin-top: 38px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  width: 289px;
+  text-align: left;
+  background: linear-gradient(45deg, #101828, #475467);
+  color: #fff;
+}
+.help_wrapper .help_card_text .help_card_words .help_card_words_button a {
+  text-decoration: none;
+  color: #fff;
+}
+.help_wrapper .help_card_text .help_card_words .icons {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.help_wrapper .help_card_faqs {
+  margin: 200px 0;
+  margin-bottom: 300px;
+}
+.help_wrapper .help_card_faqs .faq_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* gap: 20px; */
+  max-width: 80rem;
+}
+.help_wrapper .help_card_faqs .faq_header {
+  font-size: 30px;
+  font-family: Degular;
+  margin: 50px 0;
+}
+.help_wrapper .help_card_faqs .faq_item_container {
+  position: relative;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 16px;
+  width: calc(40% - 10px);
+}
+.help_wrapper .help_card_faqs .faq_item {
+  display: flex;
+  justify-content: space-between;
+  font-family: Degular;
+  /* height: 100%; */
+}
+.help_wrapper .help_card_faqs .faq_item_container .faq_item_answer {
+  color: rgba(252, 252, 253, 1);
+  overflow: auto;
+}
+@media screen and (max-width: 768px) {
+  .help_wrapper .help_card_wrapper {
+    flex-direction: column;
+    margin-top: 23rem;
+  }
+  .faq_item_container {
+    width: calc(100% - 20px);
+  }
+  .help_wrapper .help_card_wrapper .help_card .help_card_background {
+    width: 330px;
+  }
+  .help_wrapper .help_card_text .help_card_words .help_card_words_button {
+    margin-top: 12px;
+    width: 200px;
+  }
+  .help_wrapper .help_card_wrapper .help_card_text {
+    padding: 30px;
+  }
+  .help_wrapper .help_card_text .help_card_words .icons {
+    margin-top: 20px;
+  }
+  .help_wrapper .help_card_faqs{
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .help_wrapper .help_card_faqs .faq_wrapper {
+  display: block;
+}
+.help_wrapper .help_card_faqs .faq_item_container{
+    width: 100%;
+}
+.help_wrapper .help_card_faqs{
+    padding: 20px;
+}
+}

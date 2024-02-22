@@ -40,6 +40,8 @@ const Footer = () => {
             <Link to='/privacy-policy'>
               <p>{t('privacyPolicy')}</p>
             </Link>
+            <Link to='/help'>
+            <p>{t("help")}</p></Link>
           </div>
         </div>
         <div className='footer__navTwo'>
