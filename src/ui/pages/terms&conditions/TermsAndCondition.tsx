@@ -79,6 +79,8 @@ const Terms = () => {
               </h3>
               <p>{t("theseTermsConstituteALegalAgreement")}</p>
               <br />
+              <p>{t("youHerebyAgreeAndConsent")}</p>
+              <br />
               {/*  */}
               <h3 className="terms-content-head">
                 <b>2. {t("supplementaryProvisions")}</b>
@@ -190,6 +192,9 @@ const Terms = () => {
                 </span>
                 <span className="terms_bulletPoint-span">
                   &#x2022;<li> {t("yourUseOfFlitaaServices")}</li>
+                </span>
+                <span className="terms_bulletPoint-span">
+                  &#x2022;<li> {t("youShallNotRelyOnAnyTechnicalShortComings")}</li>
                 </span>
                 <span className="terms_bulletPoint-span">
                   &#x2022;<li> {t("withoutPriorWrittenConsent")}</li>
@@ -329,6 +334,8 @@ const Terms = () => {
               <br />
               <p>{t("dueToNetworkDelays")}</p>
               <br />
+              <p>{t("youHerebyAgreeThatFlitaaReserves")}</p>
+              <br />
               <p>{t("flitaaReservesTheRightToUpdate")}</p>
             </div>
             <div className="terms_content">
@@ -433,7 +440,7 @@ const Terms = () => {
               <br />
               <p>{t("onTerminationOfTheseTerms")}</p>
               <br />
-              <p>{t("inTheCaseOfAccountTermination")}</p>
+              <h3 className="terms-content-head">{t("inTheCaseOfAccountTermination")}</h3>
               <br />
               <p>{t("flitaaMaintainsFullCustody")}</p>
               <br />
@@ -443,6 +450,32 @@ const Terms = () => {
               <br />
               <p>{t("flitaaIsNoObligationToallow")}</p>
               <br />
+              <h3 className="terms-content-head">{t("recoveryOfErroneousTransactions")}</h3>
+              <br />
+              <p>{t("youHerebyAgreeThatInTheEvent")}</p>
+              <br />
+              <p>{t("youHerebyAgreeThatShould")}</p>
+              <br />
+              <p>{t("inTheEventThatGlitches")}</p>
+              <br />
+              <div className="terms_bulletPoint-div">
+                <span className="terms_bulletPoint-span">
+                  &#x2022;<li> {t("ifYouHaveNotUsed")}</li>
+                </span>
+                <span className="terms_bulletPoint-span">
+                  &#x2022;<li> {t("ifYouHaveUsed")}</li>
+                </span>
+                <span className="terms_bulletPoint-span">
+                  &#x2022;<li> {t("weWillPromptlyNotifyYou")}</li>
+                </span>
+                <span className="terms_bulletPoint-span">
+                  &#x2022;<li> {t("theMarketValueForThePurpose")}</li>
+                </span>
+                <span className="terms_bulletPoint-span">
+                  &#x2022;<li> {t("byUsingThePlatform")}</li>
+                </span>
+                <br />
+              </div>
             </div>
             {/*  */}
             <div className="terms_content">
@@ -458,6 +491,12 @@ const Terms = () => {
             <div className="terms_content">
               <h3 className="terms-content-head">{t("noFinancialAdvice")}</h3>
               <p>{t("flitaaIsNotYourInvestmentManager")}</p>
+              <br />
+              <p>{t("youHerebyAcknowledge")}</p>
+              <br />
+              <p>{t("furthermoreYouHereby")}</p>
+              <br />
+              <p>{t("youHerebyAgreeThatThePotential")}</p>
               <br />
             </div>
             <div className="terms_content">
@@ -610,6 +649,8 @@ const Terms = () => {
             </div>
             <div className="terms_content">
               <h3 className="terms-content-head">{t("noticeOfClaimAnd")}</h3>
+              <br />
+              <p>{t("youHerebyExpresslyWaive")}</p>
               <br />
               <p>{t("inTheEventOfAnIssue")}</p>
               <br />
