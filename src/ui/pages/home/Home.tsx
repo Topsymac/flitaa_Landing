@@ -139,7 +139,7 @@ const Home = () => {
                         {t('startInvesting')}
                       </div>
                       <p className='new_design_trade_paragraph'>
-                        {t('bringInOrTakeOutCashAtZeroDeposit')}
+                        {t('buyAndHold')}
                       </p>
                     </div>
                   </div>
