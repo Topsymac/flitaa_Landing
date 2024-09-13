@@ -1,12 +1,22 @@
-import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import routeNames from './RouterNames';
-import Home from '../ui/pages/home/Home';
-import Terms from '../ui/pages/terms&conditions/TermsAndCondition';
-import PrivacyPolicy from '../ui/pages/privacyPolicy/PrivacyPolicy';
-import LandingWrapper from '../ui/wrappers/landingWrapper/LandingWrapper';
-import NotFound from '../ui/pages/noFound/NotFound';
-import Help from '../ui/pages/help/Help';
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import routeNames from "./RouterNames";
+// import Home from '../ui/pages/home/Home';
+// import Terms from '../ui/pages/terms&conditions/TermsAndCondition';
+// import PrivacyPolicy from '../ui/pages/privacyPolicy/PrivacyPolicy';
+import LandingWrapper from "../ui/wrappers/landingWrapper/LandingWrapper";
+// import NotFound from '../ui/pages/noFound/NotFound';
+// import Help from '../ui/pages/help/Help';
+import { lazy } from "react";
+const Home = lazy(() => import("../ui/pages/home/Home"));
+const Terms = lazy(
+  () => import("../ui/pages/terms&conditions/TermsAndCondition")
+);
+const PrivacyPolicy = lazy(
+  () => import("../ui/pages/privacyPolicy/PrivacyPolicy")
+);
+const Help = lazy(() => import("../ui/pages/help/Help"));
+const NotFound = lazy(() => import("../ui/pages/noFound/NotFound"));
 // import ScrollToTop from '../hooks/ScrollToTop';
 // import ScrollToTop from '../hooks/ScrollToTop';
 
@@ -35,8 +45,8 @@ const Router = ({ children }: IProps): JSX.Element => {
     },
     {
       path: routeNames.help,
-      element: <Help/>
-    }
+      element: <Help />,
+    },
   ]);
   return <RouterProvider router={router} />;
 };

@@ -17,6 +17,7 @@
 .top {
   /* max-width: 1400px; */
   /* padding-top: 30px; */
+  font-family: Degular;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,12 +37,6 @@
   left: 0;
   right: 0;
 }
-/* .left {
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-} */
 .blurLeft {
   width: 550px;
   height: 550px;
@@ -64,19 +59,7 @@
   max-width: 618px;
   font-size: 48px;
   line-height: 63px;
-  
 }
-/* .leftTextSpan {
-  background: linear-gradient(96deg, #2ae884 0.28%, #e0e9e6 97.38%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 1;
-  transition: opacity 1s ease;
-}
-.leftTextSpan.fade {
-  opacity: 0;
-} */
 
 .leftTextSpan {
   background: linear-gradient(96deg, #2ae884 0.28%, #e0e9e6 97.38%);
@@ -86,7 +69,7 @@
   position: relative;
   display: inline-block;
   opacity: 1;
-  animation: slideUp 3s infinite; 
+  animation: slideUp 3s infinite;
 }
 
 @keyframes slideUp {
@@ -94,7 +77,8 @@
     opacity: 0;
     transform: translateY(20px);
   }
-  10%, 90% {
+  10%,
+  90% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -116,7 +100,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: 24px;
-  font-family: 'Degular Light' !important;
+  font-family: "Degular Light" !important;
   /* color: transparent; */
 }
 .blurRight {
@@ -168,6 +152,7 @@
   width: 738px;
   margin: 0 auto;
   z-index: 5;
+  min-height: 60rem;
   /* background: red; */
 }
 
@@ -181,6 +166,7 @@
   top: 25%;
   left: -15%;
   transform: translateY(0px) translateX(0px);
+  /* background-color: red !important; */
 }
 .top_small_right_logo {
   position: absolute;
@@ -191,6 +177,7 @@
   -moz-transform: translateX(100px);
   -ms-transform: translateX(100px);
   -o-transform: translateX(100px);
+  /* background-color: #2ae884 !important; */
 }
 .top_small_right_orange_logo {
   position: absolute;
@@ -201,13 +188,14 @@
   -moz-transform: translateX(-100px);
   -ms-transform: translateX(-100px);
   -o-transform: translateX(-100px);
+  /* background-color: aqua !important; */
 }
 .bottom_small_right_logo {
   position: absolute;
   bottom: 55%;
   right: 0%;
   transform: translateX(-200px);
-  /* background: red; */
+  /* background-color: coral !important; */
 }
 .Hero .fade {
   opacity: 0.1;
@@ -253,7 +241,7 @@
 @media screen and (max-width: 768px) {
   .Hero {
     padding: 10px;
-    height: 820px;
+    /* height: 820px; */
     padding-top: 0px;
     gap: 40px;
   }
@@ -265,6 +253,7 @@
     margin-left: 10px;
     align-items: flex-start;
     padding-bottom: 50px;
+    min-height: 15rem;
   }
 
   .blurLeftText {
@@ -283,6 +272,7 @@
   .hero_bottom_mobile {
     display: block;
     position: relative;
+    min-height: 30rem;
   }
   .hero_mobile_logo-img {
     margin: 0 auto;

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import "./Hero.css";
@@ -18,11 +18,8 @@ const Hero = () => {
   const [windowScroll, setWindowScroll] = useState<number>(0);
   const [isIntersection, setIsIntersection] = useState(false);
   const [isIntersectionLeft, setIsIntersectionLeft] = useState(false);
-  const [textKeys, setTextKeys] = useState([
-    "withEase",
-    "faster",
-    "efficiently",
-  ]);
+  const textKeys = useMemo(() => ["withEase", "faster", "efficiently"], []);
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
 
@@ -199,24 +196,6 @@ const Hero = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-
-  // Trial 3 
-  //  useEffect(() => {
-  //    const intervalId = setInterval(() => {
-  //      // Add and remove the "fade" class to trigger the fade effect for leftTextSpan
-  //      const leftTextSpan = document.querySelector(".leftTextSpan");
-  //      leftTextSpan?.classList.add("fade");
-  //      setTimeout(() => {
-  //        setTimeout(() => {
-  //          setCurrentIndex((prevIndex) => (prevIndex + 1) % textKeys.length);
-  //          leftTextSpan?.classList.remove("fade");
-  //        }, 400);
-  //      }, 300); // Adjust the timeout to match the transition duration
-  //    }, 4000);
-
-  //    return () => clearInterval(intervalId);
-  //  }, [textKeys.length]);
 
   // trial 4
 useEffect(() => {
