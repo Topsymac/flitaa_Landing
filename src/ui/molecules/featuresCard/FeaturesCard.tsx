@@ -1,7 +1,7 @@
 import React from 'react';
 import star from '../../../assets/star.png';
 import downloadIcon from '../../../assets/shield.svg';
-import transactIcon from '../../../assets/transactIcon.svg';
+// import transactIcon from '../../../assets/transactIcon.svg';
 import walletImg1 from '../../../assets/walletImgOne.png';
 import walletImg2 from '../../../assets/walletImgTwo.png';
 import walletImg3 from '../../../assets/walletImgThree.png';

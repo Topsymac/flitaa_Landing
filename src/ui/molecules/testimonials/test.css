@@ -1,6 +1,6 @@
 .testimonial {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   background-color: #121514;
   color: white;
@@ -53,7 +53,7 @@
 .testionial_ellipse {
   /* position: absolute; */
   /* left: 0px; */
-  background-image: url('../../../assets/TestimonialEllipse.svg');
+  background-image: url("../../../assets/TestimonialEllipse.svg");
   width: 550px;
   height: 550px;
   border-radius: 100%;
@@ -66,7 +66,7 @@
 .testionial_greenEllipse {
   /* position: absolute; */
   right: 0px;
-  background-image: url('../../../assets/greenEllipse.png');
+  background-image: url("../../../assets/greenEllipse.png");
   width: 660px;
   height: 550px;
 }
@@ -131,7 +131,7 @@
   /* padding-left: 48px; */
   max-width: 420px;
   color: #fcfcfd;
-  font-family: 'Degular Light' !important;
+  font-family: "Degular Light" !important;
 }
 
 .testimonial__paragraphTwo {
@@ -144,7 +144,7 @@
   z-index: 30px;
   max-width: 420px;
   color: #fcfcfd;
-  font-family: 'Degular Light' !important;
+  font-family: "Degular Light" !important;
 }
 .testimonial__paragraphThree {
   font-size: 18px;
@@ -155,7 +155,7 @@
   padding-bottom: 24px;
   max-width: 420px;
   color: #fcfcfd;
-  font-family: 'Degular Light' !important;
+  font-family: "Degular Light" !important;
 }
 
 .testimonial__userName {
@@ -200,7 +200,7 @@
     padding-right: 0px;
   }
   .testimonial__headerText {
-    align-self: self-start;
+    align-self: flex-start;
     width: 330px;
   }
   .testimonial__quoteImg {
@@ -315,7 +315,7 @@
     padding-right: 0px;
   }
   .testimonial__headerText {
-    align-self: self-start;
+    align-self: flex-start;
     width: 530px;
   }
   .testimonial__quoteImg {
@@ -477,8 +477,8 @@
   }
   .testimonial {
     display: flex;
-    align-items: start;
-    align-content: start;
+    align-items: flex-start;
+    align-content: flex-start;
     flex-direction: row;
     justify-content: center;
     background-color: #121514;
@@ -511,7 +511,7 @@
     position: absolute;
     /* top: 20px; */
     left: 0px;
-    background-image: url('../../../assets/TestimonialEllipse.svg');
+    background-image: url("../../../assets/TestimonialEllipse.svg");
     width: 550px;
     height: 550px;
     border-radius: 100%;
@@ -524,7 +524,7 @@
   .testionial_greenEllipse {
     position: absolute;
     right: 0px;
-    background-image: url('../../../assets/greenEllipse.png');
+    background-image: url("../../../assets/greenEllipse.png");
     width: 660px;
     height: 550px;
   }
@@ -652,7 +652,7 @@
     gap: 130px;
     padding-left: 0px;
     padding-right: 0px;
-    align-items: start;
+    align-items: flex-start;
   }
   .testimonial__paragraph {
     max-width: 93%;

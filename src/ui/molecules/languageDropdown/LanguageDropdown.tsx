@@ -53,6 +53,7 @@ const LanguageDropdown = () => {
     return () => {
       document.removeEventListener('mousedown', closeOpenMenus);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div>

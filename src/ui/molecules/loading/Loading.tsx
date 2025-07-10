@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import loadingVid from "../../../assets/Flitaa_Logo_2.webm"
-import loadingVideo from "../../../assets/logo.lottie"
-import { DotLottiePlayer } from "@dotlottie/react-player";
+// import loadingVideo from "../../../assets/logo.lottie"
+// import { DotLottiePlayer } from "@dotlottie/react-player";
 import "@dotlottie/react-player/dist/index.css";
 import "./Loading.css";
 
